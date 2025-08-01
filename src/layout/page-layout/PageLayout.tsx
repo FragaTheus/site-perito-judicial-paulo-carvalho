@@ -1,23 +1,21 @@
 import React from "react";
 import { SectionLayout } from "../section-layout/SectionLayout";
 import { Box } from "@mui/joy";
-import { Footer } from "../../components/footer/Footer";
 
-interface ISectionProps {
+interface SectionProps {
   title?: string;
-  position?: string;
-  top?: number;
-  component: React.ReactNode;
 }
 
 interface IPageLayoutProps {
   heroComponent?: React.ReactNode;
-  sections: ISectionProps[];
+  sections: SectionProps[];
+  children: React.ReactNode;
 }
 
 export const PageLayout: React.FC<IPageLayoutProps> = ({
   heroComponent,
   sections,
+  children,
 }) => {
   return (
     <>
@@ -35,18 +33,10 @@ export const PageLayout: React.FC<IPageLayoutProps> = ({
         </Box>
       )}
       {sections.map((section, i) => (
-        <SectionLayout
-          key={i}
-          title={section.title}
-          position={section.position}
-          top={section.top}
-        >
-          {section.component}
+        <SectionLayout key={i} title={section.title}>
+          {children}
         </SectionLayout>
       ))}
-      <Box flex={1} bgcolor={"#121212"}>
-        <Footer />
-      </Box>
     </>
   );
 };
