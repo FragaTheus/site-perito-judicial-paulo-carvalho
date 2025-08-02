@@ -9,25 +9,26 @@ import {
 } from "@mui/joy";
 import { KeyboardArrowRight } from "@mui/icons-material";
 import { useResContext } from "../../contexts/ResponsiveContext";
+import type React from "react";
 
 interface ICardProps {
   imgUrl?: string;
   cardTitle: string;
   cardIcon?: React.ReactNode;
-  cardText: string;
   cardActionContent: boolean;
   cardSubtitle?: string;
   hrefScrollId?: string;
+  children: React.ReactNode;
 }
 
 export const CardLayout: React.FC<ICardProps> = ({
   imgUrl,
   cardTitle,
   cardIcon,
-  cardText,
   cardActionContent,
   cardSubtitle,
   hrefScrollId,
+  children,
 }) => {
   const { isMobile } = useResContext();
   const cardDirection = isMobile ? "column" : "row";
@@ -85,9 +86,7 @@ export const CardLayout: React.FC<ICardProps> = ({
           alignSelf={"center"}
           gap={"20px"}
         >
-          <Typography level="body-md" sx={{ flex: 1 }}>
-            {cardText}
-          </Typography>
+          <Box flex={1}>{children}</Box>
           {imgUrl && (
             <Box id="img" sx={{ width: "clamp(180px,33vw,800px)" }}>
               <AspectRatio ratio={"16/9"}>
