@@ -13,15 +13,17 @@ import { useResContext } from "../../contexts/ResponsiveContext";
 interface ICardProps {
   imgUrl?: string;
   cardTitle: string;
+  cardIcon?: React.ReactNode;
   cardText: string;
   cardActionContent: boolean;
   cardSubtitle?: string;
-  hrefScrollId: string;
+  hrefScrollId?: string;
 }
 
 export const CardLayout: React.FC<ICardProps> = ({
   imgUrl,
   cardTitle,
+  cardIcon,
   cardText,
   cardActionContent,
   cardSubtitle,
@@ -36,23 +38,43 @@ export const CardLayout: React.FC<ICardProps> = ({
       sx={isMobile ? { height: "80%", gap: "0px" } : {}}
     >
       <Box
-        id="card-title-box"
-        bgcolor={"primary.100"}
+        id="card-header"
         display={"flex"}
         alignItems={"center"}
-        justifyContent={"center"}
-        borderRadius={"sm"}
+        justifyContent={"space-between"}
+        alignSelf={"center"}
+        bgcolor={isMobile ? "primary.100" : "transparent"}
         sx={{
-          width: {
-            xs: "100%",
-            sm: "40%",
-          },
+          width: "100%",
           height: "clamp(30px, 5vh, 80px)",
+          borderRadius: "sm",
+          paddingX: "10px",
         }}
       >
-        <Typography level="body-sm" fontWeight={400} sx={{ color: "#121212" }}>
-          {cardTitle}
-        </Typography>
+        <Box
+          id="card-title-box"
+          bgcolor={"primary.100"}
+          display={"flex"}
+          alignItems={"center"}
+          justifyContent={"center"}
+          borderRadius={"sm"}
+          sx={{
+            width: {
+              xs: "100%",
+              sm: "40%",
+            },
+            height: "clamp(30px, 5vh, 80px)",
+          }}
+        >
+          <Typography
+            level="body-sm"
+            fontWeight={400}
+            sx={{ color: "#121212" }}
+          >
+            {cardTitle}
+          </Typography>
+        </Box>
+        {cardIcon && cardIcon}
       </Box>
       <CardContent>
         <Box

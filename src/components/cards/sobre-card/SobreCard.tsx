@@ -9,6 +9,7 @@ export const SobreCard = () => {
       Atua como perito judicial há 10 anos nas Varas de Mogi e São José, com ética e precisão em laudos técnicos."
       cardSubtitle="Conheça a trajetória por trás da experiência."
       hrefScrollId="#servicos"
+      cardActionContent={true}
     ></CardLayout>
   );
 };

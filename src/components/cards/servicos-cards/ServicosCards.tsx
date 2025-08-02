@@ -1,12 +1,12 @@
-import { ServCardLayout } from "../../../layout/cards-layout/ServCardLayout";
 import GavelIcon from "@mui/icons-material/Gavel";
 import DescriptionIcon from "@mui/icons-material/Description";
 import EngineeringIcon from "@mui/icons-material/Engineering";
 import AnalyticsIcon from "@mui/icons-material/Analytics";
+import { CardLayout } from "../../../layout/cards-layout/CardLayout";
 
 export const CardServico = () => {
   return (
-    <ServCardLayout
+    <CardLayout
       cardIcon={<GavelIcon sx={{ color: "#121212", fontSize: "body-lg" }} />}
       cardTitle="Perícia técnica trabalhista"
       cardText="Realização de vistorias técnicas em locais de trabalho 
@@ -16,13 +16,14 @@ export const CardServico = () => {
       existência ou não de insalubridade, periculosidade, nexo causal em acidentes
       de trabalho e inconformidades ergonômicas. Ao final, é emitido um laudo 
       técnico detalhado."
-    ></ServCardLayout>
+      cardActionContent={false}
+    ></CardLayout>
   );
 };
 
 export const CardServico1 = () => {
   return (
-    <ServCardLayout
+    <CardLayout
       cardTitle="Laudo e parecer técnico"
       cardIcon={
         <DescriptionIcon sx={{ color: "#121212", fontSize: "body-lg" }} />
@@ -32,13 +33,14 @@ export const CardServico1 = () => {
       análise criteriosa de situações específicas — como acidentes, condições de 
       trabalho ou equipamentos — e a produção de um laudo ou parecer com conclusão objetiva, 
       que pode ser utilizado em processos judiciais, administrativos ou para tomada de decisões internas nas empresas."
-    ></ServCardLayout>
+      cardActionContent={false}
+    ></CardLayout>
   );
 };
 
 export const CardServico2 = () => {
   return (
-    <ServCardLayout
+    <CardLayout
       cardTitle="Avaliação de máquina e NR-12"
       cardIcon={
         <EngineeringIcon sx={{ color: "#121212", fontSize: "body-lg" }} />
@@ -48,13 +50,14 @@ export const CardServico2 = () => {
        comandos operacionais, sinalização, layout, acessos e manutenções. Ao final, 
        é produzido um relatório técnico com a identificação de falhas, 
       riscos de acidentes, itens fora de conformidade e orientações para adequação à legislação vigente."
-    ></ServCardLayout>
+      cardActionContent={false}
+    ></CardLayout>
   );
 };
 
 export const CardServico3 = () => {
   return (
-    <ServCardLayout
+    <CardLayout
       cardTitle="Levantamento técnico"
       cardIcon={
         <AnalyticsIcon sx={{ color: "#121212", fontSize: "body-lg" }} />
@@ -64,6 +67,7 @@ export const CardServico3 = () => {
        quantitativos, aplicação de checklists normativos, medições ambientais (quando aplicável) 
        e análise de fatores físicos, químicos, biológicos e ergonômicos. Os dados levantados 
        servem de base para ações de prevenção, correção ou regularização junto a órgãos fiscalizadores."
-    ></ServCardLayout>
+      cardActionContent={false}
+    ></CardLayout>
   );
 };

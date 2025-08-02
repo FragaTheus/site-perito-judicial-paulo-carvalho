@@ -9,6 +9,7 @@ export const FuncaoCard = () => {
        Atua em segurança do trabalho, avaliando riscos e acidentes. Seu laudo é decisivo e segue normas legais."
       cardSubtitle="Entenda como a perícia técnica contribui com a justiça."
       hrefScrollId="#sobre"
+      cardActionContent={true}
     ></CardLayout>
   );
 };
