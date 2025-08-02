@@ -1,4 +1,5 @@
 import {
+  ExperienciaCard,
   FormacaoCard,
   QuemSouCard,
 } from "../../components/cards/page-sobre-cards/PageSobreCards";
@@ -15,8 +16,12 @@ export const PageSobre = () => {
         />
       }
       sections={[
+        { title: "Afinal, quem e Paulo Carvalho?", component: <QuemSouCard /> },
         {
-          component: <QuemSouCard />,
+          component: <FormacaoCard />,
+        },
+        {
+          component: <ExperienciaCard />,
         },
         {
           component: <FormacaoCard />,

@@ -52,3 +52,35 @@ export const FormacaoCard = () => {
     </CardLayout>
   );
 };
+
+export const ExperienciaCard = () => {
+  return (
+    <CardLayout cardTitle="Experiência Profissional" cardActionContent={false}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          width: "100%",
+        }}
+      >
+        <Typography level="body-md" textAlign={"center"}>
+          Atuo há duas décadas na área de segurança do trabalho, com passagem
+          por diferentes setores como:
+        </Typography>
+        <Typography textAlign={"left"}>-Construção civil</Typography>
+        <Typography>-Indústrias metalúrgicas</Typography>
+        <Typography>-Indústrias químicas</Typography>
+        <Typography>-Setor de telecomunicações</Typography>
+        <Typography>-Indústria alimentícia</Typography>
+        <Typography>
+          Nos últimos 10 anos, venho atuando como perito judicial junto às
+          varas:
+        </Typography>
+        <Typography>-1ª Vara de Mogi das Cruzes/SP</Typography>
+        <Typography>-3ª Vara de São José dos Campos/SP</Typography>
+      </Box>
+    </CardLayout>
+  );
+};
