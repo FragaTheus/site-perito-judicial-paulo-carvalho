@@ -127,7 +127,7 @@ export const theme = extendTheme({
       color: "#ffffff",
     },
     h4: {
-      fontSize: "clamp(1rem,1.5vmin,6rem)",
+      fontSize: "clamp(1.2rem,2vmin,3rem)",
       fontWeight: "300",
       fontFamily: '"Montserrat", sans-serif',
       color: "#ffffff",

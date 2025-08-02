@@ -18,7 +18,7 @@ export const Logo = () => {
         alignItems={"center"}
       >
         <Typography
-          level="h2"
+          level="h4"
           textAlign={"center"}
           sx={{
             color: "primary.100",
@@ -33,7 +33,7 @@ export const Logo = () => {
         sx={{ bgcolor: "primary.400", height: "80%", alignSelf: "center" }}
       />
       <Typography
-        level="h2"
+        level="h4"
         fontFamily={'"EB Garamond", serif'}
         sx={{
           color: "#ffffff",
