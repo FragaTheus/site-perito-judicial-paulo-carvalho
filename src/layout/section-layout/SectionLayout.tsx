@@ -11,6 +11,7 @@ export const SectionLayout: React.FC<ISectionLayout> = ({
 }) => {
   return (
     <Box
+      id="main"
       width={"100%"}
       minHeight={"100svh"}
       maxHeight={"200svh"}
@@ -20,12 +21,11 @@ export const SectionLayout: React.FC<ISectionLayout> = ({
       alignItems={"center"}
       gap={"10px"}
     >
-      <Box id="section-title-layout" width={"80%"} height={"10svh"}>
+      <Box id="section-header" width={"80%"} height={"10svh"}>
         <Typography level="title-md" textAlign={"center"}>
           {title}
         </Typography>
       </Box>
-
       {children}
     </Box>
   );

@@ -2,14 +2,15 @@ import React from "react";
 import { SectionLayout } from "../section-layout/SectionLayout";
 import { Box } from "@mui/joy";
 
-interface SectionProps {
+type SectionProps = {
   title?: string;
-}
+  component: React.ReactNode;
+};
 
 interface IPageLayoutProps {
   heroComponent?: React.ReactNode;
   sections: SectionProps[];
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 export const PageLayout: React.FC<IPageLayoutProps> = ({
@@ -34,9 +35,14 @@ export const PageLayout: React.FC<IPageLayoutProps> = ({
       )}
       {sections.map((section, i) => (
         <SectionLayout key={i} title={section.title}>
-          {children}
+          {section.component}
         </SectionLayout>
       ))}
+      {children && (
+        <Box id="static-section" width={"100%"}>
+          {children}
+        </Box>
+      )}
     </>
   );
 };
