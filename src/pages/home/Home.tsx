@@ -1,15 +1,15 @@
-import { FuncaoCard } from "../components/cards/funcao-card/FuncaoCard";
-import { IntroCard } from "../components/cards/intro-card/IntroCard";
+import { FuncaoCard } from "../../components/cards/funcao-card/FuncaoCard";
+import { IntroCard } from "../../components/cards/intro-card/IntroCard";
 import {
   CardServico,
   CardServico1,
   CardServico2,
   CardServico3,
-} from "../components/cards/servicos-cards/ServicosCards";
-import { SobreCard } from "../components/cards/sobre-card/SobreCard";
-import { HeroSection } from "../components/hero/HeroSection";
-import { PageLayout } from "../layout/page-layout/PageLayout";
-import { SectionLayout } from "../layout/section-layout/SectionLayout";
+} from "../../components/cards/servicos-cards/ServicosCards";
+import { SobreCard } from "../../components/cards/sobre-card/SobreCard";
+import { HeroSection } from "../../components/hero/HeroSection";
+import { PageLayout } from "../../layout/page-layout/PageLayout";
+import { SectionLayout } from "../../layout/section-layout/SectionLayout";
 
 export const HomePage = ({}) => {
   return (
