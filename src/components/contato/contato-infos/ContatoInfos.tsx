@@ -62,6 +62,8 @@ export const ContatoInfos = () => {
       <Box mt={1} display="flex" gap={1}>
         <IconButton
           variant="outlined"
+          color="primary"
+          sx={{ borderRadius: "lg", borderColor: "primary.900" }}
           component="a"
           href="https://www.linkedin.com/in/paulo-carvalho-pereira-2507a22ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
           target="_blank"
@@ -70,6 +72,8 @@ export const ContatoInfos = () => {
         </IconButton>
         <IconButton
           variant="outlined"
+          color="primary"
+          sx={{ borderRadius: "lg", borderColor: "primary.900" }}
           component="a"
           href="https://www.instagram.com/paulodecarvalho.pereira?igsh=YW44Z2ZqaHB4cGxt"
           target="_blank"
