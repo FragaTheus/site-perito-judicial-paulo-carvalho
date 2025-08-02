@@ -14,6 +14,20 @@ export const QuemSouCard = () => {
                 imparcialidade, ética e precisão técnica, com foco em oferecer
                 análises claras, objetivas e embasadas."
       cardActionContent={false}
-    ></CardLayout>
+    />
+  );
+};
+
+export const FormacaoCard = () => {
+  return (
+    <CardLayout
+      cardTitle="Formação Acadêmica"
+      cardText="Sou formado em:
+                Engenharia de Segurança do Trabalho
+                Engenharia Ambiental
+                Essas formações me permitem atuar com um olhar técnico e abrangente sobre as condições de trabalho, 
+                riscos ocupacionais e impactos ambientais, fornecendo subsídios confiáveis tanto em perícias como em consultorias."
+      cardActionContent={false}
+    />
   );
 };

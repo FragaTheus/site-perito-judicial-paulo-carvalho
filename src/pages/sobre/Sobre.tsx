@@ -1,4 +1,7 @@
-import { QuemSouCard } from "../../components/cards/quem-sou-card/QuemSou";
+import {
+  FormacaoCard,
+  QuemSouCard,
+} from "../../components/cards/page-sobre-cards/PageSobreCards";
 import { HeroSection } from "../../components/hero/HeroSection";
 import { PageLayout } from "../../layout/page-layout/PageLayout";
 
@@ -13,11 +16,10 @@ export const PageSobre = () => {
       }
       sections={[
         {
-          title: "Quem sou eu?",
           component: <QuemSouCard />,
         },
         {
-          component: <QuemSouCard />,
+          component: <FormacaoCard />,
         },
       ]}
     ></PageLayout>
