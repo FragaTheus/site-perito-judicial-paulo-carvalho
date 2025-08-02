@@ -61,20 +61,20 @@ export const ContatoInfos = () => {
 
       <Box mt={1} display="flex" gap={1}>
         <IconButton
-          variant="plain"
+          variant="outlined"
           component="a"
           href="https://www.linkedin.com/in/paulo-carvalho-pereira-2507a22ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
           target="_blank"
         >
-          <LinkedInIcon sx={{ fontSize: "md", color: "primary.100" }} />
+          <LinkedInIcon sx={{ fontSize: "md" }} />
         </IconButton>
         <IconButton
-          variant="plain"
+          variant="outlined"
           component="a"
           href="https://www.instagram.com/paulodecarvalho.pereira?igsh=YW44Z2ZqaHB4cGxt"
           target="_blank"
         >
-          <InstagramIcon sx={{ fontSize: "md", color: "primary.100" }} />
+          <InstagramIcon sx={{ fontSize: "md" }} />
         </IconButton>
       </Box>
 

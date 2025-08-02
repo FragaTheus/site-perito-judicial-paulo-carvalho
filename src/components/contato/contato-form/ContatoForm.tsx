@@ -33,7 +33,11 @@ export const ContatoForm = () => {
       padding={"30px"}
     >
       <Box>
-        <Typography level="h3" sx={{ color: "primary.100" }}>
+        <Typography
+          level="h3"
+          textAlign={"center"}
+          sx={{ color: "primary.100" }}
+        >
           Entre em contato conosco:
         </Typography>
       </Box>
@@ -102,7 +106,6 @@ export const ContatoForm = () => {
         <Button
           variant="solid"
           type="submit"
-          sx={{ bgcolor: "#121212", color: "primary.100" }}
           onClick={() =>
             enviarMsg(
               `Olá! Meu nome é ${form.nome} e gostaria de falar sobre: ${form.assunto}.
