@@ -7,14 +7,21 @@ import {
   CardServico3,
 } from "../components/cards/servicos-cards/ServicosCards";
 import { SobreCard } from "../components/cards/sobre-card/SobreCard";
-import { HeroContent } from "../components/hero/HeroContent";
+import { HeroSection } from "../components/hero/HeroSection";
 import { PageLayout } from "../layout/page-layout/PageLayout";
 import { SectionLayout } from "../layout/section-layout/SectionLayout";
 
 export const HomePage = ({}) => {
   return (
     <PageLayout
-      heroComponent={<HeroContent />}
+      heroComponent={
+        <HeroSection
+          title="Paulo Carvaho"
+          subtitle="Engenheiro de segurança do trabalho | Perito Judicial"
+          description="Perícias judiciais e assistências técnicas em ações
+          trabalhistas."
+        />
+      }
       sections={[
         {
           title: "Precisa de um especialista para sua pericia?",

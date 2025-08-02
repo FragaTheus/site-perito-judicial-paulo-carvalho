@@ -1,8 +1,19 @@
 import { Box, Button, Typography } from "@mui/joy";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { useWppContext } from "../../contexts/WhatsAppContext";
+import type React from "react";
 
-export const HeroContent = () => {
+interface IHeroProsp {
+  title: string;
+  subtitle?: string;
+  description?: string;
+}
+
+export const HeroSection: React.FC<IHeroProsp> = ({
+  title,
+  subtitle,
+  description,
+}) => {
   const { enviarMsg } = useWppContext();
   return (
     <>
@@ -26,13 +37,13 @@ export const HeroContent = () => {
         zIndex={1}
       >
         <Typography textAlign={"left"} level="h1">
-          Paulo Carvalho
+          {title}
         </Typography>
         <Typography textAlign={"left"} level="h2">
-          Engenheiro de segurança do trabalho | Perito judicial
+          {subtitle}
         </Typography>
         <Typography textAlign={"left"} level="h3">
-          Perícias judiciais e assistências técnicas em ações trabalhistas.
+          {description}
         </Typography>
         <Button
           onClick={() => enviarMsg()}
