@@ -13,20 +13,21 @@ export const ContatoInfos = () => {
       flexDirection={"column"}
       alignItems={"center"}
       justifyContent={"center"}
+      gap={"20px"}
     >
       <Typography level="body-md" textAlign="center" sx={{ color: "#888888" }}>
         Paulo de Carvalho Pereira
       </Typography>
       <Box display="flex" flexDirection="column" alignItems="center" gap={0.5}>
         <Box display="flex" alignItems="center" gap={"4px"}>
-          <LocalPhoneIcon sx={{ fontSize: "body-md" }} />
+          <LocalPhoneIcon sx={{ fontSize: "body-md", color: "primary.100" }} />
           <Typography level="body-md" sx={{ color: "#888888" }}>
             11 97224-8445
           </Typography>
         </Box>
 
         <Box display="flex" alignItems="center" gap={1}>
-          <EmailIcon sx={{ fontSize: "body-md" }} />
+          <EmailIcon sx={{ fontSize: "body-md", color: "primary.100" }} />
           <Typography
             level="body-md"
             textAlign={"center"}
@@ -37,7 +38,7 @@ export const ContatoInfos = () => {
         </Box>
 
         <Box display="flex" alignItems="center" gap={1}>
-          <EmailIcon sx={{ fontSize: "body-md" }} />
+          <EmailIcon sx={{ fontSize: "body-md", color: "primary.100" }} />
           <Typography
             level="body-md"
             textAlign={"center"}
@@ -65,7 +66,7 @@ export const ContatoInfos = () => {
           href="https://www.linkedin.com/in/paulo-carvalho-pereira-2507a22ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
           target="_blank"
         >
-          <LinkedInIcon sx={{ fontSize: "md" }} />
+          <LinkedInIcon sx={{ fontSize: "md", color: "primary.100" }} />
         </IconButton>
         <IconButton
           variant="plain"
@@ -73,7 +74,7 @@ export const ContatoInfos = () => {
           href="https://www.instagram.com/paulodecarvalho.pereira?igsh=YW44Z2ZqaHB4cGxt"
           target="_blank"
         >
-          <InstagramIcon sx={{ fontSize: "md" }} />
+          <InstagramIcon sx={{ fontSize: "md", color: "primary.100" }} />
         </IconButton>
       </Box>
 
