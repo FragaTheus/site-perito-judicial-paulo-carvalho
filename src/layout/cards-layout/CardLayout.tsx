@@ -14,7 +14,8 @@ interface ICardProps {
   imgUrl?: string;
   cardTitle: string;
   cardText: string;
-  cardSubtitle: string;
+  cardActionContent: boolean;
+  cardSubtitle?: string;
   hrefScrollId: string;
 }
 
@@ -22,6 +23,7 @@ export const CardLayout: React.FC<ICardProps> = ({
   imgUrl,
   cardTitle,
   cardText,
+  cardActionContent,
   cardSubtitle,
   hrefScrollId,
 }) => {
@@ -76,44 +78,48 @@ export const CardLayout: React.FC<ICardProps> = ({
           )}
         </Box>
       </CardContent>
-      <CardActions>
-        {!isMobile && (
-          <Typography level="body-sm" sx={{ color: "#ffffff" }}>
-            {cardSubtitle}
-          </Typography>
-        )}
-        <Box
-          display={"flex"}
-          gap={"5px"}
-          alignItems={"center"}
-          justifyContent={"center"}
-          sx={isMobile ? { width: "100%" } : { width: "40%" }}
-        >
-          <a href="#contato">
-            <Button id="contato-button" variant="solid">
-              <Typography level="body-sm" sx={{ color: "#ffffff" }}>
-                Entrar em contato
-              </Typography>
-            </Button>
-          </a>
-          <Button
-            id="section-button"
-            component="a"
-            href={hrefScrollId}
-            variant="plain"
-            sx={{ width: "30%" }}
-          >
-            <Typography
-              level="body-sm"
-              textAlign={"center"}
-              sx={{ color: "primary.100" }}
-            >
-              Ver mais
+      {cardActionContent ? (
+        <CardActions>
+          {!isMobile && (
+            <Typography level="body-sm" sx={{ color: "#ffffff" }}>
+              {cardSubtitle}
             </Typography>
-            <KeyboardArrowRight />
-          </Button>
-        </Box>
-      </CardActions>
+          )}
+          <Box
+            display={"flex"}
+            gap={"5px"}
+            alignItems={"center"}
+            justifyContent={"center"}
+            sx={isMobile ? { width: "100%" } : { width: "40%" }}
+          >
+            <a href="#contato">
+              <Button id="contato-button" variant="solid">
+                <Typography level="body-sm" sx={{ color: "#ffffff" }}>
+                  Entrar em contato
+                </Typography>
+              </Button>
+            </a>
+            <Button
+              id="section-button"
+              component="a"
+              href={hrefScrollId}
+              variant="plain"
+              sx={{ width: "30%" }}
+            >
+              <Typography
+                level="body-sm"
+                textAlign={"center"}
+                sx={{ color: "primary.100" }}
+              >
+                Ver mais
+              </Typography>
+              <KeyboardArrowRight />
+            </Button>
+          </Box>
+        </CardActions>
+      ) : (
+        <CardActions sx={{ height: "1svh" }} />
+      )}
     </Card>
   );
 };
