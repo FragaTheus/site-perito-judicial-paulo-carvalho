@@ -27,8 +27,6 @@ export const ServCardLayout: React.FC<ICardProps> = ({
           height: "clamp(30px, 5vh, 80px)",
           borderRadius: "sm",
           paddingX: "10px",
-          position: "sticky",
-          top: 0,
         }}
       >
         <Box
