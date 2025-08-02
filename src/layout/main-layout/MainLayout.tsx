@@ -13,15 +13,7 @@ export const MainLayout: React.FC<IMainLayout> = ({ children }) => {
       <Header />
       <AppDrawer />
       <Box id="page-layout">{children}</Box>
-      <Box
-        flex={1}
-        display={"flex"}
-        alignItems={"center"}
-        justifyContent={"center"}
-        bgcolor={"#121212"}
-      >
-        <Footer />
-      </Box>
+      <Footer />
     </Box>
   );
 };
