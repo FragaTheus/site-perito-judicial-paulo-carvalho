@@ -2,11 +2,15 @@ import { Box, Typography } from "@mui/joy";
 
 interface ISectionLayout {
   title?: string;
+  position?: string;
+  top?: number;
   children: React.ReactNode;
 }
 
 export const SectionLayout: React.FC<ISectionLayout> = ({
   title,
+  position,
+  top,
   children,
 }) => {
   return (
@@ -20,6 +24,8 @@ export const SectionLayout: React.FC<ISectionLayout> = ({
       justifyContent={"center"}
       alignItems={"center"}
       gap={"10px"}
+      position={position as any}
+      top={top}
     >
       <Box id="section-header" width={"80%"} height={"10svh"}>
         <Typography level="title-md" textAlign={"center"}>
