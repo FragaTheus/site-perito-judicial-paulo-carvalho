@@ -10,7 +10,6 @@ export const IntroCard = () => {
       técnicos."
       cardSubtitle="Fale com um especialista e tire suas dúvidas."
       hrefScrollId="#funcao"
-      buttonSectionText="Função"
     ></CardLayout>
   );
 };
