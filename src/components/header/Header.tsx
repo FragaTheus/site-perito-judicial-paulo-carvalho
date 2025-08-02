@@ -1,7 +1,8 @@
-import { Box, Divider, IconButton, Sheet, Typography } from "@mui/joy";
+import { Box, IconButton, Sheet } from "@mui/joy";
 import MailIcon from "@mui/icons-material/Mail";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { Logo } from "../logo/Logo";
 
 export const Header = () => {
   return (
@@ -47,37 +48,7 @@ export const Header = () => {
           height={"100%"}
           gap={"10px"}
         >
-          <Box
-            id="logo"
-            borderRadius={"lg"}
-            display={"flex"}
-            justifyContent={"center"}
-            alignItems={"center"}
-          >
-            <Typography
-              fontSize={"md"}
-              textAlign={"center"}
-              sx={{
-                color: "primary.100",
-                fontFamily: '"EB Garamond", serif',
-              }}
-            >
-              PC
-            </Typography>
-          </Box>
-          <Divider
-            orientation="vertical"
-            sx={{ bgcolor: "primary.400", height: "80%", alignSelf: "center" }}
-          />
-          <Typography
-            fontSize={"md"}
-            fontFamily={'"EB Garamond", serif'}
-            sx={{
-              color: "inherit",
-            }}
-          >
-            Paulo Carvalho
-          </Typography>
+          <Logo />
         </Box>
         <Box id="social-media" display={"flex"} gap={"4px"}>
           <IconButton
