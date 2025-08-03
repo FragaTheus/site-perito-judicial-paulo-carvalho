@@ -9,7 +9,7 @@ interface IMainLayout {
 
 export const MainLayout: React.FC<IMainLayout> = ({ children }) => {
   return (
-    <Box width={"100%"}>
+    <Box width={"100%"} bgcolor={"background.body"}>
       <Header />
       <AppDrawer />
       <Box id="page-layout">{children}</Box>

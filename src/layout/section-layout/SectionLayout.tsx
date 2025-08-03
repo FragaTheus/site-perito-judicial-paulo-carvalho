@@ -17,7 +17,7 @@ export const SectionLayout: React.FC<ISectionLayout> = ({
     <Box
       id="main"
       width={"100%"}
-      height={"100svh"}
+      minHeight={"100svh"}
       display={"flex"}
       flexDirection={"column"}
       justifyContent={"center"}
@@ -25,6 +25,7 @@ export const SectionLayout: React.FC<ISectionLayout> = ({
       gap={"10px"}
       position={position as any}
       top={top}
+      padding={"20px"}
     >
       <Box id="section-header" width={"80%"} height={"10svh"}>
         <Typography level="title-md" textAlign={"center"}>

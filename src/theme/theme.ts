@@ -135,6 +135,11 @@ export const theme = extendTheme({
     "title-md": {
       fontSize: "clamp(1.2rem,6vmin,6rem)",
       fontFamily: '"Montserrat", sans-serif',
+      fontWeight: 700,
+    },
+    "title-sm": {
+      fontSize: "clamp(1rem,4vmin,5rem)",
+      fontFamily: '"Montserrat", sans-serif',
     },
     "body-lg": {
       fontSize: "clamp(1rem,3vmin,5rem)",
@@ -168,7 +173,6 @@ export const theme = extendTheme({
           gap: "20px",
           padding: "30px",
           backgroundColor: "background.surface",
-          boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.2)",
         },
       },
     },

@@ -8,7 +8,7 @@ type SectionProps = {
 };
 
 interface IPageLayoutProps {
-  heroComponent: React.ReactNode;
+  heroComponent?: React.ReactNode;
   sections: SectionProps[];
   children?: React.ReactNode;
 }
@@ -20,17 +20,20 @@ export const PageLayout: React.FC<IPageLayoutProps> = ({
 }) => {
   return (
     <>
-      <Box
-        width={"100%"}
-        height={"90svh"}
-        display={"flex"}
-        flexDirection={"column"}
-        justifyContent={"center"}
-        alignItems={"center"}
-        gap={"10px"}
-      >
-        {heroComponent}
-      </Box>
+      {heroComponent && (
+        <Box
+          width={"100%"}
+          height={"90svh"}
+          display={"flex"}
+          flexDirection={"column"}
+          justifyContent={"center"}
+          alignItems={"center"}
+          gap={"10px"}
+        >
+          {heroComponent}
+        </Box>
+      )}
+
       {sections.map((section, i) => (
         <SectionLayout key={i} title={section.title}>
           {section.component}
