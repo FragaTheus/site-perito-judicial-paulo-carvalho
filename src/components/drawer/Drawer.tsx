@@ -16,15 +16,25 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useWppContext } from "../../contexts/WhatsAppContext";
 import { useDrawerContext } from "../../contexts/DrawerContext";
+import { useResContext } from "../../contexts/ResponsiveContext";
 
 export const AppDrawer = () => {
   const { enviarMsg } = useWppContext();
   const { isOpen, toogleDrawer } = useDrawerContext();
+  const { isMobile } = useResContext();
+  const navigate = useNavigate();
+
+  const handleNavigate = (rota: string) => {
+    navigate(rota);
+    toogleDrawer();
+  };
+
   return (
     <Drawer
+      anchor={isMobile ? "bottom" : "left"}
       variant="soft"
       size="sm"
       open={isOpen}
@@ -41,14 +51,15 @@ export const AppDrawer = () => {
         <Box
           id="drawer-header"
           width={"100%"}
-          height={"10%"}
+          height={"8%"}
           bgcolor={"#121212"}
           display={"flex"}
           alignItems={"center"}
-          justifyContent={"center"}
+          justifyContent={"flex-start"}
+          padding={"20px"}
         >
           <Typography level="body-lg" sx={{ color: "#ffffff" }}>
-            Menu Navegacao
+            Menu de Navegação
           </Typography>
         </Box>
         <Box
@@ -57,13 +68,9 @@ export const AppDrawer = () => {
           display={"flex"}
           flexDirection={"column"}
         >
-          <List variant="soft" size="lg">
+          <List variant="plain" size="lg">
             <ListItem>
-              <ListItemButton
-                component={Link}
-                to="/"
-                selected={location.pathname === "/"}
-              >
+              <ListItemButton onClick={() => handleNavigate("/")}>
                 <ListItemDecorator>
                   <HomeIcon />
                 </ListItemDecorator>
@@ -71,11 +78,7 @@ export const AppDrawer = () => {
               </ListItemButton>
             </ListItem>
             <ListItem>
-              <ListItemButton
-                component={Link}
-                to="/Sobre"
-                selected={location.pathname === "/Sobre"}
-              >
+              <ListItemButton onClick={() => handleNavigate("/Sobre")}>
                 <ListItemDecorator>
                   <PersonIcon />
                 </ListItemDecorator>
@@ -83,11 +86,7 @@ export const AppDrawer = () => {
               </ListItemButton>
             </ListItem>
             <ListItem>
-              <ListItemButton
-                component={Link}
-                to="/Funcao"
-                selected={location.pathname === "/Funcao"}
-              >
+              <ListItemButton onClick={() => handleNavigate("/Funcao")}>
                 <ListItemDecorator>
                   <GavelIcon />
                 </ListItemDecorator>
