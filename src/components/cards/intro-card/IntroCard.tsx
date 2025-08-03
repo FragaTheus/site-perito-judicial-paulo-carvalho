@@ -5,7 +5,7 @@ import GavelIcon from "@mui/icons-material/Gavel";
 export const IntroCard = () => {
   return (
     <CardLayout
-      imgUrl="intro-img-paulo-final.jpg"
+      imgUrl="intro-img.jpg"
       cardTitle="Perícia com confiança"
       cardIcon={<GavelIcon sx={{ color: "#121212", fontSize: "body-lg" }} />}
       cardSubtitle="Fale com um especialista e tire suas dúvidas."

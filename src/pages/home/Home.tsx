@@ -20,6 +20,7 @@ export const HomePage = ({}) => {
           subtitle="Engenheiro de segurança do trabalho | Perito Judicial"
           description="Perícias judiciais e assistências técnicas em ações
           trabalhistas."
+          imgUrl="hero-home.jpg"
         />
       }
       sections={[

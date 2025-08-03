@@ -4,7 +4,7 @@ import { CardLayout } from "../../../layout/cards-layout/CardLayout";
 export const SobreCard = () => {
   return (
     <CardLayout
-      imgUrl="sobre-paulo.jpeg"
+      imgUrl="sobre-img.jpg"
       cardTitle=" Sobre Paulo Carvalho"
       hrefScrollId="#servicos"
       cardActionContent={true}

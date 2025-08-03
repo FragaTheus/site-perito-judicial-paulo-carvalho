@@ -16,7 +16,7 @@ export const SectionLayout: React.FC<ISectionLayout> = ({
   return (
     <Box
       id="main"
-      width={"100%"}
+      width={"100vw"}
       minHeight={"100svh"}
       display={"flex"}
       flexDirection={"column"}
