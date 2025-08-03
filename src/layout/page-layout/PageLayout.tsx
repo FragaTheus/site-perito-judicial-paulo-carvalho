@@ -4,6 +4,7 @@ import { Box } from "@mui/joy";
 
 type SectionProps = {
   title?: string;
+  dark: boolean;
   component: React.ReactNode;
 };
 
@@ -33,17 +34,18 @@ export const PageLayout: React.FC<IPageLayoutProps> = ({
           {heroComponent}
         </Box>
       )}
-
-      {sections.map((section, i) => (
-        <SectionLayout key={i} title={section.title}>
-          {section.component}
-        </SectionLayout>
-      ))}
-      {children && (
-        <Box id="static-section" width={"100%"}>
-          {children}
-        </Box>
-      )}
+      <Box width={"100%"} height={"100%"}>
+        {sections.map((section, i) => (
+          <SectionLayout key={i} title={section.title} dark={section.dark}>
+            {section.component}
+          </SectionLayout>
+        ))}
+        {children && (
+          <Box id="static-section" width={"100%"}>
+            {children}
+          </Box>
+        )}
+      </Box>
     </>
   );
 };
