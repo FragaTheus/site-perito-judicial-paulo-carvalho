@@ -146,7 +146,7 @@ export const theme = extendTheme({
       fontFamily: '"Montserrat", sans-serif',
     },
     "body-md": {
-      fontSize: "clamp(0.7rem,2.5vmin,4rem)",
+      fontSize: "clamp(0.6rem,2.5vmin,4rem)",
       fontFamily: '"Montserrat", sans-serif',
       fontWeight: 500,
     },

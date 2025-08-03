@@ -26,14 +26,19 @@ export const HomePage = ({}) => {
       sections={[
         {
           title: "Precisa de um especialista para sua pericia?",
+          dark: false,
           component: <IntroCard />,
         },
         {
           title: "Qual a funcao de um perito judicial?",
+          dark: false,
+
           component: <FuncaoCard />,
         },
         {
           title: "Afinal, quem e Paulo Carvalho?",
+          dark: false,
+
           component: <SobreCard />,
         },
       ]}
