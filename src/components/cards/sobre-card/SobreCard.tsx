@@ -6,7 +6,7 @@ export const SobreCard = () => {
     <CardLayout
       imgUrl="sobre-img.jpg"
       cardTitle=" Sobre Paulo Carvalho"
-      hrefScrollId="#servicos"
+      LinkUrl="/Sobre"
       cardSubtitle="Conheça a trajetória por trás da experiência."
       cardActionContent={true}
     >

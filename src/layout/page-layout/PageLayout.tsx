@@ -34,18 +34,16 @@ export const PageLayout: React.FC<IPageLayoutProps> = ({
           {heroComponent}
         </Box>
       )}
-      <Box width={"100%"} height={"100%"}>
-        {sections.map((section, i) => (
-          <SectionLayout key={i} title={section.title} dark={section.dark}>
-            {section.component}
-          </SectionLayout>
-        ))}
-        {children && (
-          <Box id="static-section" width={"100%"}>
-            {children}
-          </Box>
-        )}
-      </Box>
+      {sections.map((section, i) => (
+        <SectionLayout key={i} title={section.title} dark={section.dark}>
+          {section.component}
+        </SectionLayout>
+      ))}
+      {children && (
+        <Box id="static-section" width={"100%"}>
+          {children}
+        </Box>
+      )}
     </>
   );
 };

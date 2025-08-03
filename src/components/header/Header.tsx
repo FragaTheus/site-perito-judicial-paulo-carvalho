@@ -1,9 +1,9 @@
 import { Box, IconButton, Sheet } from "@mui/joy";
 import MenuIcon from "@mui/icons-material/Menu";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Logo } from "../logo/Logo";
 import { useDrawerContext } from "../../contexts/DrawerContext";
+import EmailIcon from "@mui/icons-material/Email";
 
 export const Header = () => {
   const { toogleDrawer } = useDrawerContext();
@@ -64,13 +64,13 @@ export const Header = () => {
           </IconButton>
           <IconButton
             component="a"
-            href="https://www.linkedin.com/in/paulo-carvalho-pereira-2507a22ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            href="mailto: perito.paulo@bol.com.br"
             target="_blank"
             variant="outlined"
             color="primary"
             sx={{ borderRadius: "lg", borderColor: "primary.900" }}
           >
-            <LinkedInIcon sx={{ color: "inherit", fontSize: "md" }} />
+            <EmailIcon sx={{ color: "inherit", fontSize: "md" }} />
           </IconButton>
         </Box>
       </Box>

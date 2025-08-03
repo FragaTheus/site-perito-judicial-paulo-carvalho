@@ -7,8 +7,8 @@ export const FuncaoCard = () => {
       imgUrl="funcao-img.jpg"
       cardTitle="A voz técnica no processo"
       cardSubtitle="Entenda como a perícia técnica contribui com a justiça."
-      hrefScrollId="#sobre"
       cardActionContent={true}
+      LinkUrl="/Funcao"
     >
       <Typography level="body-md">
         O perito judicial é nomeado pelo juiz para esclarecer situações

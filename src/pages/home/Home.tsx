@@ -25,18 +25,18 @@ export const HomePage = ({}) => {
       }
       sections={[
         {
-          title: "Precisa de um especialista para sua perícia?",
+          title: "Precisa de um especialista para sua pericia?",
           dark: false,
           component: <IntroCard />,
         },
         {
-          title: "Qual é a função de um perito judicial?",
+          title: "Qual a funcao de um perito judicial?",
           dark: false,
 
           component: <FuncaoCard />,
         },
         {
-          title: "Afinal, quem é Paulo Carvalho?",
+          title: "Afinal, quem e Paulo Carvalho?",
           dark: false,
 
           component: <SobreCard />,
@@ -44,7 +44,7 @@ export const HomePage = ({}) => {
       ]}
     >
       <>
-        <SectionLayout title="Serviços prestados:" position="sticky" top={0}>
+        <SectionLayout title="Servicos prestados:" position="sticky" top={0}>
           <CardServico />
         </SectionLayout>
         <SectionLayout position="sticky" top={0}>

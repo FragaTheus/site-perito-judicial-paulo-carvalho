@@ -10,7 +10,7 @@ export const IntroCard = () => {
       cardIcon={<GavelIcon sx={{ color: "#121212", fontSize: "body-lg" }} />}
       cardSubtitle="Fale com um especialista e tire suas dúvidas."
       cardActionContent={true}
-      hrefScrollId="#funcao"
+      LinkUrl="/Sobre"
     >
       <Typography level="body-md">
         Paulo Carvalho é perito judicial com mais de 20 anos de experiência.

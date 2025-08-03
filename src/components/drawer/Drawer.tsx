@@ -85,8 +85,8 @@ export const AppDrawer = () => {
             <ListItem>
               <ListItemButton
                 component={Link}
-                to="/funcao"
-                selected={location.pathname === "/funcao"}
+                to="/Funcao"
+                selected={location.pathname === "/Funcao"}
               >
                 <ListItemDecorator>
                   <GavelIcon />

@@ -10,6 +10,7 @@ import {
 import { KeyboardArrowRight } from "@mui/icons-material";
 import { useResContext } from "../../contexts/ResponsiveContext";
 import type React from "react";
+import { Link as RouterLink } from "react-router-dom";
 
 interface ICardProps {
   imgUrl?: string;
@@ -17,7 +18,7 @@ interface ICardProps {
   cardIcon?: React.ReactNode;
   cardActionContent: boolean;
   cardSubtitle?: string;
-  hrefScrollId?: string;
+  LinkUrl?: string;
   children: React.ReactNode;
 }
 
@@ -27,7 +28,7 @@ export const CardLayout: React.FC<ICardProps> = ({
   cardIcon,
   cardActionContent,
   cardSubtitle,
-  hrefScrollId,
+  LinkUrl,
   children,
 }) => {
   const { isMobile } = useResContext();
@@ -126,8 +127,8 @@ export const CardLayout: React.FC<ICardProps> = ({
             </a>
             <Button
               id="section-button"
-              component="a"
-              href={hrefScrollId}
+              component={RouterLink as any}
+              to={LinkUrl}
               variant="plain"
               sx={{ width: "30%" }}
             >
@@ -138,7 +139,6 @@ export const CardLayout: React.FC<ICardProps> = ({
               >
                 Ver mais
               </Typography>
-
               <KeyboardArrowRight />
             </Button>
           </Box>
