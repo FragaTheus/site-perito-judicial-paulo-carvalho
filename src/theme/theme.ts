@@ -133,12 +133,12 @@ export const theme = extendTheme({
       color: "#ffffff",
     },
     "title-md": {
-      fontSize: "clamp(1.2rem,6vmin,6rem)",
+      fontSize: "clamp(1.2rem,5vmin,6rem)",
       fontFamily: '"Montserrat", sans-serif',
       fontWeight: 700,
     },
     "title-sm": {
-      fontSize: "clamp(1rem,4vmin,5rem)",
+      fontSize: "clamp(1rem,4vmin,4rem)",
       fontFamily: '"Montserrat", sans-serif',
     },
     "body-lg": {
@@ -151,7 +151,7 @@ export const theme = extendTheme({
       fontWeight: 500,
     },
     "body-sm": {
-      fontSize: "clamp(0.6rem,2.2vmin,3rem)",
+      fontSize: "clamp(0.5rem,2.2vmin,3rem)",
       fontFamily: '"Montserrat", sans-serif',
     },
   },

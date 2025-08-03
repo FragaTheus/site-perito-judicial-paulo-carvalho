@@ -7,13 +7,13 @@ export const SobreCard = () => {
       imgUrl="sobre-img.jpg"
       cardTitle=" Sobre Paulo Carvalho"
       hrefScrollId="#servicos"
+      cardSubtitle="Conheça a trajetória por trás da experiência."
       cardActionContent={true}
     >
       <Typography level="body-md">
         Paulo Carvalho é Engenheiro de Segurança e Ambiental, com 20 anos de
         experiência. Atua como perito judicial há 10 anos nas Varas de Mogi e
-        São José, com ética e precisão em laudos técnicos."
-        cardSubtitle="Conheça a trajetória por trás da experiência.
+        São José, com ética e precisão em laudos técnicos.
       </Typography>
     </CardLayout>
   );

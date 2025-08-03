@@ -111,7 +111,11 @@ export const CardLayout: React.FC<ICardProps> = ({
             gap={"5px"}
             alignItems={"center"}
             justifyContent={"center"}
-            sx={isMobile ? { width: "100%" } : { width: "40%" }}
+            sx={
+              isMobile
+                ? { width: "100%" }
+                : { width: "40%", marginRight: "-60px" }
+            }
           >
             <a href="#contato">
               <Button id="contato-button" variant="solid">
@@ -134,6 +138,7 @@ export const CardLayout: React.FC<ICardProps> = ({
               >
                 Ver mais
               </Typography>
+
               <KeyboardArrowRight />
             </Button>
           </Box>
