@@ -35,7 +35,10 @@ export const MisaoVisaoValores = () => {
           Missão
         </Typography>
         <Divider />
-        <Typography level="title-sm" sx={{ color: "#121212", width: "100%" }}>
+        <Typography
+          level="title-sm"
+          sx={{ color: "text.primary", width: "100%" }}
+        >
           Oferecer suporte técnico preciso e imparcial à Justiça, por meio de
           análises fundamentadas que contribuam para decisões claras e justas.
         </Typography>
@@ -57,7 +60,10 @@ export const MisaoVisaoValores = () => {
           Visão
         </Typography>
         <Divider />
-        <Typography level="title-sm" sx={{ color: "#121212", width: "100%" }}>
+        <Typography
+          level="title-sm"
+          sx={{ color: "text.primary", width: "100%" }}
+        >
           Ser reconhecido como referência nacional em perícias judiciais, pela
           excelência técnica e compromisso com a verdade.
         </Typography>
@@ -79,7 +85,10 @@ export const MisaoVisaoValores = () => {
           Valores
         </Typography>
         <Divider />
-        <Typography level="title-sm" sx={{ color: "#121212", width: "100%" }}>
+        <Typography
+          level="title-sm"
+          sx={{ color: "text.primary", width: "100%" }}
+        >
           Atuação com ética, imparcialidade, excelência, responsabilidade social
           e total comprometimento com a qualidade técnica.
         </Typography>
