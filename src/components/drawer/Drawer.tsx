@@ -17,8 +17,10 @@ import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { Link } from "react-router-dom";
+import { useWppContext } from "../../contexts/WhatsAppContext";
 
 export const AppDrawer = () => {
+  const { enviarMsg } = useWppContext();
   return (
     <Drawer
       variant="soft"
@@ -52,7 +54,7 @@ export const AppDrawer = () => {
           display={"flex"}
           flexDirection={"column"}
         >
-          <List variant="soft" size="md">
+          <List variant="soft" size="lg">
             <ListItem>
               <ListItemButton
                 component={Link}
@@ -110,7 +112,7 @@ export const AppDrawer = () => {
             variant="plain"
             color="neutral"
             component="a"
-            href="mailto:paulo@email.com"
+            href="mailto: perito.paulo@bol.com.br"
             target="_blank"
           >
             <EmailIcon />
@@ -120,8 +122,7 @@ export const AppDrawer = () => {
           <IconButton
             variant="plain"
             color="neutral"
-            component="a"
-            href="https://wa.me/55XXXXXXXXXXX"
+            onClick={() => enviarMsg()}
             target="_blank"
           >
             <WhatsAppIcon />
@@ -132,7 +133,7 @@ export const AppDrawer = () => {
             variant="plain"
             color="neutral"
             component="a"
-            href="https://linkedin.com/in/paulocarvalho"
+            href="https://www.linkedin.com/in/paulo-carvalho-pereira-2507a22ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             target="_blank"
           >
             <LinkedInIcon />
@@ -143,7 +144,7 @@ export const AppDrawer = () => {
             variant="plain"
             color="neutral"
             component="a"
-            href="https://instagram.com/paulo_carvalho"
+            href="https://www.instagram.com/paulodecarvalho.pereira?igsh=YW44Z2ZqaHB4cGxt"
             target="_blank"
           >
             <InstagramIcon />
