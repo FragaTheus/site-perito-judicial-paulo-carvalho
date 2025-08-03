@@ -49,6 +49,7 @@ export const Header = () => {
           height={"100%"}
           gap={"10px"}
         >
+          <div id="header" />
           <Logo />
         </Box>
         <Box id="social-media" display={"flex"} gap={"4px"}>

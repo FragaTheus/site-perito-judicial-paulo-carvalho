@@ -1,4 +1,4 @@
-import { Box, Divider, Typography } from "@mui/joy";
+import { Box, Divider, IconButton, Typography } from "@mui/joy";
 
 export const Logo = () => {
   return (
@@ -17,16 +17,18 @@ export const Logo = () => {
         justifyContent={"center"}
         alignItems={"center"}
       >
-        <Typography
-          level="h4"
-          textAlign={"center"}
-          sx={{
-            color: "primary.100",
-            fontFamily: '"EB Garamond", serif',
-          }}
-        >
-          PC
-        </Typography>
+        <IconButton component="a" href="#header" sx={{ color: "transparent" }}>
+          <Typography
+            level="h4"
+            textAlign={"center"}
+            sx={{
+              color: "primary.100",
+              fontFamily: '"EB Garamond", serif',
+            }}
+          >
+            PC
+          </Typography>
+        </IconButton>
       </Box>
       <Divider
         orientation="vertical"
