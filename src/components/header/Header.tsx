@@ -1,10 +1,12 @@
 import { Box, IconButton, Sheet } from "@mui/joy";
-import MailIcon from "@mui/icons-material/Mail";
+import MenuIcon from "@mui/icons-material/Menu";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Logo } from "../logo/Logo";
+import { useDrawerContext } from "../../contexts/DrawerContext";
 
 export const Header = () => {
+  const { toogleDrawer } = useDrawerContext();
   return (
     <Sheet
       id="header"
@@ -29,13 +31,12 @@ export const Header = () => {
       >
         <Box id="menu-button">
           <IconButton
-            component="a"
-            href="mailto: perito.paulo@bol.com.br"
+            onClick={() => toogleDrawer()}
             variant="outlined"
             color="primary"
             sx={{ borderRadius: "lg", borderColor: "primary.900" }}
           >
-            <MailIcon sx={{ color: "inherit", fontSize: "md" }} />
+            <MenuIcon sx={{ color: "inherit", fontSize: "md" }} />
           </IconButton>
         </Box>
         <Box

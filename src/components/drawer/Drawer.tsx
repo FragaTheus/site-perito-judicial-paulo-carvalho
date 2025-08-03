@@ -18,14 +18,17 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { Link } from "react-router-dom";
 import { useWppContext } from "../../contexts/WhatsAppContext";
+import { useDrawerContext } from "../../contexts/DrawerContext";
 
 export const AppDrawer = () => {
   const { enviarMsg } = useWppContext();
+  const { isOpen, toogleDrawer } = useDrawerContext();
   return (
     <Drawer
       variant="soft"
       size="sm"
-      open={true}
+      open={isOpen}
+      onClose={() => toogleDrawer()}
       sx={{ color: "background.surface" }}
     >
       <Box
