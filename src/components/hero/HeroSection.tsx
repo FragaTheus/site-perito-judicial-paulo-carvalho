@@ -5,12 +5,14 @@ import type React from "react";
 
 interface IHeroProsp {
   title: string;
+  imgUrl: string;
   subtitle?: string;
   description?: string;
 }
 
 export const HeroSection: React.FC<IHeroProsp> = ({
   title,
+  imgUrl,
   subtitle,
   description,
 }) => {
@@ -20,7 +22,7 @@ export const HeroSection: React.FC<IHeroProsp> = ({
       <Box
         id="img-hero"
         component={"img"}
-        src="hero-final.jpg"
+        src={imgUrl}
         width={"100%"}
         height={"90svh"}
         sx={{ position: "relative", objectFit: "cover" }}
