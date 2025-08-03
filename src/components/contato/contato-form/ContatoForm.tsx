@@ -20,6 +20,14 @@ export const ContatoForm = () => {
     assunto: "",
     msg: "",
   });
+
+  const isFormValid =
+    form.nome.trim() &&
+    form.email.trim() &&
+    form.contato.trim() &&
+    form.assunto.trim() &&
+    form.msg.trim();
+
   return (
     <>
       <div id="contato" />
@@ -108,6 +116,7 @@ export const ContatoForm = () => {
           <Button
             variant="solid"
             type="submit"
+            disabled={!isFormValid}
             onClick={() =>
               enviarMsg(
                 `Olá! Meu nome é ${form.nome} e gostaria de falar sobre: ${form.assunto}.
