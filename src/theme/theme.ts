@@ -132,6 +132,11 @@ export const theme = extendTheme({
       fontFamily: '"Montserrat", sans-serif',
       color: "#ffffff",
     },
+    "title-lg": {
+      fontSize: "clamp(1.2rem,4vmin,6rem)",
+      fontFamily: '"Montserrat", sans-serif',
+      fontWeight: 700,
+    },
     "title-md": {
       fontSize: "clamp(1.1rem,3.5vmin,6rem)",
       fontFamily: '"Montserrat", sans-serif',

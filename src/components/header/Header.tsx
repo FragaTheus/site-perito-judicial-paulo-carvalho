@@ -18,7 +18,8 @@ export const Header = () => {
         display: "flex",
         justifyContent: "center",
         bgcolor: "primary.800",
-        position: "sticky",
+        position: "fixed",
+        zIndex: 1000,
       }}
     >
       <Box
