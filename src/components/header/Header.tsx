@@ -4,23 +4,36 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import { Logo } from "../logo/Logo";
 import { useDrawerContext } from "../../contexts/DrawerContext";
 import EmailIcon from "@mui/icons-material/Email";
+import { useResContext } from "../../contexts/ResponsiveContext";
 
 export const Header = () => {
   const { toogleDrawer } = useDrawerContext();
+  const { isMobile } = useResContext();
   return (
     <Sheet
       id="header"
       variant="solid"
       color="primary"
-      sx={{
-        height: "10vh",
-        width: "100%",
-        display: "flex",
-        justifyContent: "center",
-        bgcolor: "primary.800",
-        position: "fixed",
-        zIndex: 1000,
-      }}
+      sx={
+        isMobile
+          ? {
+              height: "10vh",
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              bgcolor: "primary.800",
+              position: "fixed",
+              zIndex: 1000,
+            }
+          : {
+              height: "10vh",
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              bgcolor: "primary.800",
+              position: "sticky",
+            }
+      }
     >
       <Box
         id="toolbar-header"
