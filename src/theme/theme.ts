@@ -109,55 +109,54 @@ export const theme = extendTheme({
   },
   typography: {
     h1: {
-      fontSize: "clamp(2.5rem,8vmin,8rem)",
+      fontSize: "clamp(2rem,8vmin,9rem)",
       fontWeight: "800",
       fontFamily: '"Montserrat", sans-serif',
       color: "#ffffff",
     },
     h2: {
-      fontSize: "clamp(2rem,6vmin,3rem)",
+      fontSize: "clamp(1.5rem,6vmin,3.5rem)",
       fontWeight: "600",
       fontFamily: '"Montserrat", sans-serif',
       color: "#ffffff",
     },
     h3: {
-      fontSize: "clamp(1.5rem,5vmin,2.5rem)",
+      fontSize: "clamp(1rem,5vmin,3rem)",
       fontWeight: "300",
       fontFamily: '"Montserrat", sans-serif',
       color: "#ffffff",
     },
     h4: {
-      fontSize: "clamp(1.2rem,2vmin,3rem)",
+      fontSize: "clamp(1rem,2vmin,7rem)",
       fontWeight: "300",
       fontFamily: '"Montserrat", sans-serif',
       color: "#ffffff",
     },
     "title-md": {
-      fontSize: "clamp(1.2rem,5vmin,6rem)",
+      fontSize: "clamp(1.1rem,3.5vmin,6rem)",
       fontFamily: '"Montserrat", sans-serif',
       fontWeight: 700,
     },
     "title-sm": {
-      fontSize: "clamp(1rem,4vmin,4rem)",
+      fontSize: "clamp(0.9rem,3.2vmin,5rem)",
       fontFamily: '"Montserrat", sans-serif',
     },
     "body-lg": {
-      fontSize: "clamp(0.8rem,3vmin,5rem)",
+      fontSize: "clamp(0.8rem,2.8vmin,4rem)",
       fontFamily: '"Montserrat", sans-serif',
     },
     "body-md": {
-      fontSize: "clamp(0.6rem,2.5vmin,4rem)",
+      fontSize: "clamp(0.7rem,2.5vmin,3rem)",
       fontFamily: '"Montserrat", sans-serif',
       fontWeight: 500,
     },
     "body-sm": {
-      fontSize: "clamp(0.5rem,2.2vmin,3rem)",
+      fontSize: "clamp(0.6rem,2.3vmin,2rem)",
       fontFamily: '"Montserrat", sans-serif',
     },
   },
   fontSize: {
-    md: "clamp(1rem, 1.5vmin, 2rem)",
-    lg: "clamp(1rem, 2vmin, 3rem)",
+    md: "clamp(0.8rem,2.8vmin,4rem)",
   },
   radius: {
     sm: "5px",
@@ -168,10 +167,9 @@ export const theme = extendTheme({
     JoyCard: {
       styleOverrides: {
         root: {
-          width: "80%",
-          height: "70%",
+          width: "90%",
+          height: "80%",
           justifyContent: "center",
-          gap: "20px",
           backgroundColor: "background.surface",
         },
       },
@@ -179,6 +177,7 @@ export const theme = extendTheme({
     JoyTypography: {
       defaultProps: {
         display: "flex",
+        flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
         textAlign: "left",
@@ -199,7 +198,7 @@ export const theme = extendTheme({
       styleOverrides: {
         root: {
           width: "100%",
-          height: "clamp(20px,10vh,100px)",
+          height: "auto",
           borderRadius: "5px",
           display: "flex",
           padding: "10px",
