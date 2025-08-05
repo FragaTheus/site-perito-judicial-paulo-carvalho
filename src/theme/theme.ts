@@ -173,7 +173,7 @@ export const theme = extendTheme({
       styleOverrides: {
         root: {
           width: "90%",
-          height: "80%",
+          height: "90%",
           justifyContent: "center",
           backgroundColor: "background.surface",
         },

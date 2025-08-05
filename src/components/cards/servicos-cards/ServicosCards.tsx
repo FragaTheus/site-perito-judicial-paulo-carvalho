@@ -84,7 +84,7 @@ export const CardServico3 = () => {
         medições ambientais (quando aplicável) e análise de fatores físicos,
         químicos, biológicos e ergonômicos. Os dados levantados servem de base
         para ações de prevenção, correção ou regularização junto a órgãos
-        fiscalizadores.s
+        fiscalizadores.
       </Typography>
     </CardLayout>
   );
