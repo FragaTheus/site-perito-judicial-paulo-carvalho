@@ -30,7 +30,7 @@ export const HeroSection: React.FC<IHeroProsp> = ({
       <Box
         id="content-hero"
         flex={1}
-        padding={"10px"}
+        padding={"20px"}
         display={"flex"}
         flexDirection={"column"}
         justifyContent={"flex-start"}
