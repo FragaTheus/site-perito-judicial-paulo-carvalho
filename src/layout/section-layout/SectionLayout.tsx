@@ -31,7 +31,7 @@ export const SectionLayout: React.FC<ISectionLayout> = ({
       sx={dark ? { bgcolor: "primary.400" } : {}}
     >
       <Box id="section-header" width={"100%"} height={"10svh"}>
-        <Typography level="title-md" textAlign={"center"}>
+        <Typography level="title-lg" textAlign={"center"}>
           {title}
         </Typography>
       </Box>
