@@ -20,6 +20,8 @@ import { useNavigate } from "react-router-dom";
 import { useWppContext } from "../../contexts/WhatsAppContext";
 import { useDrawerContext } from "../../contexts/DrawerContext";
 import { useResContext } from "../../contexts/ResponsiveContext";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import MenuIcon from "@mui/icons-material/Menu";
 
 export const AppDrawer = () => {
   const { enviarMsg } = useWppContext();
@@ -39,7 +41,6 @@ export const AppDrawer = () => {
       size="sm"
       open={isOpen}
       onClose={() => toogleDrawer()}
-      sx={{ color: "background.surface" }}
     >
       <Box
         id="drawer-box-global"
@@ -57,7 +58,9 @@ export const AppDrawer = () => {
           alignItems={"center"}
           justifyContent={"flex-start"}
           padding={"20px"}
+          gap={"10px"}
         >
+          <MenuIcon sx={{ color: "primary.100", fontSize: "md" }} />
           <Typography level="body-lg" sx={{ color: "#ffffff" }}>
             Menu de Navegação
           </Typography>
@@ -68,29 +71,51 @@ export const AppDrawer = () => {
           display={"flex"}
           flexDirection={"column"}
         >
-          <List variant="plain" size="lg">
+          <List
+            variant="solid"
+            size="md"
+            sx={{ bgcolor: "background.surface" }}
+          >
             <ListItem>
-              <ListItemButton onClick={() => handleNavigate("/")}>
-                <ListItemDecorator>
-                  <HomeIcon />
+              <ListItemButton
+                sx={{ justifyContent: "space-between" }}
+                onClick={() => handleNavigate("/")}
+              >
+                <ListItemDecorator sx={{ gap: "10px", color: "text.primary" }}>
+                  <HomeIcon sx={{ fontSize: "md" }} />
+                  Home
                 </ListItemDecorator>
-                Home
+                <ArrowForwardIosIcon
+                  sx={{ color: "primary.100", fontSize: "md" }}
+                />
               </ListItemButton>
             </ListItem>
             <ListItem>
-              <ListItemButton onClick={() => handleNavigate("/Sobre")}>
-                <ListItemDecorator>
-                  <PersonIcon />
+              <ListItemButton
+                sx={{ justifyContent: "space-between" }}
+                onClick={() => handleNavigate("/Sobre")}
+              >
+                <ListItemDecorator sx={{ gap: "10px" }}>
+                  <PersonIcon sx={{ fontSize: "md" }} />
+                  Paulo Carvalho
                 </ListItemDecorator>
-                Paulo Carvalho
+                <ArrowForwardIosIcon
+                  sx={{ color: "primary.100", fontSize: "md" }}
+                />
               </ListItemButton>
             </ListItem>
             <ListItem>
-              <ListItemButton onClick={() => handleNavigate("/Funcao")}>
-                <ListItemDecorator>
-                  <GavelIcon />
+              <ListItemButton
+                sx={{ justifyContent: "space-between" }}
+                onClick={() => handleNavigate("/Funcao")}
+              >
+                <ListItemDecorator sx={{ gap: "10px" }}>
+                  <GavelIcon sx={{ fontSize: "md" }} />
+                  Perito Judicial
                 </ListItemDecorator>
-                Perito Judicial
+                <ArrowForwardIosIcon
+                  sx={{ color: "primary.100", fontSize: "md" }}
+                />
               </ListItemButton>
             </ListItem>
           </List>
@@ -106,7 +131,7 @@ export const AppDrawer = () => {
           borderColor: "divider",
           display: "flex",
           justifyContent: "space-evenly",
-          bgcolor: "background.surface",
+          bgcolor: "#121212",
         }}
       >
         <Tooltip title="E-mail">
@@ -117,7 +142,7 @@ export const AppDrawer = () => {
             href="mailto: perito.paulo@bol.com.br"
             target="_blank"
           >
-            <EmailIcon />
+            <EmailIcon sx={{ fontSize: "md", color: "primary.100" }} />
           </IconButton>
         </Tooltip>
         <Tooltip title="WhatsApp">
@@ -127,7 +152,7 @@ export const AppDrawer = () => {
             onClick={() => enviarMsg()}
             target="_blank"
           >
-            <WhatsAppIcon />
+            <WhatsAppIcon sx={{ fontSize: "md", color: "primary.100" }} />
           </IconButton>
         </Tooltip>
         <Tooltip title="LinkedIn">
@@ -138,7 +163,7 @@ export const AppDrawer = () => {
             href="https://www.linkedin.com/in/paulo-carvalho-pereira-2507a22ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             target="_blank"
           >
-            <LinkedInIcon />
+            <LinkedInIcon sx={{ fontSize: "md", color: "primary.100" }} />
           </IconButton>
         </Tooltip>
         <Tooltip title="Instagram">
@@ -149,7 +174,7 @@ export const AppDrawer = () => {
             href="https://www.instagram.com/paulodecarvalho.pereira?igsh=YW44Z2ZqaHB4cGxt"
             target="_blank"
           >
-            <InstagramIcon />
+            <InstagramIcon sx={{ fontSize: "md", color: "primary.100" }} />
           </IconButton>
         </Tooltip>
       </Box>
