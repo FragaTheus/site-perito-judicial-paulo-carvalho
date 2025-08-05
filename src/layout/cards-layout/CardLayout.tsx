@@ -137,9 +137,9 @@ export const CardLayout: React.FC<ICardProps> = ({
                 textAlign={"center"}
                 sx={{ color: "primary.100" }}
               >
-                Ver mais
+                Sobre
               </Typography>
-              <KeyboardArrowRight />
+              <KeyboardArrowRight sx={{ fontSize: "md" }} />
             </Button>
           </Box>
         </CardActions>
