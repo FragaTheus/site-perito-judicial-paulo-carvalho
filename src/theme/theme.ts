@@ -195,7 +195,7 @@ export const theme = extendTheme({
           flexDirection: "column",
           justifyContent: "center",
           flex: 1,
-          padding: "20px",
+          padding: "5px",
         },
       },
     },
