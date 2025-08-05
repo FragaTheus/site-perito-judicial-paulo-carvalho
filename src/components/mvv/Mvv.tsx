@@ -39,8 +39,9 @@ export const MisaoVisaoValores = () => {
           level="title-sm"
           sx={{ color: "text.primary", width: "100%" }}
         >
-          Oferecer suporte técnico preciso e imparcial à Justiça, por meio de
-          análises fundamentadas que contribuam para decisões claras e justas.
+          Garantir ao cliente um trabalho pericial técnico, claro e confiável,
+          com explicações acessíveis e fundamentação precisa que ajudem a
+          esclarecer os fatos no processo judicial.
         </Typography>
       </Box>
       <Box
@@ -64,8 +65,9 @@ export const MisaoVisaoValores = () => {
           level="title-sm"
           sx={{ color: "text.primary", width: "100%" }}
         >
-          Ser reconhecido como referência nacional em perícias judiciais, pela
-          excelência técnica e compromisso com a verdade.
+          Proporcionar ao cliente a segurança de estar amparado por uma perícia
+          sólida, bem construída e transparente, contribuindo diretamente para
+          uma decisão judicial justa.
         </Typography>
       </Box>
       <Box
@@ -89,8 +91,9 @@ export const MisaoVisaoValores = () => {
           level="title-sm"
           sx={{ color: "text.primary", width: "100%" }}
         >
-          Atuação com ética, imparcialidade, excelência, responsabilidade social
-          e total comprometimento com a qualidade técnica.
+          Respeito ao cliente, atuação ética, compromisso com a verdade,
+          linguagem acessível, transparência em cada etapa da perícia e
+          responsabilidade com os prazos e com a Justiça.
         </Typography>
       </Box>
     </Box>

@@ -21,7 +21,6 @@ export const PageSobre = () => {
           component: <SobreIntro />,
         },
         {
-          title: "Sobre:",
           dark: false,
           component: (
             <>
