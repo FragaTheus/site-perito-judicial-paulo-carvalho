@@ -23,7 +23,7 @@ export const ExperienciaCard = () => {
           }}
         >
           <FormLabel
-            sx={{ fontSize: "clamp(0.6rem,2.5vmin,4rem)", fontWeight: 700 }}
+            sx={{ fontSize: "clamp(0.7rem,2.5vmin,3rem)", fontWeight: 700 }}
           >
             Paulo atua há 20 anos na área de segurança do trabalho, com passagem
             por diferentes setores como:
@@ -43,7 +43,7 @@ export const ExperienciaCard = () => {
           }}
         >
           <FormLabel
-            sx={{ fontSize: "clamp(0.6rem,2.5vmin,4rem)", fontWeight: 700 }}
+            sx={{ fontSize: "clamp(0.7rem,2.5vmin,3rem)", fontWeight: 700 }}
           >
             Nos últimos 10 anos, ele vem atuando como perito judicial junto às
             varas:
@@ -61,9 +61,9 @@ export const ExperienciaCard = () => {
           }}
         >
           <FormLabel
-            sx={{ fontSize: "clamp(0.6rem,2.5vmin,4rem)", fontWeight: 700 }}
+            sx={{ fontSize: "clamp(0.7rem,2.5vmin,3rem)", fontWeight: 700 }}
           >
-            Minhas principais especializações incluem:
+            Suas principais especializações incluem:
           </FormLabel>
           <Typography>Pareceres técnicos detalhados e fundamentados</Typography>
           <Typography>

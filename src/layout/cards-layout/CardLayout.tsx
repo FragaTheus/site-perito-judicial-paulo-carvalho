@@ -69,7 +69,7 @@ export const CardLayout: React.FC<ICardProps> = ({
           }}
         >
           <Typography
-            level="body-sm"
+            level="body-md"
             fontWeight={400}
             sx={{ color: "#121212" }}
           >
@@ -103,20 +103,16 @@ export const CardLayout: React.FC<ICardProps> = ({
       {cardActionContent ? (
         <CardActions>
           {!isMobile && (
-            <Typography level="body-sm" sx={{ color: "#ffffff" }}>
+            <Typography level="body-md" sx={{ color: "#ffffff" }}>
               {cardSubtitle}
             </Typography>
           )}
           <Box
             display={"flex"}
-            gap={"5px"}
+            gap={"10px"}
             alignItems={"center"}
-            justifyContent={"center"}
-            sx={
-              isMobile
-                ? { width: "100%" }
-                : { width: "40%", marginRight: "-60px" }
-            }
+            justifyContent={isMobile ? "center" : "flex-end"}
+            sx={isMobile ? { width: "100%" } : { width: "40%" }}
           >
             <a href="#contato">
               <Button id="contato-button" variant="solid">
@@ -130,16 +126,16 @@ export const CardLayout: React.FC<ICardProps> = ({
               component={RouterLink as any}
               to={LinkUrl}
               variant="plain"
-              sx={{ width: "30%" }}
+              sx={{ width: "20%" }}
             >
               <Typography
                 level="body-sm"
                 textAlign={"center"}
                 sx={{ color: "primary.100" }}
               >
-                Ver mais
+                Sobre
               </Typography>
-              <KeyboardArrowRight />
+              <KeyboardArrowRight sx={{ fontSize: "md" }} />
             </Button>
           </Box>
         </CardActions>

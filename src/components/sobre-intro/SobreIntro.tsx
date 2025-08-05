@@ -14,13 +14,13 @@ export const SobreIntro = () => {
       </Typography>
       <Divider />
       <Typography level="title-sm" sx={{ color: "#ffffff", width: "100%" }}>
-        Olá, sou Paulo de Carvalho Pereira, engenheiro de segurança do trabalho
-        e engenheiro ambiental, atuando há mais de 20 anos na área de segurança
-        do trabalho. Atualmente, sou perito judicial, prestando serviços
-        técnicos especializados que auxiliam a Justiça na tomada de decisões em
-        processos que envolvem questões técnicas e ambientais. Minha atuação é
-        pautada pela imparcialidade, ética e precisão técnica, com foco em
-        oferecer análises claras, objetivas e embasadas.
+        Paulo de Carvalho Pereira é engenheiro de segurança do trabalho e
+        engenheiro ambiental, com mais de 20 anos de experiência na área de
+        segurança do trabalho. Atualmente, atua como perito judicial, prestando
+        serviços técnicos especializados que auxiliam a Justiça na tomada de
+        decisões em processos relacionados a questões técnicas e ambientais. Sua
+        atuação é pautada pela imparcialidade, ética e precisão técnica, com
+        foco em oferecer análises claras, objetivas e embasadas.
       </Typography>
     </Box>
   );
