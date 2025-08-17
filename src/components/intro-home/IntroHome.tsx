@@ -35,12 +35,7 @@ export const IntroHome = () => {
           display={"flex"}
           flexDirection={"row"}
           justifyContent={"space-around"}
-<<<<<<< HEAD
           gap={"20px"}
-=======
-          gap={"10px"}
-          marginX={"50px"}
->>>>>>> develop
         >
           <IntroCard
             cardTitle={"A voz do processo"}
