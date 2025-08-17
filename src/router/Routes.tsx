@@ -30,8 +30,8 @@ export const AppRoutes = () => {
         }
       >
         <Route path="*" element={<HomePage />} />
-        <Route path="funcao" element={<FuncaoPage />} />
-        <Route path="sobre" element={<PageSobre />} />
+        <Route path="Funcao" element={<FuncaoPage />} />
+        <Route path="Sobre" element={<PageSobre />} />
       </Route>
     </Routes>
   );
