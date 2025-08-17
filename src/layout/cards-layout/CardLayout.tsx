@@ -118,7 +118,7 @@ export const CardLayout: React.FC<ICardProps> = ({
             sx={isMobile ? { width: "100%" } : { width: "40%" }}
           >
             <a href="#contato">
-              <Button id="contato-button" variant="solid">
+              <Button id="contato-button" variant="outlined">
                 <Typography level="body-sm" sx={{ color: "#ffffff" }}>
                   Entrar em contato
                 </Typography>
@@ -128,17 +128,19 @@ export const CardLayout: React.FC<ICardProps> = ({
               id="section-button"
               component={RouterLink as any}
               to={LinkUrl}
-              variant="plain"
+              variant="solid"
               sx={{ width: "20%" }}
             >
-              <Typography
-                level="body-sm"
-                textAlign={"center"}
-                sx={{ color: "primary.100" }}
-              >
-                Sobre
-              </Typography>
-              <KeyboardArrowRight sx={{ fontSize: "md" }} />
+              {!isMobile && (
+                <Typography
+                  level="body-sm"
+                  textAlign={"center"}
+                  sx={{ color: "inherit" }}
+                >
+                  Sobre
+                </Typography>
+              )}
+              <KeyboardArrowRight sx={{ fontSize: "lg" }} />
             </Button>
           </Box>
         </CardActions>

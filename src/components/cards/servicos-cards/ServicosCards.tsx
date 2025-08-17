@@ -1,16 +1,11 @@
-import GavelIcon from "@mui/icons-material/Gavel";
-import DescriptionIcon from "@mui/icons-material/Description";
-import EngineeringIcon from "@mui/icons-material/Engineering";
-import AnalyticsIcon from "@mui/icons-material/Analytics";
 import { CardLayout } from "../../../layout/cards-layout/CardLayout";
 import { Typography } from "@mui/joy";
 
 export const CardServico = () => {
   return (
     <CardLayout
-      cardIcon={<GavelIcon sx={{ color: "#121212", fontSize: "body-lg" }} />}
       cardTitle="Perícia técnica trabalhista"
-      cardActionContent={false}
+      cardActionContent={true}
     >
       <Typography level="body-md">
         Realização de vistorias técnicas em locais de trabalho para analisar
@@ -27,13 +22,7 @@ export const CardServico = () => {
 
 export const CardServico1 = () => {
   return (
-    <CardLayout
-      cardTitle="Laudo e parecer técnico"
-      cardIcon={
-        <DescriptionIcon sx={{ color: "#121212", fontSize: "body-lg" }} />
-      }
-      cardActionContent={false}
-    >
+    <CardLayout cardTitle="Laudo e parecer técnico" cardActionContent={true}>
       <Typography level="body-md">
         Elaboração de documentos técnicos com base em normas regulamentadoras,
         evidências físicas, registros e documentos apresentados. O serviço
@@ -51,10 +40,7 @@ export const CardServico2 = () => {
   return (
     <CardLayout
       cardTitle="Avaliação de máquina e NR-12"
-      cardIcon={
-        <EngineeringIcon sx={{ color: "#121212", fontSize: "body-lg" }} />
-      }
-      cardActionContent={false}
+      cardActionContent={true}
     >
       <Typography level="body-md">
         Inspeção completa de máquinas e equipamentos conforme os critérios
@@ -70,13 +56,7 @@ export const CardServico2 = () => {
 
 export const CardServico3 = () => {
   return (
-    <CardLayout
-      cardTitle="Levantamento técnico"
-      cardIcon={
-        <AnalyticsIcon sx={{ color: "#121212", fontSize: "body-lg" }} />
-      }
-      cardActionContent={false}
-    >
+    <CardLayout cardTitle="Levantamento técnico" cardActionContent={true}>
       <Typography level="body-md">
         Mapeamento detalhado das condições do ambiente de trabalho com foco na
         identificação de riscos ocupacionais. O serviço inclui a coleta de dados
