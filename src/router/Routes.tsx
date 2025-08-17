@@ -1,8 +1,22 @@
-import { Outlet, Route, Routes } from "react-router-dom";
+import { Outlet, Route, Routes, useLocation } from "react-router-dom";
 import { MainLayout } from "../layout/main-layout/MainLayout";
 import { FuncaoPage } from "../pages/funcao/FuncaoPage";
 import { PageSobre } from "../pages/sobre/Sobre";
 import { HomePage } from "../pages/home/Home";
+import { useEffect } from "react";
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [pathname]);
+
+  return null;
+};
 
 export const AppRoutes = () => {
   return (
@@ -10,6 +24,7 @@ export const AppRoutes = () => {
       <Route
         element={
           <MainLayout>
+            <ScrollToTop />
             <Outlet />
           </MainLayout>
         }
