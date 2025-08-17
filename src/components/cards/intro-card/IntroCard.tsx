@@ -7,6 +7,7 @@ import {
   Typography,
 } from "@mui/joy";
 import type React from "react";
+import { KeyboardArrowRight } from "@mui/icons-material";
 
 type IntroCardProps = {
   cardTitle: String;
@@ -57,14 +58,15 @@ export const IntroCard: React.FC<IntroCardProps> = ({
       </CardContent>
       <CardActions>
         <Button
-          variant="solid"
+          variant="outlined"
           component="a"
           href={path as any}
-          sx={{ bgcolor: "transparent" }}
+          sx={{ width: "10%" }}
         >
-          <Typography level="body-md" sx={{ color: "primary.100" }}>
+          <Typography level="body-md" sx={{ color: "inherit" }}>
             Saiba mais
           </Typography>
+          <KeyboardArrowRight sx={{ fontSize: "lg" }} />
         </Button>
       </CardActions>
     </Card>

@@ -37,7 +37,11 @@ export const CardLayout: React.FC<ICardProps> = ({
     <Card
       id="card"
       variant="soft"
-      sx={isMobile ? { height: "80%", gap: "0px" } : {}}
+      sx={
+        isMobile
+          ? { height: "80%", gap: "10px" }
+          : { padding: "20px", gap: "10px" }
+      }
     >
       <Box
         id="card-header"
@@ -50,7 +54,6 @@ export const CardLayout: React.FC<ICardProps> = ({
           width: "100%",
           height: "clamp(30px, 5vh, 80px)",
           borderRadius: "sm",
-          paddingX: "10px",
         }}
       >
         <Box
@@ -115,8 +118,8 @@ export const CardLayout: React.FC<ICardProps> = ({
             sx={isMobile ? { width: "100%" } : { width: "40%" }}
           >
             <a href="#contato">
-              <Button id="contato-button" variant="solid">
-                <Typography level="body-sm" sx={{ color: "#ffffff" }}>
+              <Button id="contato-button" variant="outlined">
+                <Typography level="body-sm" sx={{ color: "inherit" }}>
                   Entrar em contato
                 </Typography>
               </Button>
@@ -125,17 +128,19 @@ export const CardLayout: React.FC<ICardProps> = ({
               id="section-button"
               component={RouterLink as any}
               to={LinkUrl}
-              variant="plain"
+              variant="solid"
               sx={{ width: "20%" }}
             >
-              <Typography
-                level="body-sm"
-                textAlign={"center"}
-                sx={{ color: "primary.100" }}
-              >
-                Sobre
-              </Typography>
-              <KeyboardArrowRight sx={{ fontSize: "md" }} />
+              {!isMobile && (
+                <Typography
+                  level="body-sm"
+                  textAlign={"center"}
+                  sx={{ color: "inherit" }}
+                >
+                  Sobre
+                </Typography>
+              )}
+              <KeyboardArrowRight sx={{ fontSize: "lg" }} />
             </Button>
           </Box>
         </CardActions>
