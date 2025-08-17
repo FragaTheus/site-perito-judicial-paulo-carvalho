@@ -1,7 +1,6 @@
 import { Box, IconButton } from "@mui/joy";
 import { ContatoForm } from "../contato/contato-form/ContatoForm";
 import { ContatoInfos } from "../contato/contato-infos/ContatoInfos";
-import { Logo } from "../logo/Logo";
 import { useResContext } from "../../contexts/ResponsiveContext";
 import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 
@@ -19,8 +18,25 @@ export const Footer = () => {
       minHeight={"100svh"}
       padding={"10px"}
     >
-      <Box id="footer-header" width={"100%"} height={"10svh"} display={"flex"}>
-        <Logo />
+      <Box
+        id="footer-header"
+        width={"100%"}
+        height={"10svh"}
+        display={"flex"}
+        alignItems={"center"}
+        justifyContent={"center"}
+        alignSelf={"center"}
+        justifySelf={"center"}
+      >
+        <IconButton
+          onClick={() =>
+            window.scrollTo({
+              top: 0,
+            })
+          }
+        >
+          <ArrowDropUpIcon sx={{ color: "primary.100" }} />
+        </IconButton>
       </Box>
       <Box
         id="footer-body"
@@ -49,15 +65,6 @@ export const Footer = () => {
           <ContatoInfos />
         </Box>
       </Box>
-      <IconButton
-        onClick={() =>
-          window.scrollTo({
-            top: 0,
-          })
-        }
-      >
-        <ArrowDropUpIcon sx={{ color: "primary.100" }} />
-      </IconButton>
     </Box>
   );
 };
