@@ -25,7 +25,7 @@ export const IntroHome = () => {
         </Typography>
       </Box>
       <Box
-        width={"100vw"}
+        width={"99vw"}
         display={"flex"}
         justifyContent={"center"}
         sx={{ overflowX: "auto" }}
