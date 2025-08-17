@@ -1,22 +1,72 @@
-import { Typography } from "@mui/joy";
-import { CardLayout } from "../../../layout/cards-layout/CardLayout";
-import GavelIcon from "@mui/icons-material/Gavel";
+import {
+  Box,
+  Button,
+  Card,
+  CardActions,
+  CardContent,
+  Typography,
+} from "@mui/joy";
+import type React from "react";
 
-export const IntroCard = () => {
+type IntroCardProps = {
+  cardTitle: String;
+  text: String;
+  path: String;
+};
+
+export const IntroCard: React.FC<IntroCardProps> = ({
+  cardTitle,
+  text,
+  path,
+}) => {
   return (
-    <CardLayout
-      imgUrl="intro-img.jpg"
-      cardTitle="Perícia com confiança"
-      cardIcon={<GavelIcon sx={{ color: "#121212", fontSize: "body-lg" }} />}
-      cardSubtitle="Fale com um especialista e tire suas dúvidas."
-      cardActionContent={true}
-      LinkUrl="/Sobre"
+    <Card
+      variant="soft"
+      sx={{
+        position: "sticky",
+        width: "clamp(250px, 25vw, 800px)",
+        height: "clamp(250px, 40svh, 600px)",
+        flexShrink: 0,
+      }}
     >
-      <Typography level="body-md">
-        Paulo Carvalho é perito judicial com mais de 20 anos de experiência.
-        Atua com ética e precisão em casos de saúde e segurança. É referência no
-        meio jurídico pela qualidade dos seus laudos técnicos.
-      </Typography>
-    </CardLayout>
+      <Box
+        id="card-title-box"
+        bgcolor={"primary.100"}
+        display={"flex"}
+        alignItems={"center"}
+        justifyContent={"center"}
+        borderRadius={"sm"}
+        sx={{
+          height: "clamp(30px, 5vh, 80px)",
+        }}
+      >
+        <Typography level="body-md" fontWeight={400} sx={{ color: "#121212" }}>
+          {cardTitle}
+        </Typography>
+      </Box>
+      <CardContent
+        sx={{
+          display: "flex",
+          alignItems: "flex-start",
+          padding: "10px",
+        }}
+      >
+        <Typography level="body-md" sx={{ color: "#121212" }}>
+          {text}
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button
+          variant="solid"
+          component="a"
+          href={path as any}
+          sx={{ bgcolor: "transparent" }}
+        >
+          <Typography level="body-md" sx={{ color: "primary.100" }}>
+            Saiba mais
+          </Typography>
+        </Button>
+      </CardActions>
+    </Card>
   );
 };

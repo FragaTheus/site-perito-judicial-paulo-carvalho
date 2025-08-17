@@ -29,12 +29,13 @@ export const HomePage = ({}) => {
           component: <IntroHome />,
         },
         {
+          divId: "funcao",
           title: "Qual é a função de um perito judicial?",
           dark: false,
-
           component: <FuncaoCard />,
         },
         {
+          divId: "sobre",
           title: "Afinal, quem é Paulo Carvalho?",
           dark: false,
 
@@ -43,7 +44,12 @@ export const HomePage = ({}) => {
       ]}
     >
       <>
-        <SectionLayout title="Áreas de atuação:" position="sticky" top={0}>
+        <SectionLayout
+          divId={"servico"}
+          title="Áreas de atuação:"
+          position="sticky"
+          top={0}
+        >
           <CardServico />
         </SectionLayout>
         <SectionLayout position="sticky" top={0}>
