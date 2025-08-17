@@ -1,6 +1,8 @@
 import { Box, Divider, IconButton, Typography } from "@mui/joy";
+import { useNavigate } from "react-router-dom";
 
 export const Logo = () => {
+  const navigate = useNavigate();
   return (
     <Box
       id="header-main"
@@ -17,7 +19,12 @@ export const Logo = () => {
         justifyContent={"center"}
         alignItems={"center"}
       >
-        <IconButton component="a" href="#header" sx={{ color: "transparent" }}>
+        <IconButton
+          onClick={() => {
+            navigate("/Home");
+          }}
+          sx={{ color: "transparent" }}
+        >
           <Typography
             level="h4"
             textAlign={"center"}
