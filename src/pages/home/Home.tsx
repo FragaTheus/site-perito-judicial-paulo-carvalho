@@ -1,5 +1,4 @@
 import { FuncaoCard } from "../../components/cards/funcao-card/FuncaoCard";
-import { IntroCard } from "../../components/cards/intro-card/IntroCard";
 import {
   CardServico,
   CardServico1,
@@ -8,6 +7,7 @@ import {
 } from "../../components/cards/servicos-cards/ServicosCards";
 import { SobreCard } from "../../components/cards/sobre-card/SobreCard";
 import { HeroSection } from "../../components/hero/HeroSection";
+import { IntroHome } from "../../components/intro-home/IntroHome";
 import { PageLayout } from "../../layout/page-layout/PageLayout";
 import { SectionLayout } from "../../layout/section-layout/SectionLayout";
 
@@ -25,17 +25,17 @@ export const HomePage = ({}) => {
       }
       sections={[
         {
-          title: "Precisa de um especialista para sua perícia?",
           dark: false,
-          component: <IntroCard />,
+          component: <IntroHome />,
         },
         {
+          divId: "funcao",
           title: "Qual é a função de um perito judicial?",
           dark: false,
-
           component: <FuncaoCard />,
         },
         {
+          divId: "sobre",
           title: "Afinal, quem é Paulo Carvalho?",
           dark: false,
 
@@ -44,7 +44,12 @@ export const HomePage = ({}) => {
       ]}
     >
       <>
-        <SectionLayout title="Áreas de atuação:" position="sticky" top={0}>
+        <SectionLayout
+          divId={"servico"}
+          title="Áreas de atuação:"
+          position="sticky"
+          top={0}
+        >
           <CardServico />
         </SectionLayout>
         <SectionLayout position="sticky" top={0}>
