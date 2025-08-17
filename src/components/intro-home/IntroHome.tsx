@@ -31,11 +31,11 @@ export const IntroHome = () => {
         sx={{ overflowX: "auto" }}
       >
         <Box
-          width={"80%"}
+          width={"75%"}
           display={"flex"}
           flexDirection={"row"}
           justifyContent={"space-around"}
-          gap={"10px"}
+          gap={"20px"}
         >
           <IntroCard
             cardTitle={"A voz do processo"}
