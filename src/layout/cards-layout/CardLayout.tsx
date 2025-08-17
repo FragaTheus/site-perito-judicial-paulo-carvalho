@@ -11,6 +11,7 @@ import { KeyboardArrowRight } from "@mui/icons-material";
 import { useResContext } from "../../contexts/ResponsiveContext";
 import type React from "react";
 import { Link as RouterLink } from "react-router-dom";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 interface ICardProps {
   imgUrl?: string;
@@ -118,28 +119,24 @@ export const CardLayout: React.FC<ICardProps> = ({
             sx={isMobile ? { width: "100%" } : { width: "40%" }}
           >
             <a href="#contato">
-              <Button id="contato-button" variant="outlined">
-                <Typography level="body-sm" sx={{ color: "inherit" }}>
-                  Entrar em contato
-                </Typography>
+              <Button id="contato-button" variant="solid">
+                <WhatsAppIcon sx={{ color: "inherit" }} />
               </Button>
             </a>
             <Button
               id="section-button"
               component={RouterLink as any}
               to={LinkUrl}
-              variant="solid"
-              sx={{ width: "20%" }}
+              variant="outlined"
             >
-              {!isMobile && (
-                <Typography
-                  level="body-sm"
-                  textAlign={"center"}
-                  sx={{ color: "inherit" }}
-                >
-                  Sobre
-                </Typography>
-              )}
+              <Typography
+                level="body-sm"
+                textAlign={"center"}
+                sx={{ color: "inherit" }}
+              >
+                Saiba mais
+              </Typography>
+
               <KeyboardArrowRight sx={{ fontSize: "lg" }} />
             </Button>
           </Box>
