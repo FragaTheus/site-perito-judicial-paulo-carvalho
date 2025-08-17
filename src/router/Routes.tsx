@@ -29,7 +29,7 @@ export const AppRoutes = () => {
           </MainLayout>
         }
       >
-        <Route path="*" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="Funcao" element={<FuncaoPage />} />
         <Route path="Sobre" element={<PageSobre />} />
       </Route>

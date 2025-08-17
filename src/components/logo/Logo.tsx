@@ -21,7 +21,7 @@ export const Logo = () => {
       >
         <IconButton
           onClick={() => {
-            navigate("/Home");
+            navigate("/");
           }}
           sx={{ color: "transparent" }}
         >
