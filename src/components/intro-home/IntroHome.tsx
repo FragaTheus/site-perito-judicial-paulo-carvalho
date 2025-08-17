@@ -25,7 +25,7 @@ export const IntroHome = () => {
         </Typography>
       </Box>
       <Box
-        width={"100vw"}
+        width={"99vw"}
         display={"flex"}
         justifyContent={"center"}
         sx={{ overflowX: "auto" }}
@@ -35,7 +35,12 @@ export const IntroHome = () => {
           display={"flex"}
           flexDirection={"row"}
           justifyContent={"space-around"}
+<<<<<<< HEAD
           gap={"20px"}
+=======
+          gap={"10px"}
+          marginX={"50px"}
+>>>>>>> develop
         >
           <IntroCard
             cardTitle={"A voz do processo"}

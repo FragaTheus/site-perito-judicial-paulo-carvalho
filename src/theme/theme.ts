@@ -172,8 +172,8 @@ export const theme = extendTheme({
     JoyCard: {
       styleOverrides: {
         root: {
-          width: "90%",
-          height: "90%",
+          width: "80%",
+          height: "80%",
           justifyContent: "center",
           backgroundColor: "background.surface",
         },

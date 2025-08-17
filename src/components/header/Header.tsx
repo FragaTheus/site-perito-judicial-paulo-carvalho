@@ -1,6 +1,6 @@
 import { Box, IconButton, Sheet } from "@mui/joy";
 import MenuIcon from "@mui/icons-material/Menu";
-import InstagramIcon from "@mui/icons-material/Instagram";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { Logo } from "../logo/Logo";
 import { useDrawerContext } from "../../contexts/DrawerContext";
 import EmailIcon from "@mui/icons-material/Email";
@@ -31,7 +31,8 @@ export const Header = () => {
               display: "flex",
               justifyContent: "center",
               bgcolor: "primary.800",
-              position: "sticky",
+              position: "fixed",
+              zIndex: 1000,
             }
       }
     >
@@ -63,20 +64,9 @@ export const Header = () => {
           height={"100%"}
           gap={"10px"}
         >
-          <div id="header" />
           <Logo />
         </Box>
         <Box id="social-media" display={"flex"} gap={"4px"}>
-          <IconButton
-            component="a"
-            href="https://www.instagram.com/paulodecarvalho.pereira?igsh=YW44Z2ZqaHB4cGxt"
-            target="_blank"
-            variant="outlined"
-            color="primary"
-            sx={{ borderRadius: "lg", borderColor: "primary.900" }}
-          >
-            <InstagramIcon sx={{ color: "inherit", fontSize: "md" }} />
-          </IconButton>
           <IconButton
             component="a"
             href="mailto: perito.paulo@bol.com.br"
@@ -86,6 +76,15 @@ export const Header = () => {
             sx={{ borderRadius: "lg", borderColor: "primary.900" }}
           >
             <EmailIcon sx={{ color: "inherit", fontSize: "md" }} />
+          </IconButton>
+          <IconButton
+            component="a"
+            href="#contato"
+            variant="outlined"
+            color="primary"
+            sx={{ borderRadius: "lg", borderColor: "primary.900" }}
+          >
+            <WhatsAppIcon sx={{ color: "inherit", fontSize: "md" }} />
           </IconButton>
         </Box>
       </Box>
