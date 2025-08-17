@@ -39,7 +39,7 @@ export const CardLayout: React.FC<ICardProps> = ({
       variant="soft"
       sx={
         isMobile
-          ? { height: "80%", gap: "10px", padding: "20px" }
+          ? { height: "80%", gap: "10px" }
           : { padding: "20px", gap: "10px" }
       }
     >
@@ -119,7 +119,7 @@ export const CardLayout: React.FC<ICardProps> = ({
           >
             <a href="#contato">
               <Button id="contato-button" variant="outlined">
-                <Typography level="body-sm" sx={{ color: "#ffffff" }}>
+                <Typography level="body-sm" sx={{ color: "inherit" }}>
                   Entrar em contato
                 </Typography>
               </Button>
