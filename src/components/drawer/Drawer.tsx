@@ -22,6 +22,7 @@ import { useDrawerContext } from "../../contexts/DrawerContext";
 import { useResContext } from "../../contexts/ResponsiveContext";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import MenuIcon from "@mui/icons-material/Menu";
+import HandymanIcon from "@mui/icons-material/Handyman";
 
 export const AppDrawer = () => {
   const { enviarMsg } = useWppContext();
@@ -107,11 +108,25 @@ export const AppDrawer = () => {
             <ListItem>
               <ListItemButton
                 sx={{ justifyContent: "space-between" }}
-                onClick={() => handleNavigate("/Funcao")}
+                onClick={() => handleNavigate("/funcao")}
               >
                 <ListItemDecorator sx={{ gap: "10px" }}>
                   <GavelIcon sx={{ fontSize: "md" }} />
                   Perito Judicial
+                </ListItemDecorator>
+                <ArrowForwardIosIcon
+                  sx={{ color: "primary.100", fontSize: "md" }}
+                />
+              </ListItemButton>
+            </ListItem>
+            <ListItem>
+              <ListItemButton
+                sx={{ justifyContent: "space-between" }}
+                onClick={() => handleNavigate("/servicos")}
+              >
+                <ListItemDecorator sx={{ gap: "10px" }}>
+                  <HandymanIcon sx={{ fontSize: "md" }} />
+                  Áreas de atuação
                 </ListItemDecorator>
                 <ArrowForwardIosIcon
                   sx={{ color: "primary.100", fontSize: "md" }}
