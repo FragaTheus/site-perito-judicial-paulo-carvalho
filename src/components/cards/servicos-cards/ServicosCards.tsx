@@ -6,6 +6,7 @@ export const CardServico = () => {
     <CardLayout
       cardTitle="Perícia técnica trabalhista"
       cardActionContent={true}
+      LinkUrl="/servicos"
     >
       <Typography level="body-md">
         Realização de vistorias técnicas em locais de trabalho para analisar
@@ -22,7 +23,11 @@ export const CardServico = () => {
 
 export const CardServico1 = () => {
   return (
-    <CardLayout cardTitle="Laudo e parecer técnico" cardActionContent={true}>
+    <CardLayout
+      cardTitle="Laudo e parecer técnico"
+      cardActionContent={true}
+      LinkUrl="/servicos"
+    >
       <Typography level="body-md">
         Elaboração de documentos técnicos com base em normas regulamentadoras,
         evidências físicas, registros e documentos apresentados. O serviço
@@ -41,6 +46,7 @@ export const CardServico2 = () => {
     <CardLayout
       cardTitle="Avaliação de máquina e NR-12"
       cardActionContent={true}
+      LinkUrl="/servicos"
     >
       <Typography level="body-md">
         Inspeção completa de máquinas e equipamentos conforme os critérios
@@ -56,7 +62,11 @@ export const CardServico2 = () => {
 
 export const CardServico3 = () => {
   return (
-    <CardLayout cardTitle="Levantamento técnico" cardActionContent={true}>
+    <CardLayout
+      cardTitle="Levantamento técnico"
+      cardActionContent={true}
+      LinkUrl="/servicos"
+    >
       <Typography level="body-md">
         Mapeamento detalhado das condições do ambiente de trabalho com foco na
         identificação de riscos ocupacionais. O serviço inclui a coleta de dados
