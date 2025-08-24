@@ -11,7 +11,13 @@ export const PageServicos = () => {
           description="Engenheiro de segurança do trabalho | Perito Judicial"
         ></HeroSection>
       }
-      sections={[]}
+      sections={[
+        {
+          dark: false,
+          title: "Experiência e Atuação Judicial",
+          component: <></>,
+        },
+      ]}
     ></PageLayout>
   );
 };
