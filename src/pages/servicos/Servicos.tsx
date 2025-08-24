@@ -1,4 +1,5 @@
 import { HeroSection } from "../../components/hero/HeroSection";
+import { IntroServicos } from "../../components/intro-servicos/IntroServicos";
 import { PageLayout } from "../../layout/page-layout/PageLayout";
 
 export const PageServicos = () => {
@@ -14,8 +15,11 @@ export const PageServicos = () => {
       sections={[
         {
           dark: false,
-          title: "Experiência e Atuação Judicial",
-          component: <></>,
+          component: (
+            <>
+              <IntroServicos />
+            </>
+          ),
         },
       ]}
     ></PageLayout>
