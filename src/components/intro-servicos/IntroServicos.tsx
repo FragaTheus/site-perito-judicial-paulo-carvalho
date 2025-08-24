@@ -14,7 +14,7 @@ export const IntroServicos = () => {
           Experiência e Atuação Judicial
         </Typography>
         <Divider />
-        <Typography level="title-sm" sx={{ color: "#121212", width: "100%" }}>
+        <Typography level="title-sm" sx={{ color: "#ffffff", width: "100%" }}>
           Com experiência consolidada na área pericial, o perito judicial já
           atuou em diversas varas da Justiça, sempre com compromisso,
           imparcialidade e qualidade técnica. Sua trajetória reforça a

@@ -10,12 +10,12 @@ export const PageServicos = () => {
         <HeroSection
           imgUrl="hero-home.jpg"
           title="Áreas de atuação"
-          description="Engenheiro de segurança do trabalho | Perito Judicial"
+          description="Engenheiro de Segurança do Srabalho | Perito Judicial"
         ></HeroSection>
       }
       sections={[
         {
-          dark: false,
+          dark: true,
           component: (
             <>
               <IntroServicos />
