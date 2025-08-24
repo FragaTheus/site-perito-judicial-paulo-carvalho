@@ -4,6 +4,7 @@ import { FuncaoPage } from "../pages/funcao/FuncaoPage";
 import { PageSobre } from "../pages/sobre/Sobre";
 import { HomePage } from "../pages/home/Home";
 import { useEffect } from "react";
+import { PageServicos } from "../pages/servicos/Servicos";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -32,6 +33,7 @@ export const AppRoutes = () => {
         <Route path="*" element={<HomePage />} />
         <Route path="funcao" element={<FuncaoPage />} />
         <Route path="sobre" element={<PageSobre />} />
+        <Route path="servicos" element={<PageServicos />} />
       </Route>
     </Routes>
   );
