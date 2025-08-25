@@ -1,6 +1,6 @@
 # Projeto Paulo Carvalho Perito Judicial - Website Responsivo
 
-Este repositório contém o código-fonte do website empresarial desenvolvido para uma Paulo Carbalho, com entrega final publicada e disponível online.
+Este repositório contém o código-fonte do website empresarial desenvolvido para uma Paulo Carvalho, com entrega final publicada e disponível online.
 
 O projeto foi desenvolvido com foco em performance, boas práticas de desenvolvimento front-end e escalabilidade, utilizando **React + TypeScript + Vite**. Ele também faz parte do meu portfólio como desenvolvedor e representa uma entrega completa e funcional.
 
@@ -31,5 +31,30 @@ O projeto foi desenvolvido com foco em performance, boas práticas de desenvolvi
 
 ## Estrutura do Projeto
 
+```bash
+.
+├── public/
+├── src/
+│   ├── components/
+│   ├── contexts/
+│   ├── layout/
+│   ├── pages/
+│   ├── router/
+│   ├── theme/
+│   ├── App.tsx
+│   ├── index.css
+│   ├── main.tsx
+│   └── vite-env.d.ts
+├── .gitignore
+├── README.md
+├── eslint.config.js
+├── index.html
+├── package.json
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+├── vercel.json
+├── vite.config.ts
+└── yarn.lock
         
 
