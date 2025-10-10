@@ -1,6 +1,7 @@
 import { Box, Button, Typography } from "@mui/joy";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import type React from "react";
+import { useWppContext } from "../../contexts/WhatsAppContext";
 
 interface IHeroProsp {
   title: string;
@@ -15,6 +16,7 @@ export const HeroSection: React.FC<IHeroProsp> = ({
   subtitle,
   description,
 }) => {
+    const { enviarMsg } = useWppContext();
   return (
     <>
       <Box
@@ -46,13 +48,13 @@ export const HeroSection: React.FC<IHeroProsp> = ({
           {description}
         </Typography>
         <Button
-          component="a"
-          href="#contato"
+          type="submit"
+          onClick={()=>enviarMsg()}
           variant="outlined"
           color="primary"
           sx={{ marginTop: "40px", gap: "5px" }}
         >
-          <WhatsAppIcon sx={{ fontSize: "clamp(1rem,2vw,3rem)" }} />
+          <WhatsAppIcon sx={{ fontSize: "clamp(1rem,2vw,3rem)", color: "#25D366" }} />
           <Typography level="h4">Entre em contato</Typography>
         </Button>
       </Box>

@@ -1,6 +1,5 @@
 import { FuncaoCard } from "../../components/cards/funcao-card/FuncaoCard";
 import {
-  CardServico,
   CardServico1,
   CardServico2,
   CardServico3,
@@ -50,10 +49,7 @@ export const HomePage = ({}) => {
           position="sticky"
           top={0}
         >
-          <CardServico />
-        </SectionLayout>
-        <SectionLayout position="sticky" top={0}>
-          <CardServico1 />
+          <CardServico1/>
         </SectionLayout>
         <SectionLayout position="sticky" top={0}>
           <CardServico2 />

@@ -5,8 +5,10 @@ import { Logo } from "../logo/Logo";
 import { useDrawerContext } from "../../contexts/DrawerContext";
 import EmailIcon from "@mui/icons-material/Email";
 import { useResContext } from "../../contexts/ResponsiveContext";
+import { useWppContext } from "../../contexts/WhatsAppContext";
 
 export const Header = () => {
+  const {enviarMsg} = useWppContext();
   const { toogleDrawer } = useDrawerContext();
   const { isMobile } = useResContext();
   return (
@@ -38,7 +40,7 @@ export const Header = () => {
     >
       <Box
         id="toolbar-header"
-        width={"90%"}
+        width={"95%"}
         height={"100%"}
         display={"flex"}
         justifyContent={"space-between"}
@@ -66,7 +68,7 @@ export const Header = () => {
         >
           <Logo />
         </Box>
-        <Box id="social-media" display={"flex"} gap={"4px"}>
+        <Box id="social-media" display={"flex"} gap={"10px"}>
           <IconButton
             component="a"
             href="mailto: perito.paulo@bol.com.br"
@@ -78,11 +80,11 @@ export const Header = () => {
             <EmailIcon sx={{ color: "inherit", fontSize: "md" }} />
           </IconButton>
           <IconButton
-            component="a"
-            href="#contato"
+            type="submit"
+            onClick={()=>enviarMsg()}
             variant="outlined"
             color="primary"
-            sx={{ borderRadius: "lg", borderColor: "primary.900" }}
+            sx={{ borderRadius: "lg", borderColor: "primary.900", backgroundColor: "#25D366" }}
           >
             <WhatsAppIcon sx={{ color: "inherit", fontSize: "md" }} />
           </IconButton>

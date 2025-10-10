@@ -1,60 +1,38 @@
 import { CardLayout } from "../../../layout/cards-layout/CardLayout";
 import { Typography } from "@mui/joy";
 
-export const CardServico = () => {
-  return (
-    <CardLayout
-      cardTitle="Perícia técnica trabalhista"
-      cardActionContent={true}
-      LinkUrl="/servicos"
-    >
-      <Typography level="body-md">
-        Realização de vistorias técnicas em locais de trabalho para analisar
-        condições ambientais, operacionais e organizacionais. O serviço envolve
-        a coleta de evidências fotográficas, análise documental, entrevistas com
-        colaboradores e aplicação de normas legais para apurar a existência ou
-        não de insalubridade, periculosidade, nexo causal em acidentes de
-        trabalho e inconformidades ergonômicas. Ao final, é emitido um laudo
-        técnico detalhado.
-      </Typography>
-    </CardLayout>
-  );
-};
+
 
 export const CardServico1 = () => {
   return (
     <CardLayout
-      cardTitle="Laudo e parecer técnico"
+      cardTitle="Assistência Técnica com Laudo"
       cardActionContent={true}
       LinkUrl="/servicos"
     >
       <Typography level="body-md">
-        Elaboração de documentos técnicos com base em normas regulamentadoras,
-        evidências físicas, registros e documentos apresentados. O serviço
-        compreende a análise criteriosa de situações específicas — como
-        acidentes, condições de trabalho ou equipamentos — e a produção de um
-        laudo ou parecer com conclusão objetiva, que pode ser utilizado em
-        processos judiciais, administrativos ou para tomada de decisões internas
-        nas empresas.
+        Ofereço suporte técnico completo na elaboração de laudos periciais, incluindo a definição dos quesitos a serem respondidos e a 
+        resposta a eventuais impugnações. Meu trabalho garante que os laudos sejam fundamentados, claros e consistentes, proporcionando 
+        confiança jurídica e técnica em processos trabalhistas e administrativos.
       </Typography>
     </CardLayout>
+
+    
   );
 };
 
 export const CardServico2 = () => {
   return (
     <CardLayout
-      cardTitle="Avaliação de máquina e NR-12"
+      cardTitle="Inspeção técnica in loco"   
       cardActionContent={true}
       LinkUrl="/servicos"
     >
       <Typography level="body-md">
-        Inspeção completa de máquinas e equipamentos conforme os critérios
-        estabelecidos pela NR-12. O serviço envolve a verificação de proteções
-        físicas, sistemas de segurança, comandos operacionais, sinalização,
-        layout, acessos e manutenções. Ao final, é produzido um relatório
-        técnico com a identificação de falhas, riscos de acidentes, itens fora
-        de conformidade e orientações para adequação à legislação vigente.
+        Realizo inspeções detalhadas diretamente no ambiente de trabalho, avaliando condições de insalubridade, periculosidade e ergonomia. 
+        Durante a visita, identifico os riscos existentes, registro evidências e elaboro orientações práticas sobre medidas corretivas e preventivas 
+        específicas para cada situação, garantindo que o ambiente esteja em conformidade com a legislação vigente e promovendo a segurança e a 
+        saúde dos colaboradores.
       </Typography>
     </CardLayout>
   );
@@ -63,18 +41,14 @@ export const CardServico2 = () => {
 export const CardServico3 = () => {
   return (
     <CardLayout
-      cardTitle="Levantamento técnico"
+      cardTitle="Suporte técnico in loco e documental"
       cardActionContent={true}
       LinkUrl="/servicos"
     >
       <Typography level="body-md">
-        Mapeamento detalhado das condições do ambiente de trabalho com foco na
-        identificação de riscos ocupacionais. O serviço inclui a coleta de dados
-        qualitativos e quantitativos, aplicação de checklists normativos,
-        medições ambientais (quando aplicável) e análise de fatores físicos,
-        químicos, biológicos e ergonômicos. Os dados levantados servem de base
-        para ações de prevenção, correção ou regularização junto a órgãos
-        fiscalizadores.s
+        Acompanho investigações e perícias relacionadas à saúde e segurança no trabalho, fornecendo assistência técnica tanto presencial 
+        quanto documental. Analiso dados, registros e evidências, e ofereço orientação prática para que todas as etapas do processo sejam 
+        realizadas corretamente, assegurando que os resultados sejam confiáveis e juridicamente válidos.
       </Typography>
     </CardLayout>
   );
@@ -83,18 +57,14 @@ export const CardServico3 = () => {
 export const CardServico4 = () => {
   return (
     <CardLayout
-      cardTitle="Perícia técnica trabalhista"
-      cardActionContent={false}
+      cardTitle="Consultoria em perícias técnicas"
+      cardActionContent={true}
       LinkUrl="/servicos"
     >
       <Typography level="body-md">
-        Realização de vistorias técnicas em locais de trabalho para analisar
-        condições ambientais, operacionais e organizacionais. O serviço envolve
-        a coleta de evidências fotográficas, análise documental, entrevistas com
-        colaboradores e aplicação de normas legais para apurar a existência ou
-        não de insalubridade, periculosidade, nexo causal em acidentes de
-        trabalho e inconformidades ergonômicas. Ao final, é emitido um laudo
-        técnico detalhado.
+        Presto consultoria especializada para empresas e profissionais que precisam aplicar ou interpretar perícias técnicas relacionadas à Saúde e 
+        Segurança no Trabalho. Auxilio na compreensão da legislação, 
+        normas técnicas e melhores práticas, garantindo que os procedimentos periciais sejam eficazes, corretos e seguros.
       </Typography>
     </CardLayout>
   );
@@ -103,18 +73,13 @@ export const CardServico4 = () => {
 export const CardServico5 = () => {
   return (
     <CardLayout
-      cardTitle="Laudo e parecer técnico"
-      cardActionContent={false}
+      cardTitle="Elaboração de Laudos Técnicos e Ergonômicos"
+      cardActionContent={true}
       LinkUrl="/servicos"
     >
       <Typography level="body-md">
-        Elaboração de documentos técnicos com base em normas regulamentadoras,
-        evidências físicas, registros e documentos apresentados. O serviço
-        compreende a análise criteriosa de situações específicas — como
-        acidentes, condições de trabalho ou equipamentos — e a produção de um
-        laudo ou parecer com conclusão objetiva, que pode ser utilizado em
-        processos judiciais, administrativos ou para tomada de decisões internas
-        nas empresas.
+        Produzo laudos completos, detalhados e objetivos, com foco em análise técnica e conformidade legal. Incluo informações sobre riscos, causas, 
+        impactos e recomendações práticas, facilitando a tomada de decisão e contribuindo para a gestão de riscos e prevenção de acidentes no ambiente de trabalho.
       </Typography>
     </CardLayout>
   );
@@ -123,17 +88,15 @@ export const CardServico5 = () => {
 export const CardServico6 = () => {
   return (
     <CardLayout
-      cardTitle="Avaliação de máquina e NR-12"
-      cardActionContent={false}
+      cardTitle="Avaliação de Máquinas conforme NR-12"
+      cardActionContent={true}
       LinkUrl="/servicos"
     >
       <Typography level="body-md">
-        Inspeção completa de máquinas e equipamentos conforme os critérios
-        estabelecidos pela NR-12. O serviço envolve a verificação de proteções
-        físicas, sistemas de segurança, comandos operacionais, sinalização,
-        layout, acessos e manutenções. Ao final, é produzido um relatório
-        técnico com a identificação de falhas, riscos de acidentes, itens fora
-        de conformidade e orientações para adequação à legislação vigente.
+        Realizo inspeções detalhadas em máquinas e equipamentos, verificando sua conformidade com a Norma Regulamentadora NR12, 
+        que trata da segurança no trabalho em máquinas e equipamentos. Identifico riscos de operação, pontos de bloqueio, proteção de 
+        partes móveis e sistemas de segurança, oferecendo orientações técnicas e práticas para adequação. Meu objetivo é garantir que 
+        as máquinas operem de forma segura, prevenindo acidentes e cumprindo todas as exigências legais.
       </Typography>
     </CardLayout>
   );
@@ -142,18 +105,14 @@ export const CardServico6 = () => {
 export const CardServico7 = () => {
   return (
     <CardLayout
-      cardTitle="Levantamento técnico"
-      cardActionContent={false}
+      cardTitle="Levantamento Técnico"
+      cardActionContent={true}
       LinkUrl="/servicos"
     >
       <Typography level="body-md">
-        Mapeamento detalhado das condições do ambiente de trabalho com foco na
-        identificação de riscos ocupacionais. O serviço inclui a coleta de dados
-        qualitativos e quantitativos, aplicação de checklists normativos,
-        medições ambientais (quando aplicável) e análise de fatores físicos,
-        químicos, biológicos e ergonômicos. Os dados levantados servem de base
-        para ações de prevenção, correção ou regularização junto a órgãos
-        fiscalizadores.
+        Realizo levantamentos técnicos detalhados de ambientes, processos e equipamentos, coletando todas as informações necessárias para a análise de 
+        insalubridade, periculosidade, ergonomia ou segurança de máquinas. Esse levantamento é a base para elaboração de laudos, relatórios e 
+        recomendações técnicas, garantindo que todas as decisões sejam fundamentadas em dados precisos e confiáveis.
       </Typography>
     </CardLayout>
   );

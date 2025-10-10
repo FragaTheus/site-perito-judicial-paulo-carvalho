@@ -12,7 +12,7 @@ interface IWppProviderProp {
 
 export const WppProvider: React.FC<IWppProviderProp> = ({ children }) => {
   const numero = "5511972248445";
-  const enviarMsg = (msg = "Olá, gostaria de mais informações!") => {
+  const enviarMsg = (msg = "Olá, Paulo! Entrei em contato pelo site para tirar dúvidas e obter mais informações sobre os seus serviços.") => {
     const link = `http://wa.me/${numero}?text=${encodeURIComponent(msg)}`;
     window.open(link, "_blank");
   };
