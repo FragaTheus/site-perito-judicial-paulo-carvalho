@@ -40,7 +40,7 @@ export const Header = () => {
     >
       <Box
         id="toolbar-header"
-        width={"95%"}
+        width={isMobile? "90%" : "95%"}
         height={"100%"}
         display={"flex"}
         justifyContent={"space-between"}
@@ -84,9 +84,9 @@ export const Header = () => {
             onClick={()=>enviarMsg()}
             variant="outlined"
             color="primary"
-            sx={{ borderRadius: "lg", borderColor: "primary.900", backgroundColor: "#25D366" }}
+            sx={{ borderRadius: "lg", borderColor: "primary.900"}}
           >
-            <WhatsAppIcon sx={{ color: "inherit", fontSize: "md" }} />
+            <WhatsAppIcon sx={{ color: "#25D366", fontSize: "md" }} />
           </IconButton>
         </Box>
       </Box>
