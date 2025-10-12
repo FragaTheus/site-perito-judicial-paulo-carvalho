@@ -50,12 +50,12 @@ export const HeroSection: React.FC<IHeroProsp> = ({
         <Button
           type="submit"
           onClick={()=>enviarMsg()}
-          variant="outlined"
+          variant="solid"
           color="primary"
-          sx={{ marginTop: "40px", gap: "5px" }}
+          sx={{ marginTop: "40px", gap: "5px", bgcolor:  "#25D366"}}
         >
-          <WhatsAppIcon sx={{ fontSize: "clamp(1rem,2vw,3rem)", color: "#25D366" }} />
-          <Typography level="h4">Entre em contato</Typography>
+          <WhatsAppIcon sx={{ fontSize: "clamp(1rem,2vw,3rem)"}} />
+          <Typography level="h4" sx={{fontWeight: 600}}>Entre em contato</Typography>
         </Button>
       </Box>
     </>
