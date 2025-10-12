@@ -40,7 +40,7 @@ export const CardLayout: React.FC<ICardProps> = ({
       variant="soft"
       sx={
         isMobile
-          ? { minHeight: "55svh", gap: "10px", width: "90%" }
+          ? { minHeight: "58svh", gap: "10px", width: "90%" }
           : { padding: "20px", gap: "10px" }
       }
     >
@@ -119,7 +119,7 @@ export const CardLayout: React.FC<ICardProps> = ({
             sx={isMobile ? { width: "100%" } : { width: "40%" }}
           >
             <a href="#contato">
-              <Button id="contato-button" variant="solid">
+              <Button id="contato-button" variant="solid" sx={{backgroundColor: "#25D366"}}>
                 <WhatsAppIcon sx={{ color: "inherit" }} />
               </Button>
             </a>
