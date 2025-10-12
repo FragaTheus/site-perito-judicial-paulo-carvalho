@@ -40,7 +40,7 @@ export const CardLayout: React.FC<ICardProps> = ({
       variant="soft"
       sx={
         isMobile
-          ? { height: "80%", gap: "10px", width: "90%" }
+          ? { minHeight: "55svh", gap: "10px", width: "90%" }
           : { padding: "20px", gap: "10px" }
       }
     >
