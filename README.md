@@ -76,7 +76,7 @@ http://localhost:5173
 │   ├── index.css
 │   ├── main.tsx
 │   └── vite-env.d.ts
-├── .gitignore
+├──.gitignore
 ├── eslint.config.js
 ├── index.html
 ├── package.json
