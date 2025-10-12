@@ -43,7 +43,7 @@
 
 ```bash
 # Clone o repositório
-git clone https://github.com/matheus-fraga/paulo-carvalho.git
+git clone https://github.com/matheus-fraga/paulo-carvalho.git](https://github.com/FragaTheus/site-perito-judicial-paulo-carvalho.git
 
 # Entre na pasta do projeto
 cd paulo-carvalho
