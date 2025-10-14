@@ -1,6 +1,6 @@
 # 🌐 Paulo Carvalho Perito Judicial — Website Responsivo
 
-> Website institucional desenvolvido para **Paulo Carvalho**, perito judicial, com foco em **performance, escalabilidade** e **melhores práticas de desenvolvimento front-end**.
+> Website institucional desenvolvido para **Paulo Carvalho**, perito judicial, com foco em **performance** e **melhores práticas de desenvolvimento front-end**.
 
 🔗 **Acesse o site online:** [paulocarvalhoperitojudicial.com](https://paulocarvalhoperitojudicial.com)  
 📦 **Deploy:** [Vercel](https://vercel.com)  
@@ -90,7 +90,7 @@ http://localhost:5173
 
 ---
 
-## 🖼️ Visual do Projeto
+## 🖼️ Visual do Projeto (Em breve)
 
 | Versão Desktop                           | Versão Mobile                          |
 | ---------------------------------------- | -------------------------------------- |
