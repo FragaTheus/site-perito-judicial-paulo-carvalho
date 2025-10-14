@@ -20,7 +20,7 @@ export const PageServicos = () => {
         <HeroSection
           imgUrl="hero-home.jpg"
           title="Áreas de atuação"
-          description="Engenheiro de Segurança do Srabalho | Perito Judicial"
+          description="Engenheiro de Segurança do Trabalho | Perito Judicial"
         ></HeroSection>
       }
       sections={[
