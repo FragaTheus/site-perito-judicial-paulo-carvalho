@@ -6,7 +6,7 @@ export const DescricaoPerito = () => {
     <>
       <CardLayout
         cardActionContent={false}
-        cardTitle="O que é um perito judicial?"
+        cardTitle="O que é um Perito Judicial?"
       >
         <Box
           sx={{
@@ -30,7 +30,7 @@ export const DescricaoPerito = () => {
               fontWeight: 700,
             }}
           >
-            Atuação em segurança do trabalho
+            Atuação em Segurança do Trabalho
           </FormLabel>
           <Typography level="body-md">
             No campo da segurança do trabalho, ele avalia riscos ocupacionais,
