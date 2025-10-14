@@ -16,9 +16,9 @@ export const HomePage = ({}) => {
       heroComponent={
         <HeroSection
           title="Paulo Carvaho"
-          subtitle="Engenheiro de segurança do trabalho | Perito Judicial"
-          description="Perícias judiciais e assistências técnicas em ações
-          trabalhistas."
+          subtitle="Engenheiro de Segurança do Trabalho | Perito Judicial"
+          description="Perícias Judiciais e Assistências Técnicas em Ações
+          Trabalhistas."
           imgUrl="hero-home.jpg"
         />
       }
@@ -29,7 +29,7 @@ export const HomePage = ({}) => {
         },
         {
           divId: "funcao",
-          title: "Qual é a função de um perito judicial?",
+          title: "Qual é a função de um Perito Judicial?",
           dark: false,
           component: <FuncaoCard />,
         },
@@ -45,7 +45,7 @@ export const HomePage = ({}) => {
       <>
         <SectionLayout
           divId={"servico"}
-          title="Áreas de atuação:"
+          title="Áreas de Atuação:"
           position="sticky"
           top={0}
         >
