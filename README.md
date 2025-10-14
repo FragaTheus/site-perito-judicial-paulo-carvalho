@@ -120,7 +120,7 @@ http://localhost:5173
 ## 👨‍💻 Sobre o Desenvolvedor
 
 Desenvolvido por **Matheus Fraga** — **Desenvolvedor Fullstack Júnior**, com experiência em **Next.js e Spring Boot**.  
-Atualmente aprimorando conhecimentos em **desenvolvimento front-end e back-end, APIs e aplicações escaláveis**.
+Atualmente aprimorando conhecimentos em **desenvolvimento Full Stack e aplicações escaláveis**.
 
 🔗 [LinkedIn](https://www.linkedin.com/in/matheus-fraga-dev-full-stack/)  
 💻 [GitHub](https://github.com/FragaTheus)  
