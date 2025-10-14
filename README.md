@@ -1,6 +1,6 @@
 # 🌐 Paulo Carvalho Perito Judicial — Website Responsivo
 
-> Website institucional desenvolvido para **Paulo Carvalho**, perito judicial, com foco em **performance** e **melhores práticas de desenvolvimento front-end**.
+> Website institucional desenvolvido para **Paulo Carvalho**, Assistente Técnico e Perito Judicial, com o **objetivo** de aumentar o **alcance da empresa**, priorizando **performance** e seguindo as boas práticas de desenvolvimento front-end.
 
 🔗 **Acesse o site online:** [paulocarvalhoperitojudicial.com](https://paulocarvalhoperitojudicial.com)  
 📦 **Deploy:** [Vercel](https://vercel.com)  
@@ -30,12 +30,11 @@
 
 ## 🧠 Principais Funcionalidades
 
-- ✅ **Design responsivo** e otimizado para diferentes dispositivos  
-- 🔄 **Navegação dinâmica** com React Router  
-- 🧩 **Componentização** e reuso de elementos visuais  
-- 🎨 **Integração com layout institucional**  
-- 🧹 **Configuração de lint e type-checking** avançados  
-- ✉️ **Envio de mensagens e e-mails** para contato direto com o cliente  
+- ✅ **Design responsivo** e otimizado para diferentes dispositivos.  
+- 🔄 **Navegação dinâmica** utilizando React Router.  
+- 🧩 **Componentização** e reutilização de elementos visuais para aumentar a performance.  
+- 🧹 **Configuração de lint e type-checking** para padronizar o código e torná-lo mais legível.  
+- ✉️ **Envio de mensagens e e-mails** para contato direto com o cliente.   
 
 ---
 
@@ -67,19 +66,19 @@ http://localhost:5173
 
 ```
 .
-├── public/
-├── src/
-│   ├── components/
-│   ├── contexts/
-│   ├── layout/
-│   ├── pages/
-│   ├── router/
-│   ├── theme/
-│   ├── App.tsx
-│   ├── index.css
-│   ├── main.tsx
-│   └── vite-env.d.ts
-├──.gitignore
+├── 📂 public/ // Arquivos públicos: imagens, ícones, sitemap
+├── 📂 src/ // Código-fonte da aplicação
+│ ├── 🧩 components/ // Componentes reutilizáveis
+│ ├── ⚙️ contexts/ // Contextos e funções globais
+│ ├── 🏗 layout/ // Layouts: main, página e seção
+│ ├── 📄 pages/ // Páginas que combinam componentes e layouts
+│ ├── 🌐 router/ // Rotas entre páginas
+│ ├── 🎨 theme/ // Configurações de tema
+│ ├── App.tsx // Componente principal, provê contextos e renderiza páginas
+│ ├── index.css // Estilos globais
+│ ├── main.tsx // Entry point: insere App no index.html
+│ └── vite-env.d.ts // Tipos do Vite
+├── .gitignore
 ├── eslint.config.js
 ├── index.html
 ├── package.json
@@ -109,12 +108,24 @@ http://localhost:5173
 
 ## 💡 Aprendizados e Desafios
 
-- Uso de **React** e seus **componentes** para criar uma interface modular e escalável  
-- Aplicação de **TypeScript**, **hooks** e **contexts** para gerenciamento de estado e lógica do app  
-- Desenvolvimento do **design do zero**, alinhando cores, tipografia e responsividade  
-- Integração e uso do **Joy UI (Material UI)**, garantindo consistência visual e desafios de customização  
-- Controle de versão com **Git**, organizando commits e branches de forma eficiente  
-- Deploy do site na **Vercel** e configuração do **domínio personalizado**
+- Uso de **React** e seus **componentes** para criar uma interface modular e escalável, focando em desempenho por meio da reutilização de componentes principais.  
+- Aplicação de **TypeScript**, **hooks** para gerenciamento de estado e validação de inputs, e **contexts** para fornecer funções (como de responsividade) em todo o projeto.  
+- Desenvolvimento do **design do zero**, alinhando cores, temas, tipografia e responsividade.  
+- Integração e uso do **Joy UI (Material UI)**, garantindo consistência visual e enfrentando desafios de customização.  
+- Controle de versão com **Git**, organizando commits e branches de forma eficiente.  
+- Deploy do site na **Vercel** e configuração do **domínio personalizado** pela Hostinger.  
+- Integração do site ao **Google**, tornando-o acessível para toda a comunidade que necessita de assistência técnica.  
+- Aprimoramento das **metatags** e inclusão de **scripts** no corpo do HTML para otimizar o SEO de busca.  
+
+---
+
+## 🧩 Observações (ou “Maior Gambiarra”)
+
+Durante o projeto, criei um componente chamado **SectionLayout**, responsável por automatizar a criação de seções.  
+No início, a ideia parecia genial — e realmente ajudou bastante —, mas acabou limitando a diversidade de layouts.  
+Conforme o projeto crescia, precisei refatorar e adaptar várias partes para recuperar a flexibilidade.  
+Essa “gambiarra controlada” me ensinou o valor de planejar melhor a arquitetura dos componentes antes de abstrair demais. 😅  
+
 
 ---
 
