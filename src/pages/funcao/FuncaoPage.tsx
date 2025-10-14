@@ -11,8 +11,8 @@ export const FuncaoPage = () => {
       heroComponent={
         <HeroSection
           imgUrl="hero-funcao.jpeg"
-          title="Qual o papel de um perito judicial?"
-          subtitle="Engenheiro de segurança do trabalho | Perito Judicial"
+          title="Qual o papel de um Perito Judicial?"
+          subtitle="Engenheiro de Segurança do Trabalho | Perito Judicial"
         />
       }
       sections={[
@@ -35,7 +35,7 @@ export const FuncaoPage = () => {
         },
 
         {
-          title: "Diferença entre perito e assistente técnico:",
+          title: "Diferença entre Perito e Assistente Técnico:",
           dark: false,
           component: <PeritoEAssistente />,
         },
