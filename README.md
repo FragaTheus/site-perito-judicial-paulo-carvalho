@@ -122,9 +122,9 @@ http://localhost:5173
 ## 🧩 Observações (ou “Maior Gambiarra”)
 
 Durante o projeto, criei um componente chamado **SectionLayout**, responsável por automatizar a criação de seções.  
-No início, a ideia parecia genial — e realmente ajudou bastante —, mas acabou limitando a diversidade de layouts.  
+No início, a ideia foi ótima e realmente ajudou bastante, mas acabou limitando a diversidade de layouts.  
 Conforme o projeto crescia, precisei refatorar e adaptar várias partes para recuperar a flexibilidade.  
-Essa “gambiarra controlada” me ensinou o valor de planejar melhor a arquitetura dos componentes antes de abstrair demais. 😅  
+Essa “gambiarra” me ensinou o valor de planejar melhor a arquitetura dos componentes e considerar a flexibilidade deles. 😅
 
 
 ---
