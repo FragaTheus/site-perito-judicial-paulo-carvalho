@@ -15,9 +15,9 @@ export const IntroFuncao = () => {
         </Typography>
         <Divider />
         <Typography level="title-sm" sx={{ color: "#ffffff", width: "100%" }}>
-          O perito é nomeado pelo juiz para esclarecer questões técnicas que
+          O Perito é nomeado pelo Juiz para esclarecer questões técnicas que
           influenciam diretamente o resultado de um processo. Na área de
-          segurança do trabalho, ele avalia riscos, investiga acidentes e
+          Segurança do Trabalho, ele avalia riscos, investiga acidentes e
           verifica condições de insalubridade ou periculosidade, sempre com base
           nas normas regulamentadoras. Seu laudo é técnico, imparcial e possui
           grande peso na decisão judicial.
