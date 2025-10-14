@@ -40,6 +40,9 @@
 ---
 
 ## 💻 Como Rodar Localmente
+### 📋 Pré-requisitos
+- Node.js instalado
+- Yarn (Gerenciador de pacote) instalado
 
 ```bash
 # Clone o repositório
