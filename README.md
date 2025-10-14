@@ -98,11 +98,9 @@ http://localhost:5173
 
 ---
 
-## 🚀 Funcionalidades Futuras
+## 🚀 Funcionalidade Futura
 
 - Adicionar integração com **Google Analytics**  
-- Otimizar **SEO e performance de busca**  
-- Melhorar estratégias de **marketing digital**  
 
 ---
 
