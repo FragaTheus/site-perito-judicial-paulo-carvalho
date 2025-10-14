@@ -15,7 +15,7 @@ export const IntroServicos = () => {
         </Typography>
         <Divider />
         <Typography level="title-sm" sx={{ color: "#ffffff", width: "100%" }}>
-          Com experiência consolidada na área pericial, o perito judicial já
+          Com experiência consolidada na área pericial, o Paulo já
           atuou em diversas varas da Justiça, sempre com compromisso,
           imparcialidade e qualidade técnica. Sua trajetória reforça a
           credibilidade necessária para auxiliar magistrados e advogados na

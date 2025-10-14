@@ -19,7 +19,7 @@ export const IntroHome = () => {
         </Typography>
         <Divider />
         <Typography level="title-sm">
-          Paulo Carvalho é perito judicial com mais de 20 anos de experiência.
+          Paulo Carvalho é Perito Judicial com mais de 20 anos de experiência.
           Atua com ética e precisão em casos de saúde e segurança. É referência
           no meio jurídico pela qualidade dos seus laudos técnicos.
         </Typography>

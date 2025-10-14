@@ -25,7 +25,7 @@ export const ExperienciaCard = () => {
           <FormLabel
             sx={{ fontSize: "clamp(0.7rem,2.5vmin,3rem)", fontWeight: 700 }}
           >
-            Paulo atua há 20 anos na área de segurança do trabalho, com passagem
+            Paulo atua há 20 anos na área de Segurança do Trabalho, com passagem
             por diferentes setores como:
           </FormLabel>
           <Typography>Construção civil</Typography>

@@ -11,8 +11,8 @@ export const FuncaoCard = () => {
       LinkUrl="/Funcao"
     >
       <Typography level="body-md">
-        O perito judicial é nomeado pelo juiz para esclarecer situações
-        técnicas. Atua em segurança do trabalho, avaliando riscos e acidentes.
+        O Perito Judicial é nomeado pelo juiz para esclarecer situações
+        técnicas. Atua em Segurança do Trabalho, avaliando riscos e acidentes.
         Seu laudo é decisivo e segue normas legais.
       </Typography>
     </CardLayout>

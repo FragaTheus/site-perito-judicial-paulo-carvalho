@@ -19,7 +19,7 @@ export const DescricaoPerito = () => {
           }}
         >
           <Typography level="body-md">
-            O perito é um profissional técnico, nomeado pelo juiz, responsável
+            O Perito é um profissional técnico, nomeado pelo juiz, responsável
             por analisar fatos que exigem conhecimento especializado dentro de
             um processo. Ele atua de forma imparcial, oferecendo um laudo claro,
             embasado e objetivo, que serve como base para decisões judiciais.
@@ -47,7 +47,7 @@ export const DescricaoPerito = () => {
             Importância do laudo técnico
           </FormLabel>
           <Typography level="body-md">
-            O laudo elaborado pelo perito é um documento oficial que traduz
+            O laudo elaborado por ele é um documento oficial que traduz
             aspectos técnicos para o juiz e as partes envolvidas. Ele tem grande
             peso no processo e pode ser decisivo para o desfecho da ação, desde
             que elaborado com clareza, precisão e responsabilidade.

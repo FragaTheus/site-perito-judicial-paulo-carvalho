@@ -11,9 +11,9 @@ export const SobreCard = () => {
       cardActionContent={true}
     >
       <Typography level="body-md">
-        Paulo Carvalho é Engenheiro de Segurança e Ambiental, com 20 anos de
-        experiência. Atua como perito judicial há 10 anos nas Varas de Mogi e
-        São José, com ética e precisão em laudos técnicos.
+        Paulo Carvalho é Engenheiro de Segurança do Trabalho e Engenheiro Ambiental, com 20 anos de
+        experiência. Atua como Perito Judicial há 10 anos nas Varas de Mogi e
+        São José, com precisão em laudos técnicos.
       </Typography>
     </CardLayout>
   );
