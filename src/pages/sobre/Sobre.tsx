@@ -11,7 +11,7 @@ export const PageSobre = () => {
       heroComponent={
         <HeroSection
           title="Afinal, quem e Paulo de Cavalho?"
-          subtitle="Engenheiro de segurança do trabalho | Perito Judicial"
+          subtitle="Engenheiro de Segurança do Trabalho | Perito Judicial"
           imgUrl="hero-sobre.jpg"
         />
       }
