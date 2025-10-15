@@ -92,12 +92,16 @@ http://localhost:5173
 
 ---
 
-## 🖼️ Visual do Projeto
+## 🖼️ Visual do Projeto 
 
 | Versão Desktop                           | Versão Mobile                          |
 | ---------------------------------------- | -------------------------------------- |
-| ![desktop](./public/preview-desktop.png) | ![mobile](https://github.com/user-attachments/assets/5f28c831-ae07-400e-a251-a69803ec8c23) |
+| [![Desktop do site](https://github.com/user-attachments/assets/707338d2-6bff-412d-87e8-52b54ec4e21d)](https://github.com/user-attachments/assets/707338d2-6bff-412d-87e8-52b54ec4e21d) | [![Mobile do site](https://github.com/user-attachments/assets/5f28c831-ae07-400e-a251-a69803ec8c23)](https://github.com/user-attachments/assets/5f28c831-ae07-400e-a251-a69803ec8c23) |
 
+> Clique nas imagens para assistir aos vídeos completos em alta qualidade.
+
+
+---
 
 ## 🚀 Funcionalidade Futura
 
