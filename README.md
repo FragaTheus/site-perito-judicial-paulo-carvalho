@@ -1,6 +1,8 @@
-# 🌐 Paulo Carvalho Perito Judicial — Website Responsivo
+# 🌐 Paulo Carvalho Perito Judicial — Website
 
-> Website institucional desenvolvido para **Paulo Carvalho**, Assistente Técnico e Perito Judicial, com o **objetivo** de aumentar o **alcance da empresa**, priorizando **performance** e seguindo as boas práticas de desenvolvimento front-end.
+> Website institucional desenvolvido com **React**, **TypeScript** e **Joy UI**, para **Paulo Carvalho**, Assistente Técnico e Perito Judicial.  
+> O projeto tem como objetivo **ampliar o alcance da empresa**, **formalizar sua presença online** e **automatizar o contato com os clientes**, tornando o processo de comunicação mais ágil e acessível.  
+> Todo o desenvolvimento foi voltado à **melhor experiência do usuário**, priorizando **performance**, **usabilidade** e as **boas práticas de desenvolvimento front-end**.
 
 🔗 **Acesse o site online:** [paulocarvalhoperitojudicial.com](https://paulocarvalhoperitojudicial.com)  
 📦 **Deploy:** [Vercel](https://vercel.com)  
