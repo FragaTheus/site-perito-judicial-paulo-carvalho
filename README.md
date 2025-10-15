@@ -92,13 +92,12 @@ http://localhost:5173
 
 ---
 
-## 🖼️ Visual do Projeto (Em breve)
+## 🖼️ Visual do Projeto
 
 | Versão Desktop                           | Versão Mobile                          |
 | ---------------------------------------- | -------------------------------------- |
-| ![desktop](./public/preview-desktop.png) | ![mobile](./public/preview-mobile.png) |
+| ![desktop](./public/preview-desktop.png) | ![mobile](https://github.com/user-attachments/assets/5f28c831-ae07-400e-a251-a69803ec8c23) |
 
----
 
 ## 🚀 Funcionalidade Futura
 
