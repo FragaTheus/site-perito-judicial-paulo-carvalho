@@ -1,7 +1,7 @@
 import { Box, Divider, Typography } from "@mui/joy";
 
 interface ISectionLayout {
-  title?: string;
+  title?: string | null;
   position?: string;
   top?: number;
   dark?: boolean;
@@ -48,7 +48,9 @@ export const SectionLayout: React.FC<ISectionLayout> = ({
             {title}
           </Typography>
         </Box>
-        {title && <Divider sx={{ width: "80%", alignSelf: "center" }} />}
+        {title && title != null && (
+          <Divider sx={{ width: "80%", alignSelf: "center" }} />
+        )}
 
         {children}
       </Box>

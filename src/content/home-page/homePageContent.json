@@ -1,0 +1,58 @@
+{
+    "hero": {
+        "title": "Paulo Carvaho",
+        "subtitle": "Assistente Técnico de Perícias Judiciais",
+        "description": "Perícias Judiciais e Assistências Técnicas em Ações Trabalhistas."
+    },
+    "intro": {
+        "title": "Precisa de um especialista para sua perícia?",
+        "description": "Assistente Técnico com mais de 20 anos de experiência. É referência no meio jurídico pela qualidade dos seus laudos técnicos.",
+        "cardProps": {
+            "title": "A voz do processo",
+            "text": "Entenda como a perícia técnica contribui com a justiça.",
+            "path": "#funcao"
+        },
+        "cardProps1": {
+            "title": "Sobre Paulo Carvalho",
+            "text": "Conheça a trajetória por trás da experiência.",
+            "path": "#sobre"
+        },
+        "cardProps2": {
+            "title": "Áreas de atuação",
+            "text": "Conheça a metodologia e o impacto de uma atuação especializada.",
+            "path": "#servico"
+        }
+    },
+    "funcao": {
+        "title": "Qual é a função de um Assistente Técnico?",
+        "card": {
+            "title": "A voz técnica no processo",
+            "subtitle": "Entenda como a perícia técnica contribui com a justiça.",
+            "bodyText": "O Assistente Técnico apoia as partes em perícias judiciais, analisando documentos, acompanhando diligências e oferecendo pareceres técnicos em Segurança do Trabalho."
+        }
+        
+    },
+    "sobre": {
+        "title": "Afinal, quem é Paulo Carvalho?",
+        "card": {
+            "title": "Sobre Paulo Carvalho",
+            "subtitle": "Conheça a trajetória por trás da experiência.",
+            "bodyText": "O Assistente Técnico apoia as partes em perícias judiciais, analisando documentos, acompanhando diligências e oferecendo pareceres técnicos em Segurança do Trabalho."
+        }
+    },
+    "servicos": {
+        "title": "Áreas de Atuação:",
+        "cardsContent": {
+            "title": "Assistência Técnica com Laudo",
+            "bodyText": "Realiza inspeções no ambiente de trabalho para identificar condições de insalubridade, periculosidade e ergonomia. Durante as visitas, registra evidências, avalia riscos e fornece orientações práticas sobre medidas corretivas e preventivas. O resultado é um laudo claro e objetivo, garantindo conformidade com a legislação e mais segurança aos colaboradores."
+        },
+        "cardsContent1": {
+            "title": "Inspeção técnica in loco",
+            "bodyText": "Realiza inspeções no ambiente de trabalho, avaliando insalubridade, periculosidade e ergonomia. Durante as visitas, identifica riscos, registra evidências e orienta sobre medidas corretivas e preventivas. Seu trabalho garante ambientes mais seguros e alinhados à legislação."
+        },
+         "cardsContent2": {
+            "title": "Suporte técnico in loco e documental",
+            "bodyText": "Acompanha investigações e perícias em saúde e segurança do trabalho, oferecendo assistência técnica presencial e documental. Ele analisa dados, registros e evidências, orientando cada etapa do processo para garantir resultados confiáveis e juridicamente válidos."
+        }
+    }
+}

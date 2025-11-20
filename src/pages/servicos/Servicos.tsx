@@ -1,8 +1,5 @@
 import { AreaAtuacao } from "../../components/area-atuacao/AreaAtuacao";
 import {
-  CardServico1,
-  CardServico2,
-  CardServico3,
   CardServico4,
   CardServico5,
   CardServico6,
@@ -40,20 +37,6 @@ export const PageServicos = () => {
       ]}
     >
       <>
-        <SectionLayout
-          divId={"servico"}
-          title="Especialidades:"
-          position="sticky"
-          top={0}
-        >
-          <CardServico1 />
-        </SectionLayout>
-        <SectionLayout position="sticky" top={0}>
-          <CardServico2 />
-        </SectionLayout>
-        <SectionLayout position="sticky" top={0}>
-          <CardServico3 />
-        </SectionLayout>
         <SectionLayout position="sticky" top={0}>
           <CardServico4 />
         </SectionLayout>

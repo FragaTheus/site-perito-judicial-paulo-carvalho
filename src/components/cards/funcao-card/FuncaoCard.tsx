@@ -1,20 +1,27 @@
 import { Typography } from "@mui/joy";
 import { CardLayout } from "../../../layout/cards-layout/CardLayout";
 
-export const FuncaoCard = () => {
+type FuncaoCardProps = {
+  title: string;
+  subtitle: string;
+  bodyText: string;
+};
+
+export const FuncaoCard: React.FC<FuncaoCardProps> = ({
+  title,
+  subtitle,
+  bodyText,
+}) => {
   return (
     <CardLayout
       imgUrl="funcao-img.jpg"
-      cardTitle="A voz técnica no processo"
-      cardSubtitle="Entenda como a perícia técnica contribui com a justiça."
+      cardTitle={title}
+      cardSubtitle={subtitle}
       cardActionContent={true}
       LinkUrl="/Funcao"
     >
-      <Typography level="body-md">
-        O Perito Judicial é nomeado pelo juiz para esclarecer situações
-        técnicas. Atua em Segurança do Trabalho, avaliando riscos e acidentes.
-        Seu laudo é decisivo e segue normas legais.
-      </Typography>
+      <Typography level="body-md"></Typography>
+      {bodyText}
     </CardLayout>
   );
 };

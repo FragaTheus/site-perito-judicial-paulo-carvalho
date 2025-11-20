@@ -2,7 +2,23 @@ import { Box, Divider, Typography } from "@mui/joy";
 import { IntroCard } from "../cards/intro-card/IntroCard";
 import { useResContext } from "../../contexts/ResponsiveContext";
 
-export const IntroHome = () => {
+type IntroCardProps = {
+  title: string;
+  text: string;
+  path: string;
+};
+
+type IntroHomeProps = {
+  title: string;
+  description: string;
+  cardProps: IntroCardProps[];
+};
+
+export const IntroHome: React.FC<IntroHomeProps> = ({
+  title,
+  cardProps,
+  description,
+}) => {
   const { isMobile } = useResContext();
   return (
     <>
@@ -15,14 +31,10 @@ export const IntroHome = () => {
         gap={isMobile ? "10px" : "20px"}
       >
         <Typography level="title-lg" sx={{ color: "primary.100", mt: "-20px" }}>
-          Precisa de um especialista para sua perícia?
+          {title}
         </Typography>
         <Divider />
-        <Typography level="title-sm">
-          Paulo Carvalho é Perito Judicial com mais de 20 anos de experiência.
-          Atua com ética e precisão em casos de saúde e segurança. É referência
-          no meio jurídico pela qualidade dos seus laudos técnicos.
-        </Typography>
+        <Typography level="title-sm">{description}</Typography>
       </Box>
       <Box
         width={"99vw"}
@@ -37,23 +49,14 @@ export const IntroHome = () => {
           justifyContent={"space-around"}
           gap={"20px"}
         >
-          <IntroCard
-            cardTitle={"A voz do processo"}
-            text={"Entenda como a perícia técnica contribui com a justiça."}
-            path={"#funcao"}
-          />
-          <IntroCard
-            cardTitle={"Sobre Paulo Carvalho"}
-            text={"Conheça a trajetória por trás da experiência."}
-            path={"#sobre"}
-          />
-          <IntroCard
-            cardTitle={"Áreas de atuação"}
-            text={
-              "Conheça a metodologia e o impacto de uma atuação especializada."
-            }
-            path={"#servico"}
-          />
+          {cardProps.map((c) => (
+            <IntroCard
+              key={c.title}
+              cardTitle={c.title}
+              text={c.text}
+              path={c.path}
+            />
+          ))}
         </Box>
       </Box>
     </>

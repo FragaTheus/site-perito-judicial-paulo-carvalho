@@ -5,8 +5,8 @@ import { Box } from "@mui/joy";
 type SectionProps = {
   divId?: String;
   title?: string;
-  dark: boolean;
-  component: React.ReactNode;
+  dark?: boolean;
+  component?: React.ReactNode;
 };
 
 interface IPageLayoutProps {
