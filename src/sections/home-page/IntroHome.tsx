@@ -47,7 +47,7 @@ export const IntroHome = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % introCards.length);
-    }, 3500);
+    }, 4000);
     return () => clearInterval(timer);
   }, []);
   return (
@@ -71,7 +71,6 @@ export const IntroHome = () => {
           spacing={"10px"}
         >
           <SwipeableViews
-            enableMouseEvents
             index={activeIndex}
             onChangeIndex={(index) => setActiveIndex(index)}
           >
@@ -88,6 +87,7 @@ export const IntroHome = () => {
                   alignItems: "center",
                   justifyContent: "center",
                   justifySelf: "center",
+                  borderColor: "#ffffff",
                 }}
               >
                 <Stack

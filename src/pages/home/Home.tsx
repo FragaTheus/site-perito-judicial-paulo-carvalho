@@ -1,12 +1,12 @@
 import { CardServico } from "../../components/cards/servicos-cards/ServicosCards";
-import { SobreCard } from "../../components/cards/sobre-card/SobreCard";
 import { HeroSection } from "../../components/hero/HeroSection";
 import { PageLayout } from "../../layout/page-layout/PageLayout";
 import { SectionLayout } from "../../layout/section-layout/SectionLayout";
 import content from "../../content/home-page/homePageContent.json";
 import { useResContext } from "../../contexts/ResponsiveContext";
-import { IntroHome } from "../../components/intro-home/IntroHome";
+import { IntroHome } from "../../sections/home-page/IntroHome";
 import { Beneficios } from "../../sections/home-page/Beneficios";
+import { Sobre } from "../../sections/home-page/Sobre";
 
 export const HomePage = ({}) => {
   const { isMobile } = useResContext();
@@ -33,13 +33,7 @@ export const HomePage = ({}) => {
     title: content.sobre.title,
     dark: false,
 
-    component: (
-      <SobreCard
-        title={content.sobre.card.title}
-        subtitle={content.sobre.card.subtitle}
-        bodyText={content.sobre.card.bodyText}
-      />
-    ),
+    component: <Sobre />,
   });
 
   const servicosCards = [

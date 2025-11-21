@@ -84,17 +84,19 @@ export const Beneficios = () => {
         {beneficioCards.map((c, i) => (
           <Card
             key={i}
-            variant="outlined"
+            variant="solid"
             sx={
               isMobile
                 ? {
                     height: "250px",
-                    bgcolor: "transparent",
+                    bgcolor: "background.surface",
+                    boxShadow: "lg",
                     borderColor: "text.primary",
                   }
                 : {
                     height: "280px",
-                    bgcolor: "transparent",
+                    bgcolor: "background.surface",
+                    boxShadow: "lg",
                     borderColor: "text.primary",
                   }
             }

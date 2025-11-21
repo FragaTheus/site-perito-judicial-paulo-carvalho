@@ -1,8 +1,8 @@
 {
     "hero": {
         "title": "Paulo Carvaho",
-        "subtitle": "Assistente Técnico de Perícias Judiciais",
-        "description": "Perícias Judiciais e Assistências Técnicas em Ações Trabalhistas."
+        "subtitle": "Perícias e Assistência Técnica para Ações Trabalhistas.",
+        "description": "Assistente Técnico | Engenheiro Ambiental | Segurança do Trabalho"
     },
     "intro": {
   "title": "Qual é a função de um Assistente Técnico?",
@@ -42,16 +42,23 @@
         },
         "descriptionTitle": "Em resumo:",
         "descriptionBody": "Você conta com avaliações precisas, suporte técnico especializado e a garantia de que cada etapa será conduzida com responsabilidade e rigor profissional."
-        
+
     },
-    "sobre": {
-        "title": "Afinal, quem é Paulo Carvalho?",
-        "card": {
-            "title": "Sobre Paulo Carvalho",
-            "subtitle": "Conheça a trajetória por trás da experiência.",
-            "bodyText": "O Assistente Técnico apoia as partes em perícias judiciais, analisando documentos, acompanhando diligências e oferecendo pareceres técnicos em Segurança do Trabalho."
-        }
-    },
+ "sobre": {
+  "title": "Quem é Paulo Carvalho?",
+  "card": {
+    "title": "Expertise em Perícias Judiciais e Laudos Técnicos",
+    "titleXs": "Sobre",
+    "subtitle": "Paulo:",
+    "bodyText": "Engenheiro de Segurança do Trabalho e Ambiental, com mais de 20 anos de experiência, atua como Perito Judicial e Consultor Técnico, oferecendo análises objetivas, pareceres detalhados e soluções confiáveis que transformam processos complexos em decisões claras e fundamentadas. Ele já prestou suporte em processos judiciais, conduziu perícias em insalubridade, periculosidade e ergonomia, e realizou avaliações de máquinas e equipamentos conforme NR12.",
+    "description": "-Transforma complexidade em clareza, oferecendo análises técnicas precisas e confiáveis que apoiam decisões seguras."
+  }
+}
+
+
+
+,
+
     "servicos": {
         "title": "Áreas de Atuação:",
         "cardsContent": {
