@@ -71,7 +71,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.23.9, @babel/runtime@npm:^7.28.4, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.8.7":
+"@babel/runtime@npm:7.0.0":
+  version: 7.0.0
+  resolution: "@babel/runtime@npm:7.0.0"
+  dependencies:
+    regenerator-runtime: "npm:^0.12.0"
+  checksum: 10c0/fbbdf86380a1cfa6ce32a743549f4e4c8b8eb06a18be5054441cc0f66e75a747ae43b042d8989f4657027e1be3b9a82069865ccc5080838f004abd1161093742
+  languageName: node
+  linkType: hard
+
+"@babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.2.0, @babel/runtime@npm:^7.23.9, @babel/runtime@npm:^7.28.4, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.8.7":
   version: 7.28.4
   resolution: "@babel/runtime@npm:7.28.4"
   checksum: 10c0/792ce7af9750fb9b93879cc9d1db175701c4689da890e6ced242ea0207c9da411ccf16dc04e689cc01158b28d7898c40d75598f4559109f761c12ce01e959bf7
@@ -1395,12 +1404,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-swipeable-views@npm:^0":
+  version: 0.13.6
+  resolution: "@types/react-swipeable-views@npm:0.13.6"
+  dependencies:
+    "@types/react": "npm:*"
+  checksum: 10c0/a26879146748417234bb7f44c5a71e6bab2b76c0b34c72f0493c18403487a5d77021510e8665bd8bd22786904fbbd90d6db55c8dd2bf983c32421139de851c94
+  languageName: node
+  linkType: hard
+
 "@types/react-transition-group@npm:^4.4.12":
   version: 4.4.12
   resolution: "@types/react-transition-group@npm:4.4.12"
   peerDependencies:
     "@types/react": "*"
   checksum: 10c0/0441b8b47c69312c89ec0760ba477ba1a0808a10ceef8dc1c64b1013ed78517332c30f18681b0ec0b53542731f1ed015169fed1d127cc91222638ed955478ec7
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:*":
+  version: 19.2.6
+  resolution: "@types/react@npm:19.2.6"
+  dependencies:
+    csstype: "npm:^3.2.2"
+  checksum: 10c0/23b1100f88662ce9f9e4fcca3a2b4ef9fff1ecde24ede2b2dcbd07731e48d6946fd7fd156cd133f5b25321694b0569cd9b8dd30b22c4e076d1cf4c8cdd9a75cb
   languageName: node
   linkType: hard
 
@@ -1805,6 +1832,13 @@ __metadata:
   version: 3.1.3
   resolution: "csstype@npm:3.1.3"
   checksum: 10c0/80c089d6f7e0c5b2bd83cf0539ab41474198579584fa10d86d0cafe0642202343cbc119e076a0b1aece191989477081415d66c9fefbf3c957fc2fc4b7009f248
+  languageName: node
+  linkType: hard
+
+"csstype@npm:^3.2.2":
+  version: 3.2.3
+  resolution: "csstype@npm:3.2.3"
+  checksum: 10c0/cd29c51e70fa822f1cecd8641a1445bed7063697469d35633b516e60fe8c1bde04b08f6c5b6022136bb669b64c63d4173af54864510fbb4ee23281801841a3ce
   languageName: node
   linkType: hard
 
@@ -2569,6 +2603,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"keycode@npm:^2.1.7":
+  version: 2.2.1
+  resolution: "keycode@npm:2.2.1"
+  checksum: 10c0/e38ecbdc62f57e18ef9f7ad88aefded84e05b89115a40eea3081a7002d7c055765ddb5f5c3e2dd36ac2b2ab3901053c8286c9db082fd807b3abeb7e44034d96a
+  languageName: node
+  linkType: hard
+
 "keyv@npm:^4.5.4":
   version: 4.5.4
   resolution: "keyv@npm:4.5.4"
@@ -2611,7 +2652,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loose-envify@npm:^1.4.0":
+"loose-envify@npm:^1.0.0, loose-envify@npm:^1.4.0":
   version: 1.4.0
   resolution: "loose-envify@npm:1.4.0"
   dependencies:
@@ -2991,6 +3032,7 @@ __metadata:
     "@mui/system": "npm:5.15.15"
     "@types/react": "npm:^19.1.8"
     "@types/react-dom": "npm:^19.1.6"
+    "@types/react-swipeable-views": "npm:^0"
     "@vitejs/plugin-react-swc": "npm:^3.10.2"
     eslint: "npm:^9.30.1"
     eslint-plugin-react-hooks: "npm:^5.2.0"
@@ -2999,6 +3041,7 @@ __metadata:
     react: "npm:^19.1.0"
     react-dom: "npm:^19.1.0"
     react-router-dom: "npm:^7.7.1"
+    react-swipeable-views: "npm:^0.14.1"
     typescript: "npm:~5.8.3"
     typescript-eslint: "npm:^8.35.1"
     vite: "npm:^7.0.4"
@@ -3015,7 +3058,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.6.2, prop-types@npm:^15.8.1":
+"prop-types@npm:^15.5.4, prop-types@npm:^15.6.0, prop-types@npm:^15.6.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -3048,6 +3091,19 @@ __metadata:
   peerDependencies:
     react: ^19.2.0
   checksum: 10c0/fa2cae05248d01288e91523b590ce4e7635b1e13f1344e225f850d722a8da037bf0782f63b1c1d46353334e0c696909b82e582f8cad607948fde6f7646cc18d9
+  languageName: node
+  linkType: hard
+
+"react-event-listener@npm:^0.6.0":
+  version: 0.6.7
+  resolution: "react-event-listener@npm:0.6.7"
+  dependencies:
+    "@babel/runtime": "npm:^7.2.0"
+    prop-types: "npm:^15.6.0"
+    warning: "npm:^4.0.1"
+  peerDependencies:
+    react: ^16.3.0
+  checksum: 10c0/f7901b677b64533b13110951bd24c04d8d57da06ad4dda8b3b550f3185d7bb1b1a6952f4fdf166168da3b5cef43406000b4f093c1123e161fac1936b1c26f3a5
   languageName: node
   linkType: hard
 
@@ -3093,6 +3149,49 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-swipeable-views-core@npm:^0.14.1":
+  version: 0.14.1
+  resolution: "react-swipeable-views-core@npm:0.14.1"
+  dependencies:
+    "@babel/runtime": "npm:7.0.0"
+    warning: "npm:^4.0.1"
+  peerDependencies:
+    react: ^15.3.0 || ^16.0.0 || ^17.0.0
+  checksum: 10c0/4da08493dad34f8498b66c596c1f40cd9a62e4968e71d00c79a26bf45e25ba3a3323e690641121cc8e7fd9c695e7da37fe781fa3f69e7d2b60fff3bfe4621426
+  languageName: node
+  linkType: hard
+
+"react-swipeable-views-utils@npm:^0.14.1":
+  version: 0.14.1
+  resolution: "react-swipeable-views-utils@npm:0.14.1"
+  dependencies:
+    "@babel/runtime": "npm:7.0.0"
+    keycode: "npm:^2.1.7"
+    prop-types: "npm:^15.6.0"
+    react-event-listener: "npm:^0.6.0"
+    react-swipeable-views-core: "npm:^0.14.1"
+    shallow-equal: "npm:^1.2.1"
+  peerDependencies:
+    react: ^15.3.0 || ^16.0.0 || ^17.0.0
+  checksum: 10c0/f9a9930e7df9dab9cd0f5344c7cf0423cc8aff4728436eb7dc13588186fbd1a557c8250b6329ec09242f3f6d2700d33e1155ab191ce8de48aa860fad6fb1814b
+  languageName: node
+  linkType: hard
+
+"react-swipeable-views@npm:^0.14.1":
+  version: 0.14.1
+  resolution: "react-swipeable-views@npm:0.14.1"
+  dependencies:
+    "@babel/runtime": "npm:7.0.0"
+    prop-types: "npm:^15.5.4"
+    react-swipeable-views-core: "npm:^0.14.1"
+    react-swipeable-views-utils: "npm:^0.14.1"
+    warning: "npm:^4.0.1"
+  peerDependencies:
+    react: ^15.3.0 || ^16.0.0 || ^17.0.0
+  checksum: 10c0/7ee6d19cc33172e0846835eafd4b24ece0f26aed5cc9bbe80d3ec7c8d22f327443df8b2d50ddb4b837e1d6fbb40744abc41f62cdcab8e941e0663a952d627a15
+  languageName: node
+  linkType: hard
+
 "react-transition-group@npm:^4.4.5":
   version: 4.4.5
   resolution: "react-transition-group@npm:4.4.5"
@@ -3112,6 +3211,13 @@ __metadata:
   version: 19.2.0
   resolution: "react@npm:19.2.0"
   checksum: 10c0/1b6d64eacb9324725bfe1e7860cb7a6b8a34bc89a482920765ebff5c10578eb487e6b46b2f0df263bd27a25edbdae2c45e5ea5d81ae61404301c1a7192c38330
+  languageName: node
+  linkType: hard
+
+"regenerator-runtime@npm:^0.12.0":
+  version: 0.12.1
+  resolution: "regenerator-runtime@npm:0.12.1"
+  checksum: 10c0/dbefbb38f5d6d55261aec1182d7c97ac93f2eec6ef9c756d9656eb5152f5cb3f8d873df020ddb4a3a8126c2ac1a3c2e534413cffe18d8f89b1c2a480a0a38601
   languageName: node
   linkType: hard
 
@@ -3279,6 +3385,13 @@ __metadata:
   version: 2.7.1
   resolution: "set-cookie-parser@npm:2.7.1"
   checksum: 10c0/060c198c4c92547ac15988256f445eae523f57f2ceefeccf52d30d75dedf6bff22b9c26f756bd44e8e560d44ff4ab2130b178bd2e52ef5571bf7be3bd7632d9a
+  languageName: node
+  linkType: hard
+
+"shallow-equal@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "shallow-equal@npm:1.2.1"
+  checksum: 10c0/51e03abadd97c9ebe590547d92db9148446962a3f23a3a0fb1ba2fccab80af881eef0ff1f8ccefd3f066c0bc5a4c8ca53706194813b95c8835fa66448a843a26
   languageName: node
   linkType: hard
 
@@ -3590,6 +3703,15 @@ __metadata:
   bin:
     vite: bin/vite.js
   checksum: 10c0/f628f903a137c1410232558bde99c223ea00a090bda6af77752c61f912955f0050aac12d3cfe024d08a0f150ff6fab61b3d0be75d634a59b94d49f525392e1f7
+  languageName: node
+  linkType: hard
+
+"warning@npm:^4.0.1":
+  version: 4.0.3
+  resolution: "warning@npm:4.0.3"
+  dependencies:
+    loose-envify: "npm:^1.0.0"
+  checksum: 10c0/aebab445129f3e104c271f1637fa38e55eb25f968593e3825bd2f7a12bd58dc3738bb70dc8ec85826621d80b4acfed5a29ebc9da17397c6125864d72301b937e
   languageName: node
   linkType: hard
 

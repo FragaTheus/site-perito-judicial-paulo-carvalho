@@ -3,7 +3,7 @@ const color = {
   100: "#F4CE2C",
   200: "#F7DC6F",
   300: "#E4B801",
-  400: "#242323",
+  400: "#2C2C2C",
   500: "#888888",
   600: "#AAAAAA",
   700: "#ffffff",
@@ -46,7 +46,7 @@ export const theme = extendTheme({
           plainActiveColor: color[300],
         },
         background: {
-          body: "#F0F0F0",
+          body: "#F3F4F6",
           surface: "#ffffff",
         },
         text: {
@@ -57,6 +57,7 @@ export const theme = extendTheme({
     dark: {
       palette: {
         primary: {
+          //colors
           100: color[100],
           200: color[200],
           300: color[300],

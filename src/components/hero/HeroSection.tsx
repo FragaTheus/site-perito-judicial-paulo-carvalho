@@ -16,7 +16,7 @@ export const HeroSection: React.FC<IHeroProsp> = ({
   subtitle,
   description,
 }) => {
-    const { enviarMsg } = useWppContext();
+  const { enviarMsg } = useWppContext();
   return (
     <>
       <Box
@@ -49,13 +49,15 @@ export const HeroSection: React.FC<IHeroProsp> = ({
         </Typography>
         <Button
           type="submit"
-          onClick={()=>enviarMsg()}
+          onClick={() => enviarMsg()}
           variant="solid"
           color="primary"
-          sx={{ marginTop: "40px", gap: "5px", bgcolor:  "#25D366"}}
+          sx={{ marginTop: "40px", gap: "5px", bgcolor: "#25D366" }}
         >
-          <WhatsAppIcon sx={{ fontSize: "clamp(1rem,2vw,3rem)"}} />
-          <Typography level="h4" sx={{fontWeight: 600}}>Entre em contato</Typography>
+          <WhatsAppIcon sx={{ fontSize: "clamp(1rem,2vw,3rem)" }} />
+          <Typography level="h4" sx={{ fontWeight: 600 }}>
+            Entre em contato
+          </Typography>
         </Button>
       </Box>
     </>

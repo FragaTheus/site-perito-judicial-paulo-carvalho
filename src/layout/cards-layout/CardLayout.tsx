@@ -119,8 +119,22 @@ export const CardLayout: React.FC<ICardProps> = ({
             sx={isMobile ? { width: "100%" } : { width: "40%" }}
           >
             <a href="#contato">
-              <Button id="contato-button" variant="solid" sx={{backgroundColor: "#25D366", display: "flex", alignItems: "center", justifyContent: "center"}}>
-                <WhatsAppIcon sx={{ color: "inherit", fontSize: "clamp(0.8rem,3.3vmin,4rem)"}} />
+              <Button
+                id="contato-button"
+                variant="solid"
+                sx={{
+                  backgroundColor: "#25D366",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <WhatsAppIcon
+                  sx={{
+                    color: "inherit",
+                    fontSize: "clamp(0.8rem,3.3vmin,4rem)",
+                  }}
+                />
               </Button>
             </a>
             <Button

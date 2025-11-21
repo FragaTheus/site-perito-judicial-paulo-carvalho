@@ -5,31 +5,43 @@
         "description": "Perícias Judiciais e Assistências Técnicas em Ações Trabalhistas."
     },
     "intro": {
-        "title": "Precisa de um especialista para sua perícia?",
-        "description": "Assistente Técnico com mais de 20 anos de experiência. É referência no meio jurídico pela qualidade dos seus laudos técnicos.",
-        "cardProps": {
-            "title": "A voz do processo",
-            "text": "Entenda como a perícia técnica contribui com a justiça.",
-            "path": "#funcao"
-        },
-        "cardProps1": {
-            "title": "Sobre Paulo Carvalho",
-            "text": "Conheça a trajetória por trás da experiência.",
-            "path": "#sobre"
-        },
-        "cardProps2": {
-            "title": "Áreas de atuação",
-            "text": "Conheça a metodologia e o impacto de uma atuação especializada.",
-            "path": "#servico"
-        }
-    },
-    "funcao": {
-        "title": "Qual é a função de um Assistente Técnico?",
+  "title": "Qual é a função de um Assistente Técnico?",
+  "description": "O Assistente Técnico oferece suporte especializado em perícias judiciais, analisando documentos, acompanhando diligências e emitindo pareceres técnicos que garantem segurança, clareza e conformidade em cada etapa do processo.",
+  
+  "cardProps": {
+    "title": "Documentos e Laudos",
+    "text": "Analisa documentos e laudos técnicos para garantir precisão, conformidade e credibilidade."
+  },
+  
+  "cardProps1": {
+    "title": "Diligências no Local",
+    "text": "Acompanha inspeções e verificações presenciais para esclarecer fatos com precisão técnica."
+  },
+  
+  "cardProps2": {
+    "title": "Parecer Técnico",
+    "text": "Produz pareceres claros e objetivos que fortalecem decisões judiciais e administrativas."
+  },
+  
+  "cardProps3": {
+    "title": "Segurança do Trabalho",
+    "text": "Avalia riscos e verifica se as medidas adotadas atendem às normas e legislações vigentes."
+  }
+},
+    "beneficios":{
+        "title": "Por que contratar um profissional especializado?",
+        "text": "Contratar um especialista é garantir laudos confiáveis, menos riscos e mais segurança em qualquer processo técnico ou judicial.",
         "card": {
-            "title": "A voz técnica no processo",
-            "subtitle": "Entenda como a perícia técnica contribui com a justiça.",
-            "bodyText": "O Assistente Técnico apoia as partes em perícias judiciais, analisando documentos, acompanhando diligências e oferecendo pareceres técnicos em Segurança do Trabalho."
-        }
+            "title": "O que você ganha ao contratar um especialista:",
+            "item": "Proteção dos seus interesses em perícias e processos judiciais.",
+            "item1": "Laudos técnicos confiáveis, elaborados conforme normas e legislações vigentes.",
+            "item2": "Redução de riscos, multas e responsabilidades legais.",
+            "item3": "Acompanhamento profissional em cada etapa do processo.",
+            "item4": "Decisões mais seguras, baseadas em análises técnicas e imparciais.",
+            "item5": "Credibilidade e tranquilidade, sabendo que tudo está sendo feito por um profissional habilitado."
+        },
+        "descriptionTitle": "Em resumo:",
+        "descriptionBody": "Você conta com avaliações precisas, suporte técnico especializado e a garantia de que cada etapa será conduzida com responsabilidade e rigor profissional."
         
     },
     "sobre": {
