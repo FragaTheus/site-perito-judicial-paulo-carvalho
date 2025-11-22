@@ -5,28 +5,9 @@
         "description": "Assistente Técnico | Engenheiro Ambiental | Segurança do Trabalho"
     },
     "intro": {
-  "title": "Qual é a função de um Assistente Técnico?",
-  "description": "O Assistente Técnico oferece suporte especializado em perícias judiciais, analisando documentos, acompanhando diligências e emitindo pareceres técnicos que garantem segurança, clareza e conformidade em cada etapa do processo.",
-  
-  "cardProps": {
-    "title": "Documentos e Laudos",
-    "text": "Analisa documentos e laudos técnicos para garantir precisão, conformidade e credibilidade."
-  },
-  
-  "cardProps1": {
-    "title": "Diligências no Local",
-    "text": "Acompanha inspeções e verificações presenciais para esclarecer fatos com precisão técnica."
-  },
-  
-  "cardProps2": {
-    "title": "Parecer Técnico",
-    "text": "Produz pareceres claros e objetivos que fortalecem decisões judiciais e administrativas."
-  },
-  
-  "cardProps3": {
-    "title": "Segurança do Trabalho",
-    "text": "Avalia riscos e verifica se as medidas adotadas atendem às normas e legislações vigentes."
-  }
+  "title": "Como um Assistente Técnico fortalece sua perícia?",
+  "description": "Auxilia empresas, advogados e partes envolvidas a defender seus interesses em processos judiciais por meio de análises técnicas claras, pareceres precisos e acompanhamento completo das perícias. Tudo de forma organizada, objetiva e com foco em resultados.",
+  "cardDesc": "Técnica que Facilita o Trabalho Pericial"
 },
     "beneficios":{
         "title": "Por que contratar um profissional especializado?",

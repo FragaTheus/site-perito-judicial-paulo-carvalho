@@ -2,7 +2,6 @@ import { Stack } from "@mui/joy";
 
 interface ISection {
   id: string;
-  bgcolor: string;
   padded?: boolean;
   children: React.ReactNode;
 }
@@ -16,11 +15,10 @@ export const Section = (contract: ISection) => {
       maxWidth={"1440px"}
       mx={"auto"}
       minHeight={"60dvh"}
-      bgcolor={contract.bgcolor}
       position={"relative"}
       alignItems={"center"}
       justifyContent={"center"}
-      sx={contract.padded ? { p: { xs: "4px", md: "8px" } } : { p: 0 }}
+      sx={contract.padded ? { p: { xs: "10px", md: "12px" } } : { p: 0 }}
     >
       {contract.children}
     </Stack>

@@ -1,133 +1,101 @@
 import {
+  Box,
   Button,
   Card,
-  CardContent,
-  Divider,
+  CardActions,
+  CardCover,
   Stack,
   Typography,
 } from "@mui/joy";
 import content from "../../content/home-page/homePageContent.json";
-import SwipeableViews from "react-swipeable-views";
-import ArticleIcon from "@mui/icons-material/Article";
-import SearchTwoToneIcon from "@mui/icons-material/SearchTwoTone";
-import BalanceTwoToneIcon from "@mui/icons-material/BalanceTwoTone";
+import ManageSearchIcon from "@mui/icons-material/ManageSearch";
 import EngineeringIcon from "@mui/icons-material/Engineering";
-import { useEffect, useState } from "react";
-import { useResContext } from "../../contexts/ResponsiveContext";
-import { Link as RouterLink } from "react-router-dom";
+import { Section } from "../../components/Section";
 import { KeyboardArrowRight } from "@mui/icons-material";
 
-const introCards = [
-  {
-    icon: <ArticleIcon sx={{ color: "primary.100" }} />,
-    title: content.intro.cardProps.title,
-    text: content.intro.cardProps.text,
-  },
-  {
-    icon: <SearchTwoToneIcon sx={{ color: "primary.100" }} />,
-    title: content.intro.cardProps1.title,
-    text: content.intro.cardProps1.text,
-  },
-  {
-    icon: <BalanceTwoToneIcon sx={{ color: "primary.100" }} />,
-    title: content.intro.cardProps2.title,
-    text: content.intro.cardProps2.text,
-  },
-  {
-    icon: <EngineeringIcon sx={{ color: "primary.100" }} />,
-    title: content.intro.cardProps3.title,
-    text: content.intro.cardProps3.text,
-  },
-];
-
 export const IntroHome = () => {
-  const { isMobile, isTablet } = useResContext();
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % introCards.length);
-    }, 4000);
-    return () => clearInterval(timer);
-  }, []);
   return (
-    <>
-      <Stack
-        direction={isTablet ? "column" : "row"}
-        alignItems={"center"}
-        width={"80%"}
-        justifyContent={"space-evenly"}
-        spacing={"10px"}
-      >
-        <Stack flex={1} alignItems={"flex-start"}>
-          <Typography level="body-md" sx={{ color: "#ffffff" }}>
-            {content.intro.description}
-          </Typography>
-        </Stack>
-        {isTablet && <Divider />}
-        <Stack
-          width={isTablet ? "100%" : "45%"}
-          justifyContent={"center"}
-          spacing={"10px"}
-        >
-          <SwipeableViews
-            index={activeIndex}
-            onChangeIndex={(index) => setActiveIndex(index)}
+    <Box
+      id="intro-bg"
+      width={"100%"}
+      bgcolor={"primary.400"}
+      alignItems={"center"}
+      justifyContent={"center"}
+    >
+      <Section id="home-intro" padded={true}>
+        <Stack id="intro-container" alignSelf={"center"} justifySelf={"center"}>
+          <Box
+            id="itro-content"
+            display={"grid"}
+            alignContent={"center"}
+            justifyItems={"center"}
+            gridTemplateColumns={"repeat(auto-fit, minmax(250px, 1fr))"}
           >
-            {introCards.map((c, i) => (
-              <Card
-                key={i}
-                variant="outlined"
+            <Card
+              variant="solid"
+              sx={{
+                height: "clamp(280px,50vw,450px)",
+                width: "90%",
+                boxShadow: "4px 4px 10px rgba(0, 0, 0, 0.5)",
+              }}
+            >
+              <CardCover>
+                <img
+                  src="funcao-img.jpg"
+                  style={{
+                    objectFit: "cover",
+                    objectPosition: "center center",
+                  }}
+                ></img>
+              </CardCover>
+              <CardActions
                 sx={{
-                  bgcolor: "transparent",
-                  minHeight: "25svh",
-                  width: "100%",
+                  bgcolor: "#1c1c1c",
+                  p: "10px",
+                  borderRadius: "sm",
+                  ml: "-25px",
                   display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  justifySelf: "center",
-                  borderColor: "#ffffff",
+                  height: "20%",
+                  boxShadow: "4px 4px 5px rgba(0, 0, 0, 0.5)",
                 }}
               >
-                <Stack
-                  width={"100%"}
-                  direction={"row"}
-                  justifyContent={"center"}
-                  alignItems={"center"}
-                  gap={1}
-                >
-                  {c.icon}
-                  <Typography level="body-md" sx={{ color: "primary.100" }}>
-                    {c.title}
-                  </Typography>
-                </Stack>
+                <EngineeringIcon
+                  sx={{ color: "primary.100", fontSize: "large" }}
+                />
+                <Typography level="body-md" sx={{ color: "#ffffff" }}>
+                  {content.intro.title}
+                </Typography>
+              </CardActions>
+            </Card>
 
-                <Divider sx={{ my: 1, borderColor: "primary.100" }} />
-
-                <CardContent sx={{ width: "100%" }}>
-                  <Typography
-                    level="body-md"
-                    textAlign={"center"}
-                    sx={{ color: "#ffffff" }}
-                  >
-                    {c.text}
-                  </Typography>
-                </CardContent>
-              </Card>
-            ))}
-          </SwipeableViews>
-          <Button
-            variant="outlined"
-            component={RouterLink as any}
-            to={"/funcao"}
-            sx={isTablet ? { alignSelf: "center" } : { alignSelf: "flex-end" }}
-          >
-            Entender mais
-            <KeyboardArrowRight sx={{ fontSize: "lg" }} />
-          </Button>
+            <Stack
+              alignItems={"flex-start"}
+              justifyContent={"space-evenly"}
+              width={"90%"}
+              spacing={"15px"}
+            >
+              <ManageSearchIcon
+                sx={{
+                  color: "primary.100",
+                  fontSize: "clamp(20px,15vw,80px)",
+                }}
+              />
+              <Typography level="title-lg" sx={{ color: "primary.100" }}>
+                {content.intro.cardDesc}
+              </Typography>
+              <Typography level="body-md" sx={{ color: "#ffffff" }}>
+                {content.intro.description}
+              </Typography>
+              <Button variant="outlined">
+                <Typography level="body-md" sx={{ color: "#ffffff" }}>
+                  Saiba mais
+                </Typography>{" "}
+                <KeyboardArrowRight />
+              </Button>
+            </Stack>
+          </Box>
         </Stack>
-      </Stack>
-    </>
+      </Section>
+    </Box>
   );
 };

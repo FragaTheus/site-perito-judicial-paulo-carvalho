@@ -19,7 +19,7 @@ export const HomeHero = () => {
         display: "flex",
       }}
     >
-      <Section id="hero-section" bgcolor="" padded={true}>
+      <Section id="hero-section" padded={true}>
         <Stack id="hero-content">
           <Typography level="h1">{content.hero.title}</Typography>
           <Typography level="h2">{content.hero.subtitle}</Typography>
