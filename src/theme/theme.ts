@@ -57,7 +57,6 @@ export const theme = extendTheme({
     dark: {
       palette: {
         primary: {
-          //colors
           100: color[100],
           200: color[200],
           300: color[300],
@@ -96,131 +95,62 @@ export const theme = extendTheme({
     },
   },
   fontFamily: {
-    display: '"Playfair Display", serif',
-    body: '"Montserrat", sans-serif',
+  display: '"Playfair Display", serif',
+  body: '"Montserrat", sans-serif',
+},
+typography: {
+  h1: {
+    fontSize: "clamp(2.5rem, 6vw, 4.5rem)", 
+    fontWeight: 800,
+    fontFamily: '"Montserrat", sans-serif',
+    color: "#ffffff",
   },
-  breakpoints: {
-    values: {
-      xs: 0,
-      sm: 600,
-      md: 900,
-      lg: 1200,
-      xl: 1400,
-    },
+  h2: {
+    fontSize: "clamp(2rem, 5vw, 3.5rem)", 
+    fontWeight: 700,
+    fontFamily: '"Montserrat", sans-serif',
+    color: "#ffffff",
   },
-  typography: {
-    h1: {
-      fontSize: "clamp(2rem,8vmin,9rem)",
-      fontWeight: "800",
-      fontFamily: '"Montserrat", sans-serif',
-      color: "#ffffff",
-    },
-    h2: {
-      fontSize: "clamp(1.5rem,6vmin,3.5rem)",
-      fontWeight: "600",
-      fontFamily: '"Montserrat", sans-serif',
-      color: "#ffffff",
-    },
-    h3: {
-      fontSize: "clamp(1rem,5vmin,3rem)",
-      fontWeight: "300",
-      fontFamily: '"Montserrat", sans-serif',
-      color: "#ffffff",
-    },
-    h4: {
-      fontSize: "clamp(1rem,2vmin,7rem)",
-      fontWeight: "300",
-      fontFamily: '"Montserrat", sans-serif',
-      color: "#ffffff",
-    },
-    "title-lg": {
-      fontSize: "clamp(1.2rem,4vmin,6rem)",
-      fontFamily: '"Montserrat", sans-serif',
-      fontWeight: 700,
-    },
-    "title-md": {
-      fontSize: "clamp(1.1rem,3.5vmin,6rem)",
-      fontFamily: '"Montserrat", sans-serif',
-      fontWeight: 700,
-    },
-    "title-sm": {
-      fontSize: "clamp(0.9rem,3.2vmin,5rem)",
-      fontFamily: '"Montserrat", sans-serif',
-    },
-    "body-lg": {
-      fontSize: "clamp(0.9rem,3vmin,5rem)",
-      fontFamily: '"Montserrat", sans-serif',
-    },
-    "body-md": {
-      fontSize: "clamp(0.7rem,2.5vmin,4rem)",
-      fontFamily: '"Montserrat", sans-serif',
-      fontWeight: 500,
-    },
-    "body-sm": {
-      fontSize: "clamp(0.7rem,2.2vmin,3rem)",
-      fontFamily: '"Montserrat", sans-serif',
-    },
+  h3: {
+    fontSize: "clamp(1.5rem, 3.5vw, 2.5rem)", 
+    fontWeight: 500,
+    fontFamily: '"Montserrat", sans-serif',
+    color: "#ffffff",
   },
-  fontSize: {
-    md: "clamp(0.8rem,2.8vmin,4rem)",
+  h4: {
+    fontSize: "clamp(1.2rem, 2.5vw, 1.8rem)", 
+    fontWeight: 400,
+    fontFamily: '"Montserrat", sans-serif',
+    color: "#ffffff",
   },
-  radius: {
-    sm: "5px",
-    md: "10px",
-    lg: "25px",
+
+  "title-lg": {
+    fontSize: "clamp(1.4rem, 3vw, 2.2rem)",
+    fontFamily: '"Montserrat", sans-serif',
+    fontWeight: 700,
   },
-  components: {
-    JoyCard: {
-      styleOverrides: {
-        root: {
-          width: "80%",
-          height: "80%",
-          justifyContent: "center",
-          backgroundColor: "background.surface",
-        },
-      },
-    },
-    JoyTypography: {
-      defaultProps: {
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        textAlign: "left",
-      },
-    },
-    JoyCardContent: {
-      styleOverrides: {
-        root: {
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          flex: 1,
-          padding: "5px",
-        },
-      },
-    },
-    JoyCardActions: {
-      styleOverrides: {
-        root: {
-          width: "100%",
-          height: "auto",
-          borderRadius: "5px",
-          display: "flex",
-          padding: "10px",
-          alignItems: "center",
-          justifyContent: "space-between",
-          backgroundColor: color[400],
-        },
-      },
-    },
-    JoyIconButton: {
-      styleOverrides: {
-        root: {
-          borderRadius: "lg",
-          borderCollor: color[900],
-        },
-      },
-    },
+  "title-md": {
+    fontSize: "clamp(1.2rem, 2.5vw, 1.8rem)",
+    fontFamily: '"Montserrat", sans-serif',
+    fontWeight: 700,
   },
+  "title-sm": {
+    fontSize: "clamp(1rem, 2vw, 1.4rem)",
+    fontFamily: '"Montserrat", sans-serif',
+  },
+
+  "body-lg": {
+    fontSize: "clamp(1rem, 1.8vw, 1.3rem)",
+    fontFamily: '"Montserrat", sans-serif',
+  },
+  "body-md": {
+    fontSize: "clamp(0.9rem, 1.5vw, 1.1rem)",
+    fontFamily: '"Montserrat", sans-serif',
+    fontWeight: 500,
+  },
+  "body-sm": {
+    fontSize: "clamp(0.8rem, 1.2vw, 1rem)",
+    fontFamily: '"Montserrat", sans-serif',
+  },
+},
 });

@@ -1,14 +1,14 @@
 import { Box, IconButton, Sheet } from "@mui/joy";
 import MenuIcon from "@mui/icons-material/Menu";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import { Logo } from "../logo/Logo";
-import { useDrawerContext } from "../../contexts/DrawerContext";
+import { useDrawerContext } from "../contexts/DrawerContext";
 import EmailIcon from "@mui/icons-material/Email";
-import { useResContext } from "../../contexts/ResponsiveContext";
-import { useWppContext } from "../../contexts/WhatsAppContext";
+import { useResContext } from "../contexts/ResponsiveContext";
+import { useWppContext } from "../contexts/WhatsAppContext";
+import { Logo } from "./Logo";
 
 export const Header = () => {
-  const {enviarMsg} = useWppContext();
+  const { enviarMsg } = useWppContext();
   const { toogleDrawer } = useDrawerContext();
   const { isMobile } = useResContext();
   return (
@@ -40,7 +40,7 @@ export const Header = () => {
     >
       <Box
         id="toolbar-header"
-        width={isMobile? "90%" : "95%"}
+        width={isMobile ? "90%" : "95%"}
         height={"100%"}
         display={"flex"}
         justifyContent={"space-between"}
@@ -81,10 +81,10 @@ export const Header = () => {
           </IconButton>
           <IconButton
             type="submit"
-            onClick={()=>enviarMsg()}
+            onClick={() => enviarMsg()}
             variant="outlined"
             color="primary"
-            sx={{ borderRadius: "lg", borderColor: "primary.900"}}
+            sx={{ borderRadius: "lg", borderColor: "primary.900" }}
           >
             <WhatsAppIcon sx={{ color: "#25D366", fontSize: "md" }} />
           </IconButton>

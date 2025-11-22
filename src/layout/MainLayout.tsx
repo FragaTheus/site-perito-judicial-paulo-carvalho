@@ -1,7 +1,7 @@
 import { Box } from "@mui/joy";
-import { Header } from "../../components/header/Header";
-import { AppDrawer } from "../../components/drawer/Drawer";
-import { Footer } from "../../components/footer/Footer";
+import { Header } from "../components/Header";
+import { AppDrawer } from "../components/Drawer";
+import { Footer } from "../components/Footer";
 
 interface IMainLayout {
   children: React.ReactNode;

@@ -1,7 +1,5 @@
 import { Box, IconButton } from "@mui/joy";
-import { ContatoForm } from "../contato/contato-form/ContatoForm";
-import { ContatoInfos } from "../contato/contato-infos/ContatoInfos";
-import { useResContext } from "../../contexts/ResponsiveContext";
+import { useResContext } from "../contexts/ResponsiveContext";
 import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 
 export const Footer = () => {
@@ -52,7 +50,7 @@ export const Footer = () => {
           justifyContent={"center"}
           sx={isMobile ? { width: "100%" } : { width: "50%" }}
         >
-          <ContatoForm />
+          Contato Form
         </Box>
         <Box
           id="footer-infos"
@@ -62,7 +60,7 @@ export const Footer = () => {
           alignItems={"center"}
           justifyContent={"center"}
         >
-          <ContatoInfos />
+          Contato Info
         </Box>
       </Box>
     </Box>

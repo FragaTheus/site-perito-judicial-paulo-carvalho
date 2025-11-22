@@ -41,7 +41,7 @@ const introCards = [
 ];
 
 export const IntroHome = () => {
-  const { isMobile } = useResContext();
+  const { isMobile, isTablet } = useResContext();
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -53,20 +53,20 @@ export const IntroHome = () => {
   return (
     <>
       <Stack
-        direction={isMobile ? "column" : "row"}
+        direction={isTablet ? "column" : "row"}
         alignItems={"center"}
         width={"80%"}
         justifyContent={"space-evenly"}
         spacing={"10px"}
       >
-        <Stack width={isMobile ? "100%" : "80%"} alignItems={"flex-start"}>
-          <Typography level="title-sm" sx={{ color: "#ffffff" }}>
+        <Stack flex={1} alignItems={"flex-start"}>
+          <Typography level="body-md" sx={{ color: "#ffffff" }}>
             {content.intro.description}
           </Typography>
         </Stack>
-        {isMobile && <Divider />}
+        {isTablet && <Divider />}
         <Stack
-          width={isMobile ? "100%" : "30%"}
+          width={isTablet ? "100%" : "45%"}
           justifyContent={"center"}
           spacing={"10px"}
         >
@@ -98,16 +98,16 @@ export const IntroHome = () => {
                   gap={1}
                 >
                   {c.icon}
-                  <Typography level="body-sm" sx={{ color: "primary.100" }}>
+                  <Typography level="body-md" sx={{ color: "primary.100" }}>
                     {c.title}
                   </Typography>
                 </Stack>
 
                 <Divider sx={{ my: 1, borderColor: "primary.100" }} />
 
-                <CardContent sx={{ width: "80%" }}>
+                <CardContent sx={{ width: "100%" }}>
                   <Typography
-                    level="body-sm"
+                    level="body-md"
                     textAlign={"center"}
                     sx={{ color: "#ffffff" }}
                   >
@@ -117,23 +117,16 @@ export const IntroHome = () => {
               </Card>
             ))}
           </SwipeableViews>
+          <Button
+            variant="outlined"
+            component={RouterLink as any}
+            to={"/funcao"}
+            sx={isTablet ? { alignSelf: "center" } : { alignSelf: "flex-end" }}
+          >
+            Entender mais
+            <KeyboardArrowRight sx={{ fontSize: "lg" }} />
+          </Button>
         </Stack>
-      </Stack>
-      <Stack
-        width={"80%"}
-        direction={"row"}
-        spacing={"5px"}
-        justifyContent={isMobile ? "center" : ""}
-      >
-        <Button
-          variant="outlined"
-          component={RouterLink as any}
-          to={"/funcao"}
-          sx={isMobile ? { alignSelf: "center" } : { alignSelf: "flex-start" }}
-        >
-          Entender mais
-          <KeyboardArrowRight sx={{ fontSize: "lg" }} />
-        </Button>
       </Stack>
     </>
   );

@@ -50,7 +50,7 @@ const beneficioCards = [
 ];
 
 export const Beneficios = () => {
-  const { isMobile } = useResContext();
+  const { isMobile, isTablet } = useResContext();
   return (
     <Stack
       alignItems={"flex-start"}
@@ -75,6 +75,8 @@ export const Beneficios = () => {
                 gridAutoFlow: "column",
                 gridAutoColumns: "280px",
               }
+            : isTablet
+            ? { gridTemplateColumns: "repeat(2, 1fr)", gap: "20px" }
             : {
                 gridTemplateColumns: "repeat(3, 1fr)",
                 gap: "20px",
@@ -94,7 +96,7 @@ export const Beneficios = () => {
                     borderColor: "text.primary",
                   }
                 : {
-                    height: "280px",
+                    height: "350px",
                     bgcolor: "background.surface",
                     boxShadow: "lg",
                     borderColor: "text.primary",
