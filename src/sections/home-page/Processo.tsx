@@ -45,7 +45,7 @@ export const Processo = () => {
         <Stack
           sx={{
             overflowX: "auto",
-            alignItems: "center",
+            alignItems: "flex-start",
             justifyContent: "center",
             width: "100%",
             padding: "10px",
@@ -57,7 +57,7 @@ export const Processo = () => {
               width: "1400px",
               boxShadow: "lg",
               bgcolor: "background.surface",
-              height: "300px",
+              height: "280px",
             }}
           >
             <Box

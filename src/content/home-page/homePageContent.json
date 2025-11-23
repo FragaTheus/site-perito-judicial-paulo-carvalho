@@ -5,15 +5,14 @@
         "description": "Assistente Técnico | Engenheiro Ambiental | Segurança do Trabalho"
     },
     "intro": {
-        "title": "Como um Assistente Técnico fortalece sua perícia?",
+        "title": "Técnica que Facilita o Trabalho Pericial",
         "description": "Auxilia empresas, advogados e partes envolvidas a defender seus interesses em processos judiciais por meio de análises técnicas claras, pareceres precisos e acompanhamento completo das perícias. Tudo de forma organizada, objetiva e com foco em resultados.",
-        "cardDesc": "Técnica que Facilita o Trabalho Pericial"
+        "cardDesc": "Como um Assistente Técnico Fortalece sua Perícia?"
 },
     "beneficios":{
-        "title": "Por que contratar um profissional especializado?",
+        "title": "Por Que Contratar um Profissional Especializado?",
         "text": "Contratar um especialista é garantir laudos confiáveis, menos riscos e mais segurança em qualquer processo técnico ou judicial.",
         "card": {
-            "title": "O que você ganha ao contratar um especialista:",
             "item": "Proteção dos seus interesses em perícias e processos judiciais.",
             "item1": "Laudos técnicos confiáveis, elaborados conforme normas e legislações vigentes.",
             "item2": "Redução de riscos, multas e responsabilidades legais.",
@@ -24,17 +23,6 @@
         "descriptionBody": "Você conta com avaliações precisas, suporte técnico especializado e a garantia de que cada etapa será conduzida com responsabilidade e rigor profissional."
 
     },
-    "sobre": {
-        "title": "Quem é Paulo Carvalho?",
-         "card": {
-             "title": "Expertise em Perícias Judiciais e Laudos Técnicos",
-            "titleXs": "Sobre",
-            "subtitle": "Paulo:",
-            "bodyText": "Engenheiro de Segurança do Trabalho e Ambiental, com mais de 20 anos de experiência, atua como Perito Judicial e Consultor Técnico, oferecendo análises objetivas, pareceres detalhados e soluções confiáveis que transformam processos complexos em decisões claras e fundamentadas. Ele já prestou suporte em processos judiciais, conduziu perícias em insalubridade, periculosidade e ergonomia, e realizou avaliações de máquinas e equipamentos conforme NR12.",
-            "description": "-Transforma complexidade em clareza, oferecendo análises técnicas precisas e confiáveis que apoiam decisões seguras."
-  }
-}
-,
     "ctaMid": {
         "title": "Está enfrentando uma perícia e não sabe se está tudo correto?",
         "text": "Receba uma análise completa, explicada de forma clara, para entender riscos, inconsistências e oportunidades de fortalecer sua argumentação no processo."
@@ -68,7 +56,7 @@
     "description": "Receba uma avaliação detalhada e imparcial sobre seu caso, baseada em normas, legislação e boas práticas. Ideal para quem precisa entender se está tudo correto antes de avançar no processo."
   },
   "processoTrabalho": {
-    "title": "Como o processo funciona",
+    "title": "Como o Processo Funciona",
     "description": "As etapas são conduzidas de forma direta e organizada, para que você acompanhe o processo com tranquilidade e segurança.",
     "steps": {
       "step1": {
@@ -88,7 +76,30 @@
         "text": "Apresentação clara dos resultados, conclusões e recomendações, garantindo que o cliente compreenda os pontos essenciais para tomada de decisão."
       }
     }
+  },
+ 
+  "sobre": {
+    "sectionTitle": "Paulo Carvalho",
+    "sectionDescription": "Conheça a Experiência e a Trajetória do Profissional.",
+    "content": {
+      "header": "Engenheiro Ambiental e de Segurança do Trabalho",
+      "text": "Com mais de 20 anos de experiência. Conduz perícias e assistências com precisão, imparcialidade e responsabilidade, mantendo compromisso com prazos, normas e análises claras, oferecendo suporte seguro e profissional em cada caso."
+    },
+    "highlights": {
+      "highlight1": {
+        "title": "+3.000 Perícias",
+        "text": "Realizadas com precisão e imparcialidade em mais de 20 anos de atuação."
+      },
+      "highlight2": {
+        "title": "+1.500 Assistências Técnicas",
+        "text": "Apoio consistente a processos judiciais e administrativos."
+      },
+      "highlight3": {
+        "title": "Formação Especializada",
+        "text": "Engenheiro Ambiental e Engenheiro de Segurança do Trabalho."
+      }
+    }
   }
-
-
 }
+
+
