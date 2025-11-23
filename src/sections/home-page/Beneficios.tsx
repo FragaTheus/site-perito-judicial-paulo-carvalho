@@ -3,6 +3,7 @@ import {
   Card,
   CardActions,
   CardContent,
+  Divider,
   Stack,
   Typography,
 } from "@mui/joy";
@@ -87,7 +88,7 @@ export const Beneficios = () => {
               key={i}
               sx={{
                 bgcolor: "background.surface",
-                boxShadow: "4px 4px 10px rgba(0, 0, 0, 0.5)",
+                boxShadow: "lg",
                 height: "250px",
                 width: "90%",
                 maxWidth: "300px",
@@ -110,6 +111,7 @@ export const Beneficios = () => {
             {content.beneficios.descriptionBody}
           </Typography>
         </Stack>
+        <Divider />
       </Section>
     </Stack>
   );

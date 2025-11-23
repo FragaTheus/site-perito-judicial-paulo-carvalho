@@ -80,7 +80,7 @@ export const IntroHome = () => {
                   fontSize: "clamp(20px,15vw,80px)",
                 }}
               />
-              <Typography level="title-lg" sx={{ color: "primary.100" }}>
+              <Typography level="title-lg" sx={{ color: "#ffffff" }}>
                 {content.intro.cardDesc}
               </Typography>
               <Typography level="body-md" sx={{ color: "#ffffff" }}>

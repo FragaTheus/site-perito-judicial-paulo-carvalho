@@ -5,9 +5,9 @@
         "description": "Assistente Técnico | Engenheiro Ambiental | Segurança do Trabalho"
     },
     "intro": {
-  "title": "Como um Assistente Técnico fortalece sua perícia?",
-  "description": "Auxilia empresas, advogados e partes envolvidas a defender seus interesses em processos judiciais por meio de análises técnicas claras, pareceres precisos e acompanhamento completo das perícias. Tudo de forma organizada, objetiva e com foco em resultados.",
-  "cardDesc": "Técnica que Facilita o Trabalho Pericial"
+        "title": "Como um Assistente Técnico fortalece sua perícia?",
+        "description": "Auxilia empresas, advogados e partes envolvidas a defender seus interesses em processos judiciais por meio de análises técnicas claras, pareceres precisos e acompanhamento completo das perícias. Tudo de forma organizada, objetiva e com foco em resultados.",
+        "cardDesc": "Técnica que Facilita o Trabalho Pericial"
 },
     "beneficios":{
         "title": "Por que contratar um profissional especializado?",
@@ -21,38 +21,50 @@
             "item4": "Decisões mais seguras, baseadas em análises técnicas e imparciais.",
             "item5": "Credibilidade e tranquilidade, sabendo que tudo está sendo feito por um profissional habilitado."
         },
-        "descriptionTitle": "Em resumo:",
         "descriptionBody": "Você conta com avaliações precisas, suporte técnico especializado e a garantia de que cada etapa será conduzida com responsabilidade e rigor profissional."
 
     },
- "sobre": {
-  "title": "Quem é Paulo Carvalho?",
-  "card": {
-    "title": "Expertise em Perícias Judiciais e Laudos Técnicos",
-    "titleXs": "Sobre",
-    "subtitle": "Paulo:",
-    "bodyText": "Engenheiro de Segurança do Trabalho e Ambiental, com mais de 20 anos de experiência, atua como Perito Judicial e Consultor Técnico, oferecendo análises objetivas, pareceres detalhados e soluções confiáveis que transformam processos complexos em decisões claras e fundamentadas. Ele já prestou suporte em processos judiciais, conduziu perícias em insalubridade, periculosidade e ergonomia, e realizou avaliações de máquinas e equipamentos conforme NR12.",
-    "description": "-Transforma complexidade em clareza, oferecendo análises técnicas precisas e confiáveis que apoiam decisões seguras."
+    "sobre": {
+        "title": "Quem é Paulo Carvalho?",
+         "card": {
+             "title": "Expertise em Perícias Judiciais e Laudos Técnicos",
+            "titleXs": "Sobre",
+            "subtitle": "Paulo:",
+            "bodyText": "Engenheiro de Segurança do Trabalho e Ambiental, com mais de 20 anos de experiência, atua como Perito Judicial e Consultor Técnico, oferecendo análises objetivas, pareceres detalhados e soluções confiáveis que transformam processos complexos em decisões claras e fundamentadas. Ele já prestou suporte em processos judiciais, conduziu perícias em insalubridade, periculosidade e ergonomia, e realizou avaliações de máquinas e equipamentos conforme NR12.",
+            "description": "-Transforma complexidade em clareza, oferecendo análises técnicas precisas e confiáveis que apoiam decisões seguras."
   }
 }
-
-
-
 ,
-
-    "servicos": {
-        "title": "Áreas de Atuação:",
-        "cardsContent": {
-            "title": "Assistência Técnica com Laudo",
-            "bodyText": "Realiza inspeções no ambiente de trabalho para identificar condições de insalubridade, periculosidade e ergonomia. Durante as visitas, registra evidências, avalia riscos e fornece orientações práticas sobre medidas corretivas e preventivas. O resultado é um laudo claro e objetivo, garantindo conformidade com a legislação e mais segurança aos colaboradores."
-        },
-        "cardsContent1": {
-            "title": "Inspeção técnica in loco",
-            "bodyText": "Realiza inspeções no ambiente de trabalho, avaliando insalubridade, periculosidade e ergonomia. Durante as visitas, identifica riscos, registra evidências e orienta sobre medidas corretivas e preventivas. Seu trabalho garante ambientes mais seguros e alinhados à legislação."
-        },
-         "cardsContent2": {
-            "title": "Suporte técnico in loco e documental",
-            "bodyText": "Acompanha investigações e perícias em saúde e segurança do trabalho, oferecendo assistência técnica presencial e documental. Ele analisa dados, registros e evidências, orientando cada etapa do processo para garantir resultados confiáveis e juridicamente válidos."
-        }
-    }
+    "ctaMid": {
+        "title": "Está enfrentando uma perícia e não sabe se está tudo correto?",
+        "text": "Receba uma análise completa, explicada de forma clara, para entender riscos, inconsistências e oportunidades de fortalecer sua argumentação no processo."
+    },
+    "atuacao": {
+        "title": "Atuação em Saúde e Segurança",
+        "description": "Serviços especializados para apoiar empresas, advogados e profissionais na análise, elaboração e verificação de documentos e procedimentos de Saúde e Segurança no Trabalho. Cada serviço é realizado com precisão, clareza e foco na conformidade legal.",
+      "card1": {
+  "title": "Consultoria em Perícias Técnicas",
+  "text": "Apoio técnico para interpretação e aplicação de perícias relacionadas à Saúde e Segurança do Trabalho. Orientação sobre normas, legislação e melhores práticas para decisões seguras e embasadas.",
+  "small": "Orientação técnica especializada"
+},
+"card2": {
+  "title": "Laudos Técnicos e Ergonômicos",
+  "text": "Elaboração de laudos completos, objetivos e fundamentados, com análise de riscos, causas, impactos e recomendações práticas para gestão e prevenção.",
+  "small": "Laudos completos e objetivos"
+},
+"card3": {
+  "title": "Avaliação de Máquinas – NR-12",
+  "text": "Inspeção técnica de máquinas e equipamentos, identificando riscos e verificando conformidade com a NR12. Inclui recomendações práticas de adequação e segurança.",
+  "small": "Inspeção e conformidade NR12"
+},
+"card4": {
+  "title": "Levantamento Técnico",
+  "text": "Coleta completa de dados em ambientes, processos e equipamentos para embasar análises de insalubridade, periculosidade, ergonomia e segurança de máquinas.",
+  "small": "Coleta técnica de dados"
+}
+    },
+    "ctaMobile": {
+    "title": "Análise para Decisões Seguras",
+    "description": "Receba uma avaliação detalhada e imparcial sobre seu caso, baseada em normas, legislação e boas práticas. Ideal para quem precisa entender se está tudo correto antes de avançar no processo."
+  }
 }
