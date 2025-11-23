@@ -5,6 +5,7 @@ import { HomeHero } from "../sections/home-page/HomeHero";
 import { IntroHome } from "../sections/home-page/IntroHome";
 import { useMediaQuery } from "@mui/material";
 import { CtaMidSection } from "../sections/home-page/CtaMidSection";
+import { Processo } from "../sections/home-page/Processo";
 
 export const PageHome = () => {
   const theme = useTheme();
@@ -14,6 +15,7 @@ export const PageHome = () => {
       <HomeHero />
       <IntroHome />
       <Beneficios />
+      <Processo />
       <Atuacao />
       {isMobile && <CtaMidSection />}
     </>

@@ -18,7 +18,7 @@ export const IntroHome = () => {
     <Box
       id="intro-bg"
       width={"100%"}
-      bgcolor={"primary.400"}
+      bgcolor={"background.surface"}
       alignItems={"center"}
       justifyContent={"center"}
     >
@@ -80,17 +80,17 @@ export const IntroHome = () => {
                   fontSize: "clamp(20px,15vw,80px)",
                 }}
               />
-              <Typography level="title-lg" sx={{ color: "#ffffff" }}>
+              <Typography level="title-lg" sx={{ color: "text.primary" }}>
                 {content.intro.cardDesc}
               </Typography>
-              <Typography level="body-md" sx={{ color: "#ffffff" }}>
+              <Typography level="body-md" sx={{ color: "text.primary" }}>
                 {content.intro.description}
               </Typography>
               <Button variant="outlined">
-                <Typography level="body-md" sx={{ color: "#ffffff" }}>
+                <Typography level="body-md" sx={{ color: "text.primary" }}>
                   Saiba mais
-                </Typography>{" "}
-                <KeyboardArrowRight />
+                </Typography>
+                <KeyboardArrowRight sx={{ color: "text.primary" }} />
               </Button>
             </Stack>
           </Box>

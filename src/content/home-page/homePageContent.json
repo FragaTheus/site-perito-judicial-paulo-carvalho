@@ -66,5 +66,29 @@
     "ctaMobile": {
     "title": "Análise para Decisões Seguras",
     "description": "Receba uma avaliação detalhada e imparcial sobre seu caso, baseada em normas, legislação e boas práticas. Ideal para quem precisa entender se está tudo correto antes de avançar no processo."
+  },
+  "processoTrabalho": {
+    "title": "Como o processo funciona",
+    "description": "As etapas são conduzidas de forma direta e organizada, para que você acompanhe o processo com tranquilidade e segurança.",
+    "steps": {
+      "step1": {
+        "title": "Contato e Entendimento",
+        "text": "Primeiro alinhamento para compreender o caso, o contexto e o objetivo do trabalho — seja análise, documento técnico ou apoio em perícia."
+      },
+      "step2": {
+        "title": "Levantamento Técnico",
+        "text": "Coleta de informações, documentos, evidências e detalhes necessários para fundamentar a análise, de forma remota ou presencial."
+      },
+      "step3": {
+        "title": "Desenvolvimento da Solução",
+        "text": "Elaboração do trabalho técnico: análise, parecer, laudo, relatório, estudo ou consultoria, seguindo normas, legislação e boas práticas."
+      },
+      "step4": {
+        "title": "Entrega e Orientação",
+        "text": "Apresentação clara dos resultados, conclusões e recomendações, garantindo que o cliente compreenda os pontos essenciais para tomada de decisão."
+      }
+    }
   }
+
+
 }

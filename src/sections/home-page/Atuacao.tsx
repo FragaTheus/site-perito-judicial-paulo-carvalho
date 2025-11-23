@@ -50,9 +50,19 @@ export const Atuacao = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
-    <Stack bgcolor={"background.body"} width={"100%"}>
+    <Stack
+      bgcolor={"background.body"}
+      width={"100%"}
+      alignItems={"center"}
+      justifyContent={"center"}
+    >
       <Section id="atuacao-section" padded={true}>
-        <Stack id="atuacao-title" alignItems={"flex-start"} padding={"20px"}>
+        <Stack
+          id="atuacao-title"
+          alignItems={"flex-start"}
+          padding={"20px"}
+          spacing={"10px"}
+        >
           <Typography level="title-md" sx={{ color: "primary.100" }}>
             {content.atuacao.title}
           </Typography>
@@ -62,7 +72,7 @@ export const Atuacao = () => {
           id="atuacao-container"
           direction={"row"}
           alignItems={"flex-start"}
-          justifyContent={"center"}
+          justifyContent={"space-between"}
           width={"100%"}
         >
           {!isMobile && (
@@ -71,7 +81,12 @@ export const Atuacao = () => {
             </Stack>
           )}
 
-          <Box ref={containerRef} sx={{ width: { xs: "100%", md: "50%" } }}>
+          <Box
+            ref={containerRef}
+            sx={{
+              width: { xs: "100%", md: "50%" },
+            }}
+          >
             {cards.map((c, i) => (
               <Box key={i} sx={{ height: "60vh" }}>
                 <Stack
@@ -89,7 +104,7 @@ export const Atuacao = () => {
                     variant="solid"
                     sx={{
                       width: "90%",
-                      maxWidth: 600,
+                      maxWidth: 900,
                       p: "24px",
                       bgcolor: "background.surface",
                       boxShadow: "lg",

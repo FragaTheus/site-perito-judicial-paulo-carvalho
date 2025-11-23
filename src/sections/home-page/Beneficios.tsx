@@ -3,7 +3,6 @@ import {
   Card,
   CardActions,
   CardContent,
-  Divider,
   Stack,
   Typography,
 } from "@mui/joy";
@@ -111,7 +110,6 @@ export const Beneficios = () => {
             {content.beneficios.descriptionBody}
           </Typography>
         </Stack>
-        <Divider />
       </Section>
     </Stack>
   );
