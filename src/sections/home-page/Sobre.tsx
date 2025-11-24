@@ -44,7 +44,7 @@ export const Sobre = () => {
             >
               <CardCover>
                 <img
-                  src="sobre-img.jpg"
+                  src="hero-home.jpeg"
                   style={{
                     objectFit: "cover",
                     objectPosition: "center center",
