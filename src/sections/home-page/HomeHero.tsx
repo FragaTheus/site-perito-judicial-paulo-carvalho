@@ -1,9 +1,8 @@
-import { Box, Button, Stack, Typography, useTheme } from "@mui/joy";
+import { Box, Button, Stack, Typography } from "@mui/joy";
 import { Section } from "../../components/Section";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import content from "../../content/home-page/homePageContent.json";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
-import { useMediaQuery } from "@mui/material";
 
 const props = [
   {
@@ -18,8 +17,6 @@ const props = [
 ];
 
 export const HomeHero = () => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Box
       id="hero-bg"
