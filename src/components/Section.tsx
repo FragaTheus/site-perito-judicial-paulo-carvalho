@@ -14,7 +14,7 @@ export const Section = (contract: ISection) => {
       width={"100%"}
       maxWidth={"1440px"}
       mx={"auto"}
-      minHeight={"40dvh"}
+      minHeight={"40svh"}
       position={"relative"}
       alignItems={"center"}
       justifyContent={"center"}

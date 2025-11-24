@@ -12,7 +12,7 @@ export const CTAMid = () => {
       justifyContent={"center"}
     >
       <Section id="" padded={true}>
-        <Stack>
+        <Stack padding={"20px"}>
           <Typography level="title-md" sx={{ color: "#ffffff" }}>
             {content.ctaMid.title}
           </Typography>
