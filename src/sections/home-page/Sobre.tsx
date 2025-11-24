@@ -115,13 +115,16 @@ export const Sobre = () => {
                 </Typography>
               </Card>
             </Stack>
-            <Button variant="outlined">
-              <Typography level="body-md">Saiba mais</Typography>
-              <KeyboardArrowRight sx={{ color: "text.primary" }} />
-            </Button>
           </Stack>
         </Stack>
       </Section>
     </Stack>
   );
 };
+
+{
+  /* EM breve <Button variant="outlined">
+              <Typography level="body-md">Saiba mais</Typography>
+              <KeyboardArrowRight sx={{ color: "text.primary" }} />
+            </Button> */
+}

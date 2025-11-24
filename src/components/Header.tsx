@@ -1,7 +1,5 @@
 import { Box, IconButton, Sheet } from "@mui/joy";
-import MenuIcon from "@mui/icons-material/Menu";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import { useDrawerContext } from "../contexts/DrawerContext";
 import EmailIcon from "@mui/icons-material/Email";
 import { useResContext } from "../contexts/ResponsiveContext";
 import { useWppContext } from "../contexts/WhatsAppContext";
@@ -9,7 +7,6 @@ import { Logo } from "./Logo";
 
 export const Header = () => {
   const { enviarMsg } = useWppContext();
-  const { toogleDrawer } = useDrawerContext();
   const { isMobile } = useResContext();
   return (
     <Sheet
@@ -46,23 +43,12 @@ export const Header = () => {
         justifyContent={"space-between"}
         alignItems={"center"}
       >
-        <Box id="menu-button">
-          <IconButton
-            onClick={() => toogleDrawer()}
-            variant="outlined"
-            color="primary"
-            sx={{ borderRadius: "lg", borderColor: "primary.900" }}
-          >
-            <MenuIcon sx={{ color: "inherit", fontSize: "md" }} />
-          </IconButton>
-        </Box>
         <Box
           id="header-main"
           display={"flex"}
           alignItems={"center"}
           justifyContent={"center"}
           flexDirection={"row"}
-          width={"60%"}
           height={"100%"}
           gap={"10px"}
         >
@@ -93,3 +79,19 @@ export const Header = () => {
     </Sheet>
   );
 };
+
+{
+  /*
+  Em breve
+
+  <Box id="menu-button">
+          <IconButton
+            onClick={() => toogleDrawer()}
+            variant="outlined"
+            color="primary"
+            sx={{ borderRadius: "lg", borderColor: "primary.900" }}
+          >
+            <MenuIcon sx={{ color: "inherit", fontSize: "md" }} />
+          </IconButton>
+        </Box>*/
+}

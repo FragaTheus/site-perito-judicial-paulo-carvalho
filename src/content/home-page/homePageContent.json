@@ -99,7 +99,42 @@
         "text": "Engenheiro Ambiental e Engenheiro de Segurança do Trabalho."
       }
     }
-  }
+  },
+   "faq": {
+    "sectionTitle": "FAQ",
+    "sectionSubtitle": "Perguntas Frequentes",
+    "question1": {
+      "question": "Qual a diferença entre Perito e Assistente Técnico?",
+      "answer": "O perito é nomeado pelo juiz e emite laudos oficiais. O assistente técnico é contratado por uma das partes para analisar fatos, verificar laudos e produzir pareceres baseados em critérios técnicos e legais."
+    },
+    "question2": {
+      "question": "Quais tipos de perícias são realizadas?",
+      "answer": "Trabalhistas, ambientais, segurança do trabalho, insalubridade e periculosidade."
+    },
+    "question3": {
+      "question": "Os serviços são presenciais ou remotos?",
+      "answer": "Podem ser presenciais, como perícias e inspeções, ou home-office, como elaboração de laudos e relatórios."
+    },
+    "question4": {
+      "question": "Qual o prazo médio para entrega de um laudo ou parecer?",
+      "answer": "Depende da complexidade do caso, mas todos os prazos são acordados previamente e cumpridos conforme normas legais."
+    },
+    "question5": {
+      "question": "Como contratar os serviços?",
+      "answer": "Por formulário de contato, e-mail ou telefone, iniciando com uma consultoria para definir o escopo."
+    },
+    "question6": {
+      "question": "Os serviços atendem empresas e pessoas físicas?",
+      "answer": "Sim, podem ser contratados por empresas, advogados ou partes envolvidas em processos."
+    }
+  },
+  "cta": {
+  "title": "Alguma Dúvida?",
+  "description": "Precisa entender melhor seu caso? ",
+  "description1": "Preencha o formulário e receba um direcionamento inicial para saber por onde começar."
+
+}
+
 }
 
 

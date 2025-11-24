@@ -1,5 +1,6 @@
 import { Atuacao } from "../sections/home-page/Atuacao";
 import { Beneficios } from "../sections/home-page/Beneficios";
+import { CTA } from "../sections/home-page/Cta";
 import { HomeHero } from "../sections/home-page/HomeHero";
 import { IntroHome } from "../sections/home-page/IntroHome";
 import { Processo } from "../sections/home-page/Processo";
@@ -14,6 +15,7 @@ export const PageHome = () => {
       <Processo />
       <Atuacao />
       <Sobre />
+      <CTA />
     </>
   );
 };

@@ -3079,6 +3079,7 @@ __metadata:
     globals: "npm:^16.3.0"
     react: "npm:^19.1.0"
     react-dom: "npm:^19.1.0"
+    react-hook-form: "npm:^7.66.1"
     react-router-dom: "npm:^7.7.1"
     react-swipeable-views: "npm:^0.14.1"
     typescript: "npm:~5.8.3"
@@ -3143,6 +3144,15 @@ __metadata:
   peerDependencies:
     react: ^16.3.0
   checksum: 10c0/f7901b677b64533b13110951bd24c04d8d57da06ad4dda8b3b550f3185d7bb1b1a6952f4fdf166168da3b5cef43406000b4f093c1123e161fac1936b1c26f3a5
+  languageName: node
+  linkType: hard
+
+"react-hook-form@npm:^7.66.1":
+  version: 7.66.1
+  resolution: "react-hook-form@npm:7.66.1"
+  peerDependencies:
+    react: ^16.8.0 || ^17 || ^18 || ^19
+  checksum: 10c0/f82238249d44111b377116bdfb6063045e3e81fef4c73d7f487160554fa4b43ff0970dec1f4d031e57bc2dfbdd974bdfba5608bc8c5785998a7b8a39a566428f
   languageName: node
   linkType: hard
 

@@ -137,14 +137,6 @@ export const Atuacao = () => {
                           {c.small}
                         </Typography>
                       )}
-
-                      <Button
-                        variant="outlined"
-                        sx={{ color: { xs: "text.primary", md: "#ffffff" } }}
-                      >
-                        Saiba mais
-                        <KeyboardArrowRight />
-                      </Button>
                     </CardActions>
                   </Card>
                 </Stack>
@@ -156,3 +148,16 @@ export const Atuacao = () => {
     </Stack>
   );
 };
+
+{
+  /*
+  EM breve
+                      <Button    
+                        variant="outlined"
+                        sx={{ color: { xs: "text.primary", md: "#ffffff" } }}
+                      >
+                        Saiba mais
+                        <KeyboardArrowRight />
+                      </Button>
+  */
+}

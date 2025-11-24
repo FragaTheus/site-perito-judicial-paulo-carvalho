@@ -1,9 +1,8 @@
 import { Box, IconButton } from "@mui/joy";
-import { useResContext } from "../contexts/ResponsiveContext";
 import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
+import { FooterInfo } from "./FooterInfo";
 
 export const Footer = () => {
-  const { isMobile } = useResContext();
   return (
     <Box
       id="global"
@@ -13,7 +12,6 @@ export const Footer = () => {
       flexDirection={"column"}
       alignItems={"center"}
       justifyContent={"center"}
-      minHeight={"100svh"}
       padding={"10px"}
     >
       <Box
@@ -36,22 +34,7 @@ export const Footer = () => {
           <ArrowDropUpIcon sx={{ color: "primary.100" }} />
         </IconButton>
       </Box>
-      <Box
-        id="footer-body"
-        display={"flex"}
-        width={"100%"}
-        flex={1}
-        sx={isMobile ? { flexDirection: "column" } : {}}
-      >
-        <Box
-          id="footer-contato"
-          display={"flex"}
-          alignItems={"center"}
-          justifyContent={"center"}
-          sx={isMobile ? { width: "100%" } : { width: "50%" }}
-        >
-          Contato Form
-        </Box>
+      <Box id="footer-body" display={"flex"} width={"100%"} flex={1}>
         <Box
           id="footer-infos"
           flex={1}
@@ -60,7 +43,7 @@ export const Footer = () => {
           alignItems={"center"}
           justifyContent={"center"}
         >
-          Contato Info
+          <FooterInfo />
         </Box>
       </Box>
     </Box>

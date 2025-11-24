@@ -86,12 +86,6 @@ export const IntroHome = () => {
               <Typography level="body-md" sx={{ color: "text.primary" }}>
                 {content.intro.description}
               </Typography>
-              <Button variant="outlined">
-                <Typography level="body-md" sx={{ color: "text.primary" }}>
-                  Saiba mais
-                </Typography>
-                <KeyboardArrowRight sx={{ color: "text.primary" }} />
-              </Button>
             </Stack>
           </Box>
         </Stack>
@@ -99,3 +93,15 @@ export const IntroHome = () => {
     </Box>
   );
 };
+
+{
+  /*
+  Em breve
+              <Button variant="outlined">
+                <Typography level="body-md" sx={{ color: "text.primary" }}>
+                  Saiba mais
+                </Typography>
+                <KeyboardArrowRight sx={{ color: "text.primary" }} />
+              </Button>
+  */
+}
