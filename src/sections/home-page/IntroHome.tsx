@@ -1,17 +1,8 @@
-import {
-  Box,
-  Button,
-  Card,
-  CardActions,
-  CardCover,
-  Stack,
-  Typography,
-} from "@mui/joy";
+import { Box, Card, CardActions, CardCover, Stack, Typography } from "@mui/joy";
 import content from "../../content/home-page/homePageContent.json";
 import ManageSearchIcon from "@mui/icons-material/ManageSearch";
 import EngineeringIcon from "@mui/icons-material/Engineering";
 import { Section } from "../../components/Section";
-import { KeyboardArrowRight } from "@mui/icons-material";
 
 export const IntroHome = () => {
   return (

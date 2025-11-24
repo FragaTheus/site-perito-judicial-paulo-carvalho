@@ -1,19 +1,10 @@
-import {
-  Box,
-  Button,
-  Card,
-  CardContent,
-  Stack,
-  Typography,
-  useTheme,
-} from "@mui/joy";
+import { Box, Card, CardContent, Stack, Typography, useTheme } from "@mui/joy";
 import { Section } from "../../components/Section";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { CtaMid } from "../../components/CtaMid";
 import content from "../../content/home-page/homePageContent.json";
 import { CardActions, useMediaQuery } from "@mui/material";
-import { KeyboardArrowRight } from "@mui/icons-material";
 
 const cards = [
   {

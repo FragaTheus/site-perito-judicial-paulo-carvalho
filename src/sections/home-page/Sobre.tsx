@@ -1,13 +1,5 @@
-import {
-  Button,
-  Card,
-  CardActions,
-  CardCover,
-  Stack,
-  Typography,
-} from "@mui/joy";
+import { Card, CardActions, CardCover, Stack, Typography } from "@mui/joy";
 import { Section } from "../../components/Section";
-import { KeyboardArrowRight } from "@mui/icons-material";
 import AssessmentIcon from "@mui/icons-material/Assessment";
 import content from "../../content/home-page/homePageContent.json";
 import PersonIcon from "@mui/icons-material/Person";
