@@ -18,27 +18,33 @@ import VerifiedUserIcon from "@mui/icons-material/VerifiedUser";
 const bCards = [
   {
     icon: <ShieldIcon sx={{ color: "primary.100", fontSize: "lg" }} />,
-    text: content.beneficios.card.item,
+    title: content.beneficios.card.item,
+    text: content.beneficios.card.itemPt2,
   },
   {
     icon: <DescriptionIcon sx={{ color: "primary.100", fontSize: "lg" }} />,
-    text: content.beneficios.card.item1,
+    title: content.beneficios.card.item1,
+    text: content.beneficios.card.item1pt2,
   },
   {
     icon: <GavelIcon sx={{ color: "primary.100", fontSize: "lg" }} />,
-    text: content.beneficios.card.item2,
+    title: content.beneficios.card.item2,
+    text: content.beneficios.card.item2pt2,
   },
   {
     icon: <SupportAgentIcon sx={{ color: "primary.100", fontSize: "lg" }} />,
-    text: content.beneficios.card.item3,
+    title: content.beneficios.card.item3,
+    text: content.beneficios.card.item3pt2,
   },
   {
     icon: <BalanceIcon sx={{ color: "primary.100", fontSize: "lg" }} />,
-    text: content.beneficios.card.item4,
+    title: content.beneficios.card.item4,
+    text: content.beneficios.card.item4pt2,
   },
   {
     icon: <VerifiedUserIcon sx={{ color: "primary.100", fontSize: "lg" }} />,
-    text: content.beneficios.card.item5,
+    title: content.beneficios.card.item5,
+    text: content.beneficios.card.item5pt2,
   },
 ];
 
@@ -52,12 +58,7 @@ export const Beneficios = () => {
     >
       <Section id="beneficios" padded={false}>
         <Stack padding={"20px"} spacing={"10px"}>
-          <Typography level="title-md" sx={{ color: "primary.100" }}>
-            {content.beneficios.title}
-          </Typography>
-          <Typography level="body-md" sx={{ color: "text.primary" }}>
-            {content.beneficios.text}
-          </Typography>
+          <Typography level="title-md">{content.beneficios.title}</Typography>
         </Stack>
 
         <Box
@@ -91,25 +92,26 @@ export const Beneficios = () => {
                 height: "250px",
                 width: "90%",
                 maxWidth: "300px",
+                justifyContent: "space-evenly",
               }}
             >
               <CardActions>{c.icon}</CardActions>
               <CardContent
                 sx={{ alignItems: "flex-start", justifyContent: "flex-start" }}
               >
-                <Typography level="body-md" sx={{ color: "text.primary" }}>
-                  {c.text}
+                <Typography
+                  level="body-md"
+                  sx={{
+                    color: "text.primary",
+                  }}
+                >
+                  <strong>{c.title}</strong>
+                  <p>{c.text}</p>
                 </Typography>
               </CardContent>
             </Card>
           ))}
         </Box>
-
-        <Stack padding={"20px"}>
-          <Typography level="body-md" sx={{ color: "text.primary" }}>
-            {content.beneficios.descriptionBody}
-          </Typography>
-        </Stack>
       </Section>
     </Stack>
   );

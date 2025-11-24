@@ -1,35 +1,52 @@
 {
     "hero": {
         "title": "Paulo Carvaho",
-        "subtitle": "Perícias e Assistência Técnica para Ações Trabalhistas.",
-        "description": "Assistente Técnico | Engenheiro Ambiental | Segurança do Trabalho"
+        "subtitle": "Assistente Técnico para Ações Trabalhistas",
+        "desc": "Engenheiro Ambiental",
+        "desc1": "Engenheiro de Segurança do Trabalho",
+        "desc2": "Assistente Técnico em Perícias Judiciais"
+        
     },
     "intro": {
-        "title": "Técnica que Facilita o Trabalho Pericial",
-        "description": "Auxilia empresas, advogados e partes envolvidas a defender seus interesses em processos judiciais por meio de análises técnicas claras, pareceres precisos e acompanhamento completo das perícias. Tudo de forma organizada, objetiva e com foco em resultados.",
-        "cardDesc": "Como um Assistente Técnico Fortalece sua Perícia?"
+        "title": "A Força do Assistente Técnico na Perícia Judicial",
+        "description": "Revisar documentos, levantar dados relevantes, preparar quesitos, apontar falhas técnicas e esclarecer metodologias utilizadas na perícia oficial. Isso evita que interpretações equivocadas prejudiquem o processo e garante que a argumentação seja sustentada por elementos técnicos sólidos e bem estruturados.",
+        "cardDesc": "O Papel do Assistente Técnico é Tornar Cada Etapa Mais Transparente"
 },
     "beneficios":{
         "title": "Por Que Contratar um Profissional Especializado?",
         "text": "Contratar um especialista é garantir laudos confiáveis, menos riscos e mais segurança em qualquer processo técnico ou judicial.",
         "card": {
-            "item": "Proteção dos seus interesses em perícias e processos judiciais.",
-            "item1": "Laudos técnicos confiáveis, elaborados conforme normas e legislações vigentes.",
-            "item2": "Redução de riscos, multas e responsabilidades legais.",
-            "item3": "Acompanhamento profissional em cada etapa do processo.",
-            "item4": "Decisões mais seguras, baseadas em análises técnicas e imparciais.",
-            "item5": "Credibilidade e tranquilidade, sabendo que tudo está sendo feito por um profissional habilitado."
+            "item": "Proteção dos seus interesses",
+            "itemPt2": "Em perícias e processos judiciais.",
+
+            "item1": "Laudos técnicos confiáveis",
+            "item1pt2": "Elaborados conforme normas e legislações vigentes.",
+
+            "item2": "Redução de riscos",
+            "item2pt2": "Multas e responsabilidades legais.",
+
+            "item3": "Acompanhamento profissional",
+            "item3pt2": "Em cada etapa do processo.",
+
+            "item4": "Decisões mais seguras",
+            "item4pt2": "Baseadas em análises técnicas e imparciais.",
+
+            "item5": "Credibilidade e tranquilidade",
+            "item5pt2": "Sabendo que tudo está sendo feito por um profissional habilitado."
+
         },
         "descriptionBody": "Você conta com avaliações precisas, suporte técnico especializado e a garantia de que cada etapa será conduzida com responsabilidade e rigor profissional."
 
     },
     "ctaMid": {
-        "title": "Está enfrentando uma perícia e não sabe se está tudo correto?",
-        "text": "Receba uma análise completa, explicada de forma clara, para entender riscos, inconsistências e oportunidades de fortalecer sua argumentação no processo."
+        "title": "Está passando por uma perícia e quer ter certeza de que tudo está correto?",
+        "text": "Receba uma explicação clara e detalhada sobre os pontos técnicos que podem afetar sua estratégia.",
+        "complement": "Entre em contato sem compromisso para uma primeira orientação."
     },
     "atuacao": {
         "title": "Atuação em Saúde e Segurança",
         "description": "Serviços especializados para apoiar empresas, advogados e profissionais na análise, elaboração e verificação de documentos e procedimentos de Saúde e Segurança no Trabalho. Cada serviço é realizado com precisão, clareza e foco na conformidade legal.",
+        "cardPericia": "Fotos da Perícia Realizada na CPTM",
       "card1": {
   "title": "Consultoria em Perícias Técnicas",
   "text": "Apoio técnico para interpretação e aplicação de perícias relacionadas à Saúde e Segurança do Trabalho. Orientação sobre normas, legislação e melhores práticas para decisões seguras e embasadas.",

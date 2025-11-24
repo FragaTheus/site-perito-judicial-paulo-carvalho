@@ -1,9 +1,25 @@
-import { Box, Button, Stack, Typography } from "@mui/joy";
+import { Box, Button, Stack, Typography, useTheme } from "@mui/joy";
 import { Section } from "../../components/Section";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import content from "../../content/home-page/homePageContent.json";
+import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
+import { useMediaQuery } from "@mui/material";
+
+const props = [
+  {
+    text: content.hero.desc,
+  },
+  {
+    text: content.hero.desc1,
+  },
+  {
+    text: content.hero.desc2,
+  },
+];
 
 export const HomeHero = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Box
       id="hero-bg"
@@ -23,7 +39,17 @@ export const HomeHero = () => {
         <Stack id="hero-content">
           <Typography level="h1">{content.hero.title}</Typography>
           <Typography level="h2">{content.hero.subtitle}</Typography>
-          <Typography level="h3">{content.hero.description}</Typography>
+          {props.map((p, i) => (
+            <Stack key={i} direction={"row"} alignItems={"center"}>
+              <FiberManualRecordIcon
+                fontSize="small"
+                sx={{ color: "primary.100" }}
+              />
+              <Typography level="title-sm" sx={{ color: "#ffffff" }}>
+                {p.text}
+              </Typography>
+            </Stack>
+          ))}
 
           <Stack id="hero-cta" maxWidth={"350px"} mt={"50px"}>
             <Button

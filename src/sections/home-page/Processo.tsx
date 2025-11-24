@@ -34,7 +34,7 @@ export const Processo = () => {
     >
       <Section id="processo-section" padded={false}>
         <Stack padding={"20px"} spacing={"10px"}>
-          <Typography level="title-md" sx={{ color: "primary.100" }}>
+          <Typography level="title-md">
             {content.processoTrabalho.title}
           </Typography>
           <Typography level="body-md">

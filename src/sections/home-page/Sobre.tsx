@@ -13,8 +13,8 @@ export const Sobre = () => {
       justifyContent={"center"}
     >
       <Section id="sobre-section" padded={true}>
-        <Stack padding={"20px"} spacing={"10px"} alignSelf={"flex-start"}>
-          <Typography level="title-md" sx={{ color: "primary.100" }}>
+        <Stack padding={"20px"} spacing={"10px"}>
+          <Typography level="title-md">
             {content.sobre.sectionDescription}
           </Typography>
         </Stack>

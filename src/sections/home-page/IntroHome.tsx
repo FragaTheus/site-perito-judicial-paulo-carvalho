@@ -27,12 +27,12 @@ export const IntroHome = () => {
               sx={{
                 height: "clamp(280px,50vw,450px)",
                 width: "90%",
-                boxShadow: "4px 4px 10px rgba(0, 0, 0, 0.5)",
+                boxShadow: "lg",
               }}
             >
               <CardCover>
                 <img
-                  src="funcao-img.jpg"
+                  src="sobre-img.jpg"
                   style={{
                     objectFit: "cover",
                     objectPosition: "center center",
