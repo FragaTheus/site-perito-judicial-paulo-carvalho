@@ -2,68 +2,61 @@ import { Box, Button, Stack, Typography } from "@mui/joy";
 import { Section } from "../../components/Section";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import content from "../../content/home-page/homePageContent.json";
-import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
-
-const props = [
-  {
-    text: content.hero.desc,
-  },
-  {
-    text: content.hero.desc1,
-  },
-  {
-    text: content.hero.desc2,
-  },
-];
 
 export const HomeHero = () => {
   return (
     <Box
       id="hero-bg"
       sx={{
-        backgroundImage: "url(/hero-home.jpg)",
+        backgroundImage: "url(/hero-home2.jpg)",
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "85% 100%",
         width: "100%",
         height: "90svh",
-        position: "relative",
         alignItems: "center",
         justifyContent: "center",
         display: "flex",
       }}
     >
       <Section id="hero-section" padded={true}>
-        <Stack id="hero-content">
-          <Typography level="h1">{content.hero.title}</Typography>
-          <Typography level="h2">{content.hero.subtitle}</Typography>
-          {props.map((p, i) => (
-            <Stack key={i} direction={"row"} alignItems={"center"}>
-              <FiberManualRecordIcon
-                fontSize="small"
-                sx={{ color: "primary.100" }}
-              />
-              <Typography level="title-sm" sx={{ color: "#ffffff" }}>
-                {p.text}
+        <Box
+          display={"grid"}
+          gridTemplateColumns={"repeat(auto-fit, minmax(300px, 1fr))"}
+          width={"100%"}
+        >
+          <Stack
+            height={"100%"}
+            width={"100%"}
+            gap={"10px"}
+            alignItems={"flex-start"}
+            justifyContent={"center"}
+          >
+            <Stack>
+              <Typography level="h2">{content.hero.title}</Typography>
+              <Typography level="h3">{content.hero.subtitle}</Typography>
+
+              <Typography level="h4" sx={{ color: "#ffffff" }}>
+                {content.hero.descMobile}
               </Typography>
             </Stack>
-          ))}
 
-          <Stack id="hero-cta" maxWidth={"350px"} mt={"50px"}>
             <Button
               variant="solid"
               sx={{
                 color: "#ffffff",
                 gap: "10px",
                 bgcolor: "#25D366",
+                width: "70%",
               }}
             >
               <WhatsAppIcon />
-              <Typography level="title-sm" sx={{ color: "#ffffff" }}>
-                Entre em contato
+              <Typography level="body-sm" sx={{ color: "#ffffff" }}>
+                Entrar em contato
               </Typography>
             </Button>
           </Stack>
-        </Stack>
+          <Stack height={"100%"} width={"100%"} minHeight={"45svh"}></Stack>
+        </Box>
       </Section>
     </Box>
   );

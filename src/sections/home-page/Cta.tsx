@@ -1,8 +1,9 @@
-import { Box, Card, CardContent, Stack, Typography } from "@mui/joy";
+import { Box, Stack } from "@mui/joy";
 import { Section } from "../../components/Section";
 import { DynamicForm } from "../../components/Form";
 import content from "../../content/home-page/homePageContent.json";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
+import { TitleCard } from "../../components/TitleCard";
 
 export const CTA = () => {
   return (
@@ -28,37 +29,19 @@ export const CTA = () => {
             width={"100%"}
             padding={"10px"}
           >
-            <Card
-              variant="solid"
-              sx={{
-                bgcolor: "background.surface",
-                height: "100%",
-                boxShadow: "lg",
-              }}
-            >
-              <CardContent
-                sx={{
-                  display: "flex",
-                  alignItems: "flex-start",
-                  justifyContent: "space-evenly",
-                  padding: "20px",
-                }}
-              >
+            <TitleCard
+              icon={
                 <HelpOutlineIcon
                   sx={{
                     color: "primary.100",
                     fontSize: "clamp(20px,15vw,80px)",
                   }}
                 />
-                <Typography level="title-md" sx={{ color: "primary.100" }}>
-                  {content.cta.title}
-                </Typography>
-                <Typography level="body-md">
-                  <p>{content.cta.description}</p>
-                  <p>{content.cta.description1}</p>
-                </Typography>
-              </CardContent>
-            </Card>
+              }
+              title={content.cta.title}
+              text={content.cta.description}
+              complement={content.cta.description1}
+            />
           </Stack>
           <Stack
             alignItems={"center"}

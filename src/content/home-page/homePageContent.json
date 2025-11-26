@@ -2,72 +2,74 @@
     "hero": {
         "title": "Paulo Carvaho",
         "subtitle": "Assistente Técnico para Ações Trabalhistas",
-        "desc": "Engenheiro Ambiental",
-        "desc1": "Engenheiro de Segurança do Trabalho",
-        "desc2": "Assistente Técnico em Perícias Judiciais"
+        "descMobile": "Análises precisas e suporte completo em todas as etapas da perícia.",
+        "desc": "Conte com assistência técnica que gera segurança e clareza nas perícias trabalhistas, entregando análises confiáveis e suporte total ao seu processo."
         
     },
-    "intro": {
-        "title": "A Força do Assistente Técnico na Perícia Judicial",
-        "description": "Revisar documentos, levantar dados relevantes, preparar quesitos, apontar falhas técnicas e esclarecer metodologias utilizadas na perícia oficial. Isso evita que interpretações equivocadas prejudiquem o processo e garante que a argumentação seja sustentada por elementos técnicos sólidos e bem estruturados.",
-        "cardDesc": "O Papel do Assistente Técnico é Tornar Cada Etapa Mais Transparente"
+ 
+  
+  
+  "intro": {
+    "question": "Sua perícia trabalha a seu favor?",
+    "desc": "Precisão técnica para sustentar sua estratégia.",
+    "description": "Perícias falhas geram riscos: detalhes ignorados, atrasos e laudos imprecisos podem comprometer o resultado. Paulo atua nos pontos críticos — análise minuciosa, identificação de inconsistências, quesitos estratégicos e contestação objetiva. Com rigor técnico e prazos cumpridos, você ganha segurança, evita surpresas e mantém o controle da condução pericial."
+  },
+ 
+  "beneficios": {
+    "title": "Por Que Contar com um Assistente Técnico Especializado?",
+    "text": "Ter um especialista ao seu lado garante laudos precisos, análise crítica dos documentos e redução de riscos, fortalecendo sua estratégia jurídica em cada etapa do processo.",
+    "card": {
+        "item": "Proteção dos interesses da empresa",
+        "itemPt2": "Em perícias e processos trabalhistas, evitando prejuízos e responsabilidades.",
+
+        "item1": "Laudos e análises confiáveis",
+        "item1pt2": "Preparados conforme normas e práticas técnicas, sustentando sua tese.",
+
+        "item2": "Redução de riscos jurídicos",
+        "item2pt2": "Minimizando chances de decisões desfavoráveis e impactos financeiros.",
+
+        "item3": "Acompanhamento estratégico",
+        "item3pt2": "Atuação desde a análise inicial até a defesa em perícia, garantindo controle total.",
+
+        "item4": "Decisões mais seguras",
+        "item4pt2": "Baseadas em avaliações técnicas detalhadas e imparciais.",
+
+        "item5": "Credibilidade e tranquilidade",
+        "item5pt2": "Confiança de que cada etapa é conduzida por um profissional experiente e comprometido."
+    }
 },
-    "beneficios":{
-        "title": "Por Que Contratar um Profissional Especializado?",
-        "text": "Contratar um especialista é garantir laudos confiáveis, menos riscos e mais segurança em qualquer processo técnico ou judicial.",
-        "card": {
-            "item": "Proteção dos seus interesses",
-            "itemPt2": "Em perícias e processos judiciais.",
-
-            "item1": "Laudos técnicos confiáveis",
-            "item1pt2": "Elaborados conforme normas e legislações vigentes.",
-
-            "item2": "Redução de riscos",
-            "item2pt2": "Multas e responsabilidades legais.",
-
-            "item3": "Acompanhamento profissional",
-            "item3pt2": "Em cada etapa do processo.",
-
-            "item4": "Decisões mais seguras",
-            "item4pt2": "Baseadas em análises técnicas e imparciais.",
-
-            "item5": "Credibilidade e tranquilidade",
-            "item5pt2": "Sabendo que tudo está sendo feito por um profissional habilitado."
-
-        },
-        "descriptionBody": "Você conta com avaliações precisas, suporte técnico especializado e a garantia de que cada etapa será conduzida com responsabilidade e rigor profissional."
-
-    },
     "ctaMid": {
         "title": "Está passando por uma perícia e quer ter certeza de que tudo está correto?",
         "text": "Receba uma explicação clara e detalhada sobre os pontos técnicos que podem afetar sua estratégia.",
         "complement": "Entre em contato sem compromisso para uma primeira orientação."
     },
+ 
     "atuacao": {
-        "title": "Atuação em Saúde e Segurança",
-        "description": "Serviços especializados para apoiar empresas, advogados e profissionais na análise, elaboração e verificação de documentos e procedimentos de Saúde e Segurança no Trabalho. Cada serviço é realizado com precisão, clareza e foco na conformidade legal.",
-        "cardPericia": "Fotos da Perícia Realizada na CPTM",
-      "card1": {
-  "title": "Consultoria em Perícias Técnicas",
-  "text": "Apoio técnico para interpretação e aplicação de perícias relacionadas à Saúde e Segurança do Trabalho. Orientação sobre normas, legislação e melhores práticas para decisões seguras e embasadas.",
-  "small": "Orientação técnica especializada"
-},
-"card2": {
-  "title": "Laudos Técnicos e Ergonômicos",
-  "text": "Elaboração de laudos completos, objetivos e fundamentados, com análise de riscos, causas, impactos e recomendações práticas para gestão e prevenção.",
-  "small": "Laudos completos e objetivos"
-},
-"card3": {
-  "title": "Avaliação de Máquinas – NR-12",
-  "text": "Inspeção técnica de máquinas e equipamentos, identificando riscos e verificando conformidade com a NR12. Inclui recomendações práticas de adequação e segurança.",
-  "small": "Inspeção e conformidade NR12"
-},
-"card4": {
-  "title": "Levantamento Técnico",
-  "text": "Coleta completa de dados em ambientes, processos e equipamentos para embasar análises de insalubridade, periculosidade, ergonomia e segurança de máquinas.",
-  "small": "Coleta técnica de dados"
+  "title": "Expertise em Saúde, Segurança e Perícias Trabalhistas",
+  "description": "Serviços especializados para empresas e advogados que buscam segurança jurídica, precisão técnica e suporte estratégico em perícias e análises relacionadas à Saúde e Segurança do Trabalho. Cada serviço é conduzido com foco em resultados, conformidade legal e mitigação de riscos.",
+  "cardPericia": "Fotos de Perícias e Atuação Técnica",
+  "card1": {
+    "title": "Consultoria em Perícias Técnicas",
+    "text": "Suporte estratégico para interpretação e aplicação de perícias trabalhistas, com orientação sobre normas, legislação e análise técnica que fortalece a defesa ou argumentação jurídica.",
+    "small": "Apoio técnico especializado para decisões seguras"
+  },
+  "card2": {
+    "title": "Laudos Técnicos e Ergonômicos",
+    "text": "Elaboração de laudos claros e fundamentados, detalhando riscos, impactos e recomendações práticas, garantindo embasamento sólido para ações judiciais ou decisões corporativas.",
+    "small": "Laudos precisos que fortalecem sua tese"
+  },
+  "card3": {
+    "title": "Avaliação de Máquinas – NR-12",
+    "text": "Inspeção detalhada de máquinas e equipamentos, identificando riscos e verificando conformidade com a NR12, assegurando proteção legal e segurança operacional para empresas e clientes.",
+    "small": "Segurança e conformidade NR12"
+  },
+  "card4": {
+    "title": "Levantamento Técnico",
+    "text": "Coleta e análise completa de dados em processos, ambientes e equipamentos, fornecendo base sólida para perícias, laudos e decisões estratégicas em saúde e segurança no trabalho.",
+    "small": "Dados precisos para embasamento técnico e jurídico"
+  }
 }
-    },
+,
     "ctaMobile": {
     "title": "Análise para Decisões Seguras",
     "description": "Receba uma avaliação detalhada e imparcial sobre seu caso, baseada em normas, legislação e boas práticas. Ideal para quem precisa entender se está tudo correto antes de avançar no processo."

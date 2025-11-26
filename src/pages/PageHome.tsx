@@ -12,9 +12,9 @@ export const PageHome = () => {
     <>
       <HomeHero />
       <IntroHome />
+      <Beneficios />
       <Atuacao />
       <CTAMid />
-      <Beneficios />
       <Sobre />
       <Processo />
       <CTA />

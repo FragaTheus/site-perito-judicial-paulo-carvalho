@@ -1,10 +1,12 @@
-import { Box, Card, CardActions, CardCover, Stack, Typography } from "@mui/joy";
+import { Box, Stack, Typography, useTheme } from "@mui/joy";
 import content from "../../content/home-page/homePageContent.json";
 import ManageSearchIcon from "@mui/icons-material/ManageSearch";
-import EngineeringIcon from "@mui/icons-material/Engineering";
 import { Section } from "../../components/Section";
+import { useMediaQuery } from "@mui/material";
 
 export const IntroHome = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Box
       id="intro-bg"
@@ -20,59 +22,34 @@ export const IntroHome = () => {
             display={"grid"}
             alignContent={"center"}
             justifyItems={"center"}
+            gap={"10px"}
             gridTemplateColumns={"repeat(auto-fit, minmax(250px, 1fr))"}
           >
-            <Card
-              variant="solid"
-              sx={{
-                height: "clamp(280px,50vw,450px)",
-                width: "90%",
-                boxShadow: "lg",
-              }}
-            >
-              <CardCover>
-                <img
-                  src="sobre-img.jpg"
-                  style={{
-                    objectFit: "cover",
-                    objectPosition: "center center",
-                  }}
-                ></img>
-              </CardCover>
-              <CardActions
-                sx={{
-                  bgcolor: "#1c1c1c",
-                  p: "10px",
-                  borderRadius: "sm",
-                  ml: "-25px",
-                  display: "flex",
-                  height: "20%",
-                  boxShadow: "4px 4px 5px rgba(0, 0, 0, 0.5)",
-                }}
-              >
-                <EngineeringIcon
-                  sx={{ color: "primary.100", fontSize: "large" }}
-                />
-                <Typography level="body-md" sx={{ color: "#ffffff" }}>
-                  {content.intro.title}
-                </Typography>
-              </CardActions>
-            </Card>
-
             <Stack
+              width={isMobile ? "90%" : "50%"}
               alignItems={"flex-start"}
-              justifyContent={"space-evenly"}
-              width={"90%"}
-              spacing={"15px"}
+              justifyContent={"center"}
+              spacing={"10px"}
             >
               <ManageSearchIcon
                 sx={{
                   color: "primary.100",
-                  fontSize: "clamp(20px,15vw,80px)",
+                  fontSize: "clamp(20px,10vw,80px)",
                 }}
               />
+
               <Typography level="title-lg" sx={{ color: "text.primary" }}>
-                {content.intro.cardDesc}
+                {content.intro.desc}
+              </Typography>
+            </Stack>
+            <Stack
+              alignItems={"flex-start"}
+              justifyContent={"center"}
+              width={"90%"}
+              spacing={"10px"}
+            >
+              <Typography level="body-sm" alignSelf={"flex-start"}>
+                {content.intro.question}
               </Typography>
               <Typography level="body-md" sx={{ color: "text.primary" }}>
                 {content.intro.description}
