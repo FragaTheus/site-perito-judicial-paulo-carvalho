@@ -24,7 +24,7 @@ export const BenfictsCards = (prop: BenefictsCardsProps) => {
     >
       <CardActions>{prop.icon}</CardActions>
       <CardContent
-        sx={{ alignItems: "flex-start", justifyContent: "flex-start" }}
+        sx={{ alignItems: "flex-start", justifyContent: "space-evenly" }}
       >
         <Typography
           level="body-md"

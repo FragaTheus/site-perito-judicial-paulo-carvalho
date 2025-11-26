@@ -11,7 +11,7 @@ export const IntroHome = () => {
     <Box
       id="intro-bg"
       width={"100%"}
-      bgcolor={"background.surface"}
+      bgcolor={"#1c1c1c"}
       alignItems={"center"}
       justifyContent={"center"}
     >
@@ -26,7 +26,7 @@ export const IntroHome = () => {
             gridTemplateColumns={"repeat(auto-fit, minmax(250px, 1fr))"}
           >
             <Stack
-              width={isMobile ? "90%" : "50%"}
+              width={isMobile ? "90%" : "60%"}
               alignItems={"flex-start"}
               justifyContent={"center"}
               spacing={"10px"}
@@ -38,7 +38,7 @@ export const IntroHome = () => {
                 }}
               />
 
-              <Typography level="title-lg" sx={{ color: "text.primary" }}>
+              <Typography level="title-md" sx={{ color: "#ffffff" }}>
                 {content.intro.desc}
               </Typography>
             </Stack>
@@ -48,10 +48,14 @@ export const IntroHome = () => {
               width={"90%"}
               spacing={"10px"}
             >
-              <Typography level="body-sm" alignSelf={"flex-start"}>
+              <Typography
+                level="body-sm"
+                alignSelf={"flex-start"}
+                sx={{ color: "primary.100" }}
+              >
                 {content.intro.question}
               </Typography>
-              <Typography level="body-md" sx={{ color: "text.primary" }}>
+              <Typography level="body-md" sx={{ color: "#ffffff" }}>
                 {content.intro.description}
               </Typography>
             </Stack>

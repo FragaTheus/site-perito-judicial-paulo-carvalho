@@ -16,7 +16,7 @@
   },
  
   "beneficios": {
-    "title": "Por Que Contar com um Assistente Técnico Especializado?",
+    "title": "Por que contar com um Assistente Técnico especializado?",
     "text": "Ter um especialista ao seu lado garante laudos precisos, análise crítica dos documentos e redução de riscos, fortalecendo sua estratégia jurídica em cada etapa do processo.",
     "card": {
         "item": "Proteção dos interesses da empresa",
@@ -39,9 +39,9 @@
     }
 },
     "ctaMid": {
-        "title": "Está passando por uma perícia e quer ter certeza de que tudo está correto?",
-        "text": "Receba uma explicação clara e detalhada sobre os pontos técnicos que podem afetar sua estratégia.",
-        "complement": "Entre em contato sem compromisso para uma primeira orientação."
+        "title": "Perícia em andamento? Conte com suporte técnico especializado desde o início.",
+        "text": "",
+        "complement": "Fale com um profissional e receba uma primeira orientação."
     },
  
     "atuacao": {
@@ -49,8 +49,8 @@
   "description": "Serviços especializados para empresas e advogados que buscam segurança jurídica, precisão técnica e suporte estratégico em perícias e análises relacionadas à Saúde e Segurança do Trabalho. Cada serviço é conduzido com foco em resultados, conformidade legal e mitigação de riscos.",
   "cardPericia": "Fotos de Perícias e Atuação Técnica",
   "card1": {
-    "title": "Consultoria em Perícias Técnicas",
-    "text": "Suporte estratégico para interpretação e aplicação de perícias trabalhistas, com orientação sobre normas, legislação e análise técnica que fortalece a defesa ou argumentação jurídica.",
+    "title": "Análise e Consultoria Técnica Especializada",
+    "text": "Reunião de dados, avaliação minuciosa e orientação estratégica para sustentar decisões, laudos e argumentações jurídicas com base técnica sólida e alinhada às normas vigentes.",
     "small": "Apoio técnico especializado para decisões seguras"
   },
   "card2": {
@@ -62,12 +62,8 @@
     "title": "Avaliação de Máquinas – NR-12",
     "text": "Inspeção detalhada de máquinas e equipamentos, identificando riscos e verificando conformidade com a NR12, assegurando proteção legal e segurança operacional para empresas e clientes.",
     "small": "Segurança e conformidade NR12"
-  },
-  "card4": {
-    "title": "Levantamento Técnico",
-    "text": "Coleta e análise completa de dados em processos, ambientes e equipamentos, fornecendo base sólida para perícias, laudos e decisões estratégicas em saúde e segurança no trabalho.",
-    "small": "Dados precisos para embasamento técnico e jurídico"
   }
+ 
 }
 ,
     "ctaMobile": {

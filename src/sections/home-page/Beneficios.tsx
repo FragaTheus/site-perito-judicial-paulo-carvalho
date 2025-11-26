@@ -12,7 +12,7 @@ import { useMediaQuery } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/swiper-bundle.css";
-import ListIcon from "@mui/icons-material/List";
+import HowToRegIcon from "@mui/icons-material/HowToReg";
 
 const benfictsCardValue = [
   {
@@ -60,7 +60,7 @@ export const Beneficios = () => {
     >
       <Section id="beneficios" padded={false}>
         <Stack padding={"20px"} spacing={"10px"} width={"100%"}>
-          <ListIcon
+          <HowToRegIcon
             sx={{
               color: "primary.100",
               fontSize: "clamp(20px,10vw,80px)",

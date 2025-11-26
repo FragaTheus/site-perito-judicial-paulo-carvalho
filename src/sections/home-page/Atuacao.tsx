@@ -6,7 +6,6 @@ import content from "../../content/home-page/homePageContent.json";
 import AssuredWorkloadIcon from "@mui/icons-material/AssuredWorkload";
 import TaskIcon from "@mui/icons-material/Task";
 import HandymanIcon from "@mui/icons-material/Handyman";
-import AnalyticsIcon from "@mui/icons-material/Analytics";
 import { AtuacaoCard } from "../../components/AtuacaoCard";
 import LayersIcon from "@mui/icons-material/Layers";
 
@@ -43,17 +42,6 @@ const cards = [
     text: content.atuacao.card3.text,
     small: content.atuacao.card3.small,
     img: "nr12.jpg",
-  },
-  {
-    icon: (
-      <AnalyticsIcon
-        sx={{ color: "primary.100", fontSize: "clamp(20px, 10vw, 30px)" }}
-      />
-    ),
-    title: content.atuacao.card4.title,
-    text: content.atuacao.card4.text,
-    small: content.atuacao.card4.small,
-    img: "levantamento.jpg",
   },
 ];
 
@@ -106,7 +94,7 @@ export const Atuacao = () => {
                   style={{ y }}
                   sx={{
                     position: "sticky",
-                    top: "11dvh",
+                    top: "15dvh",
                     width: "100%",
                     justifyContent: "center",
                     alignItems: "center",
