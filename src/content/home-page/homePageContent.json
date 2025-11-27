@@ -112,31 +112,25 @@
     }
   },
    "faq": {
-    "sectionTitle": "FAQ",
-    "sectionSubtitle": "Perguntas Frequentes",
-    "question1": {
-      "question": "Qual a diferença entre Perito e Assistente Técnico?",
-      "answer": "O perito é nomeado pelo juiz e emite laudos oficiais. O assistente técnico é contratado por uma das partes para analisar fatos, verificar laudos e produzir pareceres baseados em critérios técnicos e legais."
+    "pergunta1": {
+      "pergunta": "O que faz um Assistente Técnico em perícias trabalhistas?",
+      "resposta": "O Assistente Técnico representa os interesses da parte durante o processo pericial, revisando documentos, acompanhando a perícia, analisando metodologias utilizadas pelo perito judicial e identificando inconsistências técnicas. Ele oferece suporte estratégico ao advogado, fortalecendo a argumentação e contribuindo para um resultado mais seguro."
     },
-    "question2": {
-      "question": "Quais tipos de perícias são realizadas?",
-      "answer": "Trabalhistas, ambientais, segurança do trabalho, insalubridade e periculosidade."
+    "pergunta2": {
+      "pergunta": "Quando é recomendado contratar um Assistente Técnico?",
+      "resposta": "A contratação é recomendada sempre que houver uma perícia trabalhista em andamento ou prevista, principalmente em casos envolvendo insalubridade, periculosidade, ergonomia, acidentes de trabalho ou questões técnicas que influenciem diretamente o resultado do processo. Quanto mais cedo for contratado, melhor o acompanhamento e a preparação da defesa."
     },
-    "question3": {
-      "question": "Os serviços são presenciais ou remotos?",
-      "answer": "Podem ser presenciais, como perícias e inspeções, ou home-office, como elaboração de laudos e relatórios."
+    "pergunta3": {
+      "pergunta": "Qual é a diferença entre Perito Judicial e Assistente Técnico?",
+      "resposta": "O Perito Judicial é nomeado pelo juiz e atua de forma imparcial para produzir o laudo pericial. Já o Assistente Técnico é contratado pela parte (empresa ou empregado) para defender seus interesses, revisando o trabalho do perito, elaborando quesitos, identificando falhas técnicas e fornecendo pareceres complementares."
     },
-    "question4": {
-      "question": "Qual o prazo médio para entrega de um laudo ou parecer?",
-      "answer": "Depende da complexidade do caso, mas todos os prazos são acordados previamente e cumpridos conforme normas legais."
+    "pergunta4": {
+      "pergunta": "O Assistente Técnico pode contestar o laudo do perito judicial?",
+      "resposta": "Sim. O Assistente Técnico pode elaborar um parecer técnico crítico apontando divergências metodológicas, ausência de evidências, interpretações equivocadas ou inconsistências nos resultados apresentados pelo perito judicial. Esse documento é fundamental para reforçar a estratégia jurídica da parte."
     },
-    "question5": {
-      "question": "Como contratar os serviços?",
-      "answer": "Por formulário de contato, e-mail ou telefone, iniciando com uma consultoria para definir o escopo."
-    },
-    "question6": {
-      "question": "Os serviços atendem empresas e pessoas físicas?",
-      "answer": "Sim, podem ser contratados por empresas, advogados ou partes envolvidas em processos."
+    "pergunta5": {
+      "pergunta": "O trabalho pode ser realizado de forma remota?",
+      "resposta": "Sim. A análise documental, elaboração de pareceres, preparação de quesitos e reuniões estratégicas podem ser feitas remotamente. Apenas atividades que exigem inspeção física — como avaliações em campo — dependem de visita presencial."
     }
   },
   "cta": {

@@ -3,7 +3,6 @@ import { Section } from "../../components/Section";
 import AssessmentIcon from "@mui/icons-material/Assessment";
 import content from "../../content/home-page/homePageContent.json";
 import PersonIcon from "@mui/icons-material/Person";
-import BadgeIcon from "@mui/icons-material/Badge";
 
 export const Sobre = () => {
   return (
@@ -14,10 +13,7 @@ export const Sobre = () => {
       justifyContent={"center"}
     >
       <Section id="sobre-section" padded={true}>
-        <Stack padding={"20px"} spacing={"10px"} width={"100%"}>
-          <BadgeIcon
-            sx={{ color: "primary.100", fontSize: "clamp(20px, 10vw, 80px)" }}
-          />
+        <Stack padding={"20px"} width={"100%"}>
           <Typography level="title-md">
             {content.sobre.sectionDescription}
           </Typography>

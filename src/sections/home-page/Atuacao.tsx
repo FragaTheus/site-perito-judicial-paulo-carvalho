@@ -62,15 +62,7 @@ export const Atuacao = () => {
       justifyContent={"center"}
     >
       <Section id="atuacao-section" padded={true}>
-        <Stack
-          id="atuacao-title"
-          padding={"20px"}
-          spacing={"10px"}
-          width={"100%"}
-        >
-          <LayersIcon
-            sx={{ color: "primary.100", fontSize: "clamp(20px, 10vw, 80px)" }}
-          />
+        <Stack id="atuacao-title" padding={"20px"} width={"100%"}>
           <Typography level="title-md">{content.atuacao.title}</Typography>
         </Stack>
 

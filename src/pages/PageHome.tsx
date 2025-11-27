@@ -1,3 +1,4 @@
+import { FAQ } from "../sections/home-page/FAQ";
 import { Atuacao } from "../sections/home-page/Atuacao";
 import { Beneficios } from "../sections/home-page/Beneficios";
 import { Cases } from "../sections/home-page/Cases";
@@ -19,6 +20,7 @@ export const PageHome = () => {
       <CTAMid />
       <Processo />
       <Sobre />
+      <FAQ />
       <CTA />
     </>
   );

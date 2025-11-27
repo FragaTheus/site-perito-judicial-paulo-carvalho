@@ -53,13 +53,7 @@ export const Beneficios = () => {
       bgcolor={"background.body"}
     >
       <Section id="beneficios" padded={false}>
-        <Stack padding={"20px"} spacing={"10px"} width={"100%"}>
-          <HowToRegIcon
-            sx={{
-              color: "primary.100",
-              fontSize: "clamp(20px,10vw,80px)",
-            }}
-          />
+        <Stack padding={"20px"} width={"100%"}>
           <Typography level="title-md">{content.beneficios.title}</Typography>
         </Stack>
         {isMobile ? (

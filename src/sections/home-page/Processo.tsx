@@ -10,7 +10,12 @@ export const Processo = () => {
       justifyContent={"center"}
     >
       <Section id="processo-section" padded={true}>
-        <ProcedureCard title="Como funciona" subtitle="Do contato à entrega" />
+        <Stack padding={"20px"} width={"100%"}>
+          <ProcedureCard
+            title="Como funciona"
+            subtitle="Do contato à entrega"
+          />
+        </Stack>
       </Section>
     </Stack>
   );
