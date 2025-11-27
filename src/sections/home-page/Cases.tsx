@@ -21,9 +21,9 @@ export const Cases = () => {
         direction={isMobile ? "column" : "row"}
         alignItems={"center"}
         justifyContent={"center"}
-        paddingY={"50px"}
+        paddingY={"30px"}
       >
-        <Stack direction={"row"} alignItems={"center"}>
+        <Stack direction={"row"} alignItems={"center"} spacing={"10px"}>
           <WorkspacePremiumIcon
             sx={{ color: "primary.100", fontSize: "clamp(20px, 10vw, 80px)" }}
           />

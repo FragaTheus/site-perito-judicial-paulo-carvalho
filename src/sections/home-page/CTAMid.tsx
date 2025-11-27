@@ -16,6 +16,9 @@ export const CTAMid = () => {
           <Typography level="title-md" sx={{ color: "#ffffff" }}>
             {content.ctaMid.title}
           </Typography>
+          <Typography level="title-md" sx={{ color: "#ffffff" }}>
+            {content.ctaMid.subtitle}
+          </Typography>
 
           <Typography level="body-md" sx={{ color: "#ffffff" }}>
             <p>{content.ctaMid.complement}</p>

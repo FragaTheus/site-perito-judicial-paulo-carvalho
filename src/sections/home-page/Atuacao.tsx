@@ -94,7 +94,7 @@ export const Atuacao = () => {
                   style={{ y }}
                   sx={{
                     position: "sticky",
-                    top: "15dvh",
+                    top: "11dvh",
                     width: "100%",
                     justifyContent: "center",
                     alignItems: "center",

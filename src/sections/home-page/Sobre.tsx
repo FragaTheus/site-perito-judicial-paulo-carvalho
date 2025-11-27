@@ -9,7 +9,7 @@ export const Sobre = () => {
   return (
     <Stack
       width={"100%"}
-      bgcolor={"background.surface"}
+      bgcolor={"background.body"}
       alignItems={"center"}
       justifyContent={"center"}
     >
@@ -92,7 +92,7 @@ export const Sobre = () => {
               <Card
                 variant="solid"
                 sx={{
-                  bgcolor: "background.body",
+                  bgcolor: "background.surface",
                   boxShadow: "lg",
                   display: "flex",
                   flexDirection: "row",

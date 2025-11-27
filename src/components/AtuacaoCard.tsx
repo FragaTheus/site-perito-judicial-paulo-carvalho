@@ -57,24 +57,6 @@ export const AtuacaoCard = (type: AtuacaoCardProp) => {
           </Stack>
         </Box>
       </CardContent>
-
-      <CardActions
-        sx={{
-          borderRadius: "sm",
-          justifyContent: {
-            xs: "flex-start",
-            md: "space-between",
-          },
-          padding: "20px",
-          bgcolor: "primary.400",
-        }}
-      >
-        {!isMobile && (
-          <Typography level="body-xs" sx={{ color: "#ffffff" }}>
-            {type.small}
-          </Typography>
-        )}
-      </CardActions>
     </Card>
   );
 };

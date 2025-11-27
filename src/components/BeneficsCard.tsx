@@ -3,7 +3,6 @@ import { Card, CardActions, CardContent, Typography } from "@mui/joy";
 type BenefictsCardsProps = {
   key: number;
   icon: React.ReactNode;
-  title: string;
   text: string;
 };
 
@@ -32,7 +31,6 @@ export const BenfictsCards = (prop: BenefictsCardsProps) => {
             color: "text.primary",
           }}
         >
-          <strong>{prop.title}</strong>
           <p>{prop.text}</p>
         </Typography>
       </CardContent>

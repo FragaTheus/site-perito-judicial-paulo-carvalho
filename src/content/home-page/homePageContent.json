@@ -19,28 +19,24 @@
     "title": "Por que contar com um Assistente Técnico especializado?",
     "text": "Ter um especialista ao seu lado garante laudos precisos, análise crítica dos documentos e redução de riscos, fortalecendo sua estratégia jurídica em cada etapa do processo.",
     "card": {
-        "item": "Proteção dos interesses da empresa",
-        "itemPt2": "Em perícias e processos trabalhistas, evitando prejuízos e responsabilidades.",
+        "item": "Proteção dos interesses da empresa em perícias e processos trabalhistas.",
 
-        "item1": "Laudos e análises confiáveis",
-        "item1pt2": "Preparados conforme normas e práticas técnicas, sustentando sua tese.",
+        "item1": "Laudos e análises confiáveis preparados para sustentar sua tese.",
 
-        "item2": "Redução de riscos jurídicos",
-        "item2pt2": "Minimizando chances de decisões desfavoráveis e impactos financeiros.",
+        "item2": "Redução de riscos jurídicos minimizando chances de decisões desfavoráveis.",
 
-        "item3": "Acompanhamento estratégico",
-        "item3pt2": "Atuação desde a análise inicial até a defesa em perícia, garantindo controle total.",
+        "item3": "Acompanhamento estratégico, atuação desde a análise inicial até a defesa em perícia.",
 
-        "item4": "Decisões mais seguras",
-        "item4pt2": "Baseadas em avaliações técnicas detalhadas e imparciais.",
+        "item4": "Decisões mais seguras baseadas em avaliações técnicas detalhadas.",
 
-        "item5": "Credibilidade e tranquilidade",
-        "item5pt2": "Confiança de que cada etapa é conduzida por um profissional experiente e comprometido."
+        "item5": "Tranquilidade e confiança de que cada etapa é conduzida por um profissional qualificado."
     }
-},
+  },
+
     "ctaMid": {
-        "title": "Perícia em andamento? Conte com suporte técnico especializado desde o início.",
-        "text": "",
+        "title": "Perícia em andamento?",
+        "subtitle": "Conte com suporte técnico especializado desde o início.",
+
         "complement": "Fale com um profissional e receba uma primeira orientação."
     },
  
@@ -75,20 +71,20 @@
     "description": "As etapas são conduzidas de forma direta e organizada, para que você acompanhe o processo com tranquilidade e segurança.",
     "steps": {
       "step1": {
-        "title": "Contato e Entendimento",
-        "text": "Primeiro alinhamento para compreender o caso, o contexto e o objetivo do trabalho — seja análise, documento técnico ou apoio em perícia."
+        "title": "Contato Inicial",
+        "text": "Entendimento rápido do caso e das necessidades do cliente."
       },
       "step2": {
-        "title": "Levantamento Técnico",
-        "text": "Coleta de informações, documentos, evidências e detalhes necessários para fundamentar a análise, de forma remota ou presencial."
+        "title": "Coleta Técnica",
+        "text": "Reunião dos dados, documentos e evidências essenciais."
       },
       "step3": {
-        "title": "Desenvolvimento da Solução",
-        "text": "Elaboração do trabalho técnico: análise, parecer, laudo, relatório, estudo ou consultoria, seguindo normas, legislação e boas práticas."
+        "title": "Análise e Produção",
+        "text": "Desenvolvimento do laudo, parecer, estudo ou consultoria."
       },
       "step4": {
-        "title": "Entrega e Orientação",
-        "text": "Apresentação clara dos resultados, conclusões e recomendações, garantindo que o cliente compreenda os pontos essenciais para tomada de decisão."
+        "title": "Entrega e Suporte",
+        "text": "Apresentação clara dos resultados e orientação final."
       }
     }
   },

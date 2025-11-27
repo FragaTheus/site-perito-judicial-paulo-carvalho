@@ -17,33 +17,27 @@ import HowToRegIcon from "@mui/icons-material/HowToReg";
 const benfictsCardValue = [
   {
     icon: <ShieldIcon sx={{ color: "primary.100", fontSize: "lg" }} />,
-    title: content.beneficios.card.item,
-    text: content.beneficios.card.itemPt2,
+    text: content.beneficios.card.item,
   },
   {
     icon: <DescriptionIcon sx={{ color: "primary.100", fontSize: "lg" }} />,
-    title: content.beneficios.card.item1,
-    text: content.beneficios.card.item1pt2,
+    text: content.beneficios.card.item1,
   },
   {
     icon: <GavelIcon sx={{ color: "primary.100", fontSize: "lg" }} />,
-    title: content.beneficios.card.item2,
-    text: content.beneficios.card.item2pt2,
+    text: content.beneficios.card.item2,
   },
   {
     icon: <FactCheckIcon sx={{ color: "primary.100", fontSize: "lg" }} />,
-    title: content.beneficios.card.item3,
-    text: content.beneficios.card.item3pt2,
+    text: content.beneficios.card.item3,
   },
   {
     icon: <BalanceIcon sx={{ color: "primary.100", fontSize: "lg" }} />,
-    title: content.beneficios.card.item4,
-    text: content.beneficios.card.item4pt2,
+    text: content.beneficios.card.item4,
   },
   {
     icon: <VerifiedUserIcon sx={{ color: "primary.100", fontSize: "lg" }} />,
-    title: content.beneficios.card.item5,
-    text: content.beneficios.card.item5pt2,
+    text: content.beneficios.card.item5,
   },
 ];
 
@@ -88,12 +82,7 @@ export const Beneficios = () => {
             >
               {benfictsCardValue.map((c, i) => (
                 <SwiperSlide key={i}>
-                  <BenfictsCards
-                    key={i}
-                    icon={c.icon}
-                    title={c.title}
-                    text={c.text}
-                  />
+                  <BenfictsCards key={i} icon={c.icon} text={c.text} />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -116,12 +105,7 @@ export const Beneficios = () => {
             }}
           >
             {benfictsCardValue.map((c, i) => (
-              <BenfictsCards
-                key={i}
-                icon={c.icon}
-                title={c.title}
-                text={c.text}
-              />
+              <BenfictsCards key={i} icon={c.icon} text={c.text} />
             ))}
           </Box>
         )}
