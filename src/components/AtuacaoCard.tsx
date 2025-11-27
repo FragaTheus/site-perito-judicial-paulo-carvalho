@@ -1,13 +1,4 @@
-import {
-  Box,
-  Card,
-  CardActions,
-  CardContent,
-  Stack,
-  Typography,
-  useTheme,
-} from "@mui/joy";
-import { useMediaQuery } from "@mui/material";
+import { Box, Card, CardContent, Stack, Typography } from "@mui/joy";
 import type React from "react";
 
 type AtuacaoCardProp = {
@@ -19,8 +10,6 @@ type AtuacaoCardProp = {
 };
 
 export const AtuacaoCard = (type: AtuacaoCardProp) => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Card
       variant="solid"

@@ -1,4 +1,4 @@
-import { Card, CardContent, Divider, Stack, Typography } from "@mui/joy";
+import { Card, CardContent, Stack, Typography } from "@mui/joy";
 import content from "../content/home-page/homePageContent.json";
 import TimelineTwoToneIcon from "@mui/icons-material/TimelineTwoTone";
 import VerticalAlignBottomIcon from "@mui/icons-material/VerticalAlignBottom";
