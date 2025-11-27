@@ -7,7 +7,6 @@ import AssuredWorkloadIcon from "@mui/icons-material/AssuredWorkload";
 import TaskIcon from "@mui/icons-material/Task";
 import HandymanIcon from "@mui/icons-material/Handyman";
 import { AtuacaoCard } from "../../components/AtuacaoCard";
-import LayersIcon from "@mui/icons-material/Layers";
 
 const cards = [
   {

@@ -12,7 +12,6 @@ import { useMediaQuery } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/swiper-bundle.css";
-import HowToRegIcon from "@mui/icons-material/HowToReg";
 
 const benfictsCardValue = [
   {
