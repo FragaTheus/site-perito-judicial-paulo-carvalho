@@ -69,13 +69,15 @@ export const Header = () => {
           </IconButton>
           <IconButton
             id="whatsapp-button"
-            type="submit"
             onClick={() => enviarMsg()}
             variant="outlined"
             color="primary"
             sx={{ borderRadius: "lg", borderColor: "primary.900" }}
           >
-            <WhatsAppIcon sx={{ color: "#25D366", fontSize: "md" }} />
+            <WhatsAppIcon
+              id="whatsapp-button"
+              sx={{ color: "#25D366", fontSize: "md" }}
+            />
           </IconButton>
         </Box>
       </Box>
