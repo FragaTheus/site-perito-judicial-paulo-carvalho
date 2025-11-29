@@ -88,6 +88,7 @@ Pode me orientar sobre os próximos passos?
                 {field.type === "textarea" && (
                   <Textarea
                     variant="soft"
+                    required={true}
                     minRows={4}
                     value={f.value || ""}
                     onChange={(e) => f.onChange(e.target.value)}

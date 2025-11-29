@@ -2,8 +2,10 @@ import { Button, Stack, Typography } from "@mui/joy";
 import { Section } from "../../components/Section";
 import content from "../../content/home-page/homePageContent.json";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import { useWppContext } from "../../contexts/WhatsAppContext";
 
 export const CTAMid = () => {
+  const { enviarMsg } = useWppContext();
   return (
     <Stack
       width={"100%"}
@@ -26,6 +28,7 @@ export const CTAMid = () => {
           <Button
             id="cta-mid-btn"
             variant="solid"
+            onClick={() => enviarMsg()}
             sx={{
               color: "#ffffff",
               gap: "10px",

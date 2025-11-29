@@ -55,9 +55,9 @@ export const Header = () => {
         >
           <Logo />
         </Box>
-        <Box id="email-box" display={"flex"} gap={"10px"}>
+        <Box display={"flex"} gap={"10px"}>
           <IconButton
-            id="email-button"
+            id="email-contact-btn"
             component="a"
             href="mailto: perito.paulo@bol.com.br"
             target="_blank"

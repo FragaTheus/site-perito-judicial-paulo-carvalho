@@ -6,7 +6,6 @@ import content from "../../content/home-page/homePageContent.json";
 export const HomeHero = () => {
   return (
     <Box
-      id="hero-bg"
       sx={{
         backgroundImage: "url(/hero-home2.jpg)",
         backgroundSize: "cover",
