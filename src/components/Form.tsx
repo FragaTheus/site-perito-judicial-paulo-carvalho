@@ -44,7 +44,8 @@ export const DynamicForm = () => {
   const { control, getValues } = useForm();
   const { enviarMsg } = useWppContext();
 
-  const handleSend = () => {
+  const handleSend = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
     const data = getValues();
 
     const texto = `
@@ -75,7 +76,12 @@ Pode me orientar sobre os próximos passos?
         bgcolor: "background.surface",
       }}
     >
-      <Stack component={"form"} spacing={2}>
+      <Stack
+        id="lead-form"
+        component={"form"}
+        onSubmit={handleSend}
+        spacing={2}
+      >
         {leadFields.map((field) => (
           <Controller
             key={field.name}
@@ -125,7 +131,7 @@ Pode me orientar sobre os próximos passos?
           />
         ))}
 
-        <Button id="form-cta-btn" variant="outlined" onClick={handleSend}>
+        <Button type="submit" variant="outlined">
           <Typography level="body-md">Enviar pelo WhatsApp</Typography>
         </Button>
       </Stack>
