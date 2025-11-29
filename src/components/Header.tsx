@@ -1,13 +1,14 @@
-import { Box, IconButton, Sheet } from "@mui/joy";
+import { Box, IconButton, Sheet, useTheme } from "@mui/joy";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import EmailIcon from "@mui/icons-material/Email";
-import { useResContext } from "../contexts/ResponsiveContext";
 import { useWppContext } from "../contexts/WhatsAppContext";
 import { Logo } from "./Logo";
+import { useMediaQuery } from "@mui/material";
 
 export const Header = () => {
   const { enviarMsg } = useWppContext();
-  const { isMobile } = useResContext();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Sheet
       id="header"
@@ -54,8 +55,9 @@ export const Header = () => {
         >
           <Logo />
         </Box>
-        <Box id="social-media" display={"flex"} gap={"10px"}>
+        <Box id="email-box" display={"flex"} gap={"10px"}>
           <IconButton
+            id="email-button"
             component="a"
             href="mailto: perito.paulo@bol.com.br"
             target="_blank"
@@ -66,6 +68,7 @@ export const Header = () => {
             <EmailIcon sx={{ color: "inherit", fontSize: "md" }} />
           </IconButton>
           <IconButton
+            id="whatsapp-button"
             type="submit"
             onClick={() => enviarMsg()}
             variant="outlined"
