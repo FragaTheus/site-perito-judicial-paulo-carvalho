@@ -75,7 +75,7 @@ Pode me orientar sobre os próximos passos?
         bgcolor: "background.surface",
       }}
     >
-      <Stack spacing={2}>
+      <Stack component={"form"} spacing={2}>
         {leadFields.map((field) => (
           <Controller
             key={field.name}
@@ -124,7 +124,7 @@ Pode me orientar sobre os próximos passos?
           />
         ))}
 
-        <Button variant="outlined" onClick={handleSend}>
+        <Button id="form-cta-btn" variant="outlined" onClick={handleSend}>
           <Typography level="body-md">Enviar pelo WhatsApp</Typography>
         </Button>
       </Stack>

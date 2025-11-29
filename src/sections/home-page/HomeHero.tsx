@@ -41,6 +41,7 @@ export const HomeHero = () => {
             </Stack>
 
             <Button
+              id="hero-cta-btn"
               variant="solid"
               sx={{
                 color: "#ffffff",

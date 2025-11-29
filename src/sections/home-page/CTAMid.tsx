@@ -24,6 +24,7 @@ export const CTAMid = () => {
             <p>{content.ctaMid.complement}</p>
           </Typography>
           <Button
+            id="cta-mid-btn"
             variant="solid"
             sx={{
               color: "#ffffff",
