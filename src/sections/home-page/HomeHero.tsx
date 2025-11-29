@@ -2,8 +2,10 @@ import { Box, Button, Stack, Typography } from "@mui/joy";
 import { Section } from "../../components/Section";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import content from "../../content/home-page/homePageContent.json";
+import { useWppContext } from "../../contexts/WhatsAppContext";
 
 export const HomeHero = () => {
+  const { enviarMsg } = useWppContext();
   return (
     <Box
       sx={{
@@ -41,6 +43,7 @@ export const HomeHero = () => {
 
             <Button
               id="hero-cta-btn"
+              onClick={() => enviarMsg()}
               variant="solid"
               sx={{
                 color: "#ffffff",
